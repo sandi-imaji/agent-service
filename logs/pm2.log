@@ -1,0 +1,64 @@
+2026-02-10T11:00:12: Usage: python -m uvicorn [OPTIONS] APP
+2026-02-10T11:00:12: Try 'python -m uvicorn --help' for help.
+2026-02-10T11:00:12: 
+2026-02-10T11:00:12: Error: Invalid value for '--port': '${PORT_AGENT:-8001}' is not a valid integer.
+2026-02-10T11:00:12: Usage: python -m uvicorn [OPTIONS] APP
+2026-02-10T11:00:12: Try 'python -m uvicorn --help' for help.
+2026-02-10T11:00:12: 
+2026-02-10T11:00:12: Error: Invalid value for '--port': '${PORT_AGENT:-8001}' is not a valid integer.
+2026-02-10T11:00:12: Usage: python -m uvicorn [OPTIONS] APP
+2026-02-10T11:00:12: Try 'python -m uvicorn --help' for help.
+2026-02-10T11:00:12: 
+2026-02-10T11:00:12: Error: Invalid value for '--port': '${PORT_AGENT:-8001}' is not a valid integer.
+2026-02-10T11:00:12: Usage: python -m uvicorn [OPTIONS] APP
+2026-02-10T11:00:12: Try 'python -m uvicorn --help' for help.
+2026-02-10T11:00:12: 
+2026-02-10T11:00:12: Error: Invalid value for '--port': '${PORT_AGENT:-8001}' is not a valid integer.
+2026-02-10T11:00:12: Usage: python -m uvicorn [OPTIONS] APP
+2026-02-10T11:00:12: Try 'python -m uvicorn --help' for help.
+2026-02-10T11:00:12: 
+2026-02-10T11:00:12: Error: Invalid value for '--port': '${PORT_AGENT:-8001}' is not a valid integer.
+2026-02-10T11:00:13: Usage: python -m uvicorn [OPTIONS] APP
+2026-02-10T11:00:13: Try 'python -m uvicorn --help' for help.
+2026-02-10T11:00:13: 
+2026-02-10T11:00:13: Error: Invalid value for '--port': '${PORT_AGENT:-8001}' is not a valid integer.
+2026-02-10T11:00:13: Usage: python -m uvicorn [OPTIONS] APP
+2026-02-10T11:00:13: Try 'python -m uvicorn --help' for help.
+2026-02-10T11:00:13: 
+2026-02-10T11:00:13: Error: Invalid value for '--port': '${PORT_AGENT:-8001}' is not a valid integer.
+2026-02-10T11:00:13: Usage: python -m uvicorn [OPTIONS] APP
+2026-02-10T11:00:13: Try 'python -m uvicorn --help' for help.
+2026-02-10T11:00:13: 
+2026-02-10T11:00:13: Error: Invalid value for '--port': '${PORT_AGENT:-8001}' is not a valid integer.
+2026-02-10T11:00:13: Usage: python -m uvicorn [OPTIONS] APP
+2026-02-10T11:00:13: Try 'python -m uvicorn --help' for help.
+2026-02-10T11:00:13: 
+2026-02-10T11:00:13: Error: Invalid value for '--port': '${PORT_AGENT:-8001}' is not a valid integer.
+2026-02-10T11:00:13: Usage: python -m uvicorn [OPTIONS] APP
+2026-02-10T11:00:13: Try 'python -m uvicorn --help' for help.
+2026-02-10T11:00:13: 
+2026-02-10T11:00:13: Error: Invalid value for '--port': '${PORT_AGENT:-8001}' is not a valid integer.
+2026-02-10T11:00:13: Usage: python -m uvicorn [OPTIONS] APP
+2026-02-10T11:00:13: Try 'python -m uvicorn --help' for help.
+2026-02-10T11:00:13: 
+2026-02-10T11:00:13: Error: Invalid value for '--port': '${PORT_AGENT:-8001}' is not a valid integer.
+2026-02-10T11:00:13: Usage: python -m uvicorn [OPTIONS] APP
+2026-02-10T11:00:13: Try 'python -m uvicorn --help' for help.
+2026-02-10T11:00:13: 
+2026-02-10T11:00:13: Error: Invalid value for '--port': '${PORT_AGENT:-8001}' is not a valid integer.
+2026-02-10T11:00:13: Usage: python -m uvicorn [OPTIONS] APP
+2026-02-10T11:00:13: Try 'python -m uvicorn --help' for help.
+2026-02-10T11:00:13: 
+2026-02-10T11:00:13: Error: Invalid value for '--port': '${PORT_AGENT:-8001}' is not a valid integer.
+2026-02-10T11:00:13: Usage: python -m uvicorn [OPTIONS] APP
+2026-02-10T11:00:13: Try 'python -m uvicorn --help' for help.
+2026-02-10T11:00:13: 
+2026-02-10T11:00:13: Error: Invalid value for '--port': '${PORT_AGENT:-8001}' is not a valid integer.
+2026-02-10T11:00:13: Usage: python -m uvicorn [OPTIONS] APP
+2026-02-10T11:00:13: Try 'python -m uvicorn --help' for help.
+2026-02-10T11:00:13: 
+2026-02-10T11:00:13: Error: Invalid value for '--port': '${PORT_AGENT:-8001}' is not a valid integer.
+2026-02-10T11:00:13: Usage: python -m uvicorn [OPTIONS] APP
+2026-02-10T11:00:13: Try 'python -m uvicorn --help' for help.
+2026-02-10T11:00:13: 
+2026-02-10T11:00:13: Error: Invalid value for '--port': '${PORT_AGENT:-8001}' is not a valid integer.

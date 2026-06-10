@@ -1,0 +1,882 @@
+2026-02-12T10:25:38: 2026-02-12 10:25:38,186 - DEBUG - Building index from IDs objects
+2026-02-12T10:25:38: INFO:     Started server process [110534]
+2026-02-12T10:25:38: INFO:     Waiting for application startup.
+2026-02-12T10:25:38: INFO:     Application startup complete.
+2026-02-12T10:25:39: INFO:     Shutting down
+2026-02-12T10:25:39: INFO:     Waiting for application shutdown.
+2026-02-12T10:25:39: INFO:     Application shutdown complete.
+2026-02-12T10:25:39: INFO:     Finished server process [110534]
+2026-02-12T10:25:39: INFO:     Stopping reloader process [110439]
+2026-02-12T10:25:39: INFO:     Will watch for changes in these directories: ['/home/imaji/smart-ai/smart-ai-dev/agent-service']
+2026-02-12T10:25:39: INFO:     Uvicorn running on http://0.0.0.0:8005 (Press CTRL+C to quit)
+2026-02-12T10:25:39: INFO:     Started reloader process [110818] using WatchFiles
+2026-02-12T10:25:50: llama_context: n_ctx_per_seq (8192) < n_ctx_train (32768) -- the full capacity of the model will not be utilized
+2026-02-12T10:26:05: 2026-02-12 10:26:05,186 - DEBUG - Building index from IDs objects
+2026-02-12T10:26:05: INFO:     Started server process [110836]
+2026-02-12T10:26:05: INFO:     Waiting for application startup.
+2026-02-12T10:26:05: INFO:     Application startup complete.
+2026-02-12T10:26:37: /home/imaji/opensource/rag-llm/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host '10.51.216.9'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+2026-02-12T10:26:37:   warnings.warn(
+2026-02-12T10:26:37: [32m2026-02-12 10:26:37[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mfull_diagnostic_async[0m:[36m113[0m - [1m==================================================[0m
+2026-02-12T10:26:37: [32m2026-02-12 10:26:37[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mfull_diagnostic_async[0m:[36m114[0m - [1mFULL DIAGNOSTIC START[0m
+2026-02-12T10:26:37: [32m2026-02-12 10:26:37[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mfull_diagnostic_async[0m:[36m115[0m - [1m==================================================[0m
+2026-02-12T10:26:37: [32m2026-02-12 10:26:37[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mdiagnostic_network[0m:[36m20[0m - [1mDiagnostic Network ...[0m
+2026-02-12T10:26:37: [32m2026-02-12 10:26:37[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mdiagnostic_network[0m:[36m29[0m - [1m[PING] Checking primary: 10.51.217.2[0m
+2026-02-12T10:26:37: [32m2026-02-12 10:26:37[0m | [1mINFO    [0m | [36mapp.utils[0m:[36mping_icmp[0m:[36m44[0m - [1mPING (ICMP): 10.51.217.2 | count : 5[0m
+2026-02-12T10:26:41: [32m2026-02-12 10:26:41[0m | [1mINFO    [0m | [36mapp.utils[0m:[36mping_icmp[0m:[36m54[0m - [1m5 packets transmitted, 5 received, 0% packet loss, time 4004ms[0m
+2026-02-12T10:26:41: [32m2026-02-12 10:26:41[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mdiagnostic_network[0m:[36m50[0m - [1m[PING] Primary 10.51.217.2 is OK![0m
+2026-02-12T10:26:41: [32m2026-02-12 10:26:41[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mdiagnostic_network[0m:[36m55[0m - [1m[TELNET] Checking 10.51.217.2:502[0m
+2026-02-12T10:26:41: [32m2026-02-12 10:26:41[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mdiagnostic_network[0m:[36m79[0m - [1m[TELNET] 10.51.217.2:502 is OPEN![0m
+2026-02-12T10:26:41: [32m2026-02-12 10:26:41[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mfull_diagnostic_async[0m:[36m136[0m - [1m[REGISTER] Reading address 1 with uint16[0m
+2026-02-12T10:26:41: [32m2026-02-12 10:26:41[0m | [1mINFO    [0m | [36mapp.modscan._modscan[0m:[36mModScan[0m:[36m107[0m - [1m[MODSCAN] Trying PRIMARY: 10.51.217.2:502[0m
+2026-02-12T10:26:41: [32m2026-02-12 10:26:41[0m | [1mINFO    [0m | [36mapp.modscan._modscan[0m:[36m_modscan_connect[0m:[36m25[0m - [1m[MODSCAN] Connecting to 10.51.217.2:502[0m
+2026-02-12T10:26:41: [32m2026-02-12 10:26:41[0m | [1mINFO    [0m | [36mapp.modscan._modscan[0m:[36m_modscan_connect[0m:[36m33[0m - [1m[MODSCAN] Connected to 10.51.217.2:502[0m
+2026-02-12T10:26:41: [32m2026-02-12 10:26:41[0m | [1mINFO    [0m | [36mapp.modscan._modscan[0m:[36mModScan[0m:[36m115[0m - [1m[MODSCAN] PRIMARY connection successful[0m
+2026-02-12T10:26:41: [32m2026-02-12 10:26:41[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mfull_diagnostic_async[0m:[36m140[0m - [1m[REGISTER] Success! Value = 33.2[0m
+2026-02-12T10:26:41: [32m2026-02-12 10:26:41[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mchecking_value_sl[0m:[36m86[0m - [1mCHECKING VALUE FROM SL:[0m
+2026-02-12T10:26:41: /home/imaji/opensource/rag-llm/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host '10.51.216.9'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+2026-02-12T10:26:41:   warnings.warn(
+2026-02-12T10:26:41: [32m2026-02-12 10:26:41[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mfull_diagnostic_async[0m:[36m157[0m - [1m==================================================[0m
+2026-02-12T10:26:41: [32m2026-02-12 10:26:41[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mfull_diagnostic_async[0m:[36m158[0m - [1mFULL DIAGNOSTIC COMPLETE - 4.580s[0m
+2026-02-12T10:26:41: [32m2026-02-12 10:26:41[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mfull_diagnostic_async[0m:[36m159[0m - [1m==================================================[0m
+2026-02-12T10:32:18: INFO:     Shutting down
+2026-02-12T10:32:18: INFO:     Waiting for application shutdown.
+2026-02-12T10:32:18: INFO:     Application shutdown complete.
+2026-02-12T10:32:18: INFO:     Finished server process [110836]
+2026-02-12T10:32:18: INFO:     Stopping reloader process [110818]
+2026-02-12T10:32:18: INFO:     Will watch for changes in these directories: ['/home/imaji/smart-ai/smart-ai-dev/agent-service']
+2026-02-12T10:32:18: INFO:     Uvicorn running on http://0.0.0.0:8005 (Press CTRL+C to quit)
+2026-02-12T10:32:18: INFO:     Started reloader process [113488] using WatchFiles
+2026-02-12T10:32:26: llama_context: n_ctx_per_seq (8192) < n_ctx_train (32768) -- the full capacity of the model will not be utilized
+2026-02-12T10:32:38: 2026-02-12 10:32:38,770 - DEBUG - Building index from IDs objects
+2026-02-12T10:32:38: INFO:     Started server process [113506]
+2026-02-12T10:32:38: INFO:     Waiting for application startup.
+2026-02-12T10:32:38: INFO:     Application startup complete.
+2026-02-12T10:37:48: INFO:     Shutting down
+2026-02-12T10:37:48: INFO:     Waiting for application shutdown.
+2026-02-12T10:37:48: INFO:     Application shutdown complete.
+2026-02-12T10:37:48: INFO:     Finished server process [113506]
+2026-02-12T10:37:48: INFO:     Stopping reloader process [113488]
+2026-02-12T10:38:23: INFO:     Will watch for changes in these directories: ['/home/imaji/smart-ai/smart-ai-dev/agent-service']
+2026-02-12T10:38:23: INFO:     Uvicorn running on http://0.0.0.0:8005 (Press CTRL+C to quit)
+2026-02-12T10:38:23: INFO:     Started reloader process [115847] using WatchFiles
+2026-02-12T10:38:31: llama_context: n_ctx_per_seq (8192) < n_ctx_train (32768) -- the full capacity of the model will not be utilized
+2026-02-12T10:38:42: 2026-02-12 10:38:42,492 - DEBUG - Building index from IDs objects
+2026-02-12T10:38:42: INFO:     Started server process [115872]
+2026-02-12T10:38:42: INFO:     Waiting for application startup.
+2026-02-12T10:38:42: INFO:     Application startup complete.
+2026-02-12T10:40:41: INFO:     Shutting down
+2026-02-12T10:40:41: INFO:     Waiting for application shutdown.
+2026-02-12T10:40:41: INFO:     Application shutdown complete.
+2026-02-12T10:40:41: INFO:     Finished server process [115872]
+2026-02-12T10:40:41: INFO:     Stopping reloader process [115847]
+2026-02-12T10:40:49: INFO:     Will watch for changes in these directories: ['/home/imaji/smart-ai/smart-ai-dev/agent-service']
+2026-02-12T10:40:49: INFO:     Uvicorn running on http://0.0.0.0:8005 (Press CTRL+C to quit)
+2026-02-12T10:40:49: INFO:     Started reloader process [117145] using WatchFiles
+2026-02-12T10:40:58: llama_context: n_ctx_per_seq (8192) < n_ctx_train (32768) -- the full capacity of the model will not be utilized
+2026-02-12T10:41:09: 2026-02-12 10:41:09,796 - DEBUG - Building index from IDs objects
+2026-02-12T10:41:09: INFO:     Started server process [117155]
+2026-02-12T10:41:09: INFO:     Waiting for application startup.
+2026-02-12T10:41:09: INFO:     Application startup complete.
+2026-02-12T10:41:39: /home/imaji/opensource/rag-llm/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host '10.51.216.9'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+2026-02-12T10:41:39:   warnings.warn(
+2026-02-12T10:41:39: [32m2026-02-12 10:41:39[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mfull_diagnostic_async[0m:[36m113[0m - [1m==================================================[0m
+2026-02-12T10:41:39: [32m2026-02-12 10:41:39[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mfull_diagnostic_async[0m:[36m114[0m - [1mFULL DIAGNOSTIC START[0m
+2026-02-12T10:41:39: [32m2026-02-12 10:41:39[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mfull_diagnostic_async[0m:[36m115[0m - [1m==================================================[0m
+2026-02-12T10:41:39: [32m2026-02-12 10:41:39[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mdiagnostic_network[0m:[36m20[0m - [1mDiagnostic Network ...[0m
+2026-02-12T10:41:39: [32m2026-02-12 10:41:39[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mdiagnostic_network[0m:[36m29[0m - [1m[PING] Checking primary: 10.51.217.2[0m
+2026-02-12T10:41:39: [32m2026-02-12 10:41:39[0m | [1mINFO    [0m | [36mapp.utils[0m:[36mping_icmp[0m:[36m44[0m - [1mPING (ICMP): 10.51.217.2 | count : 5[0m
+2026-02-12T10:41:43: [32m2026-02-12 10:41:43[0m | [1mINFO    [0m | [36mapp.utils[0m:[36mping_icmp[0m:[36m54[0m - [1m5 packets transmitted, 5 received, 0% packet loss, time 4003ms[0m
+2026-02-12T10:41:43: [32m2026-02-12 10:41:43[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mdiagnostic_network[0m:[36m50[0m - [1m[PING] Primary 10.51.217.2 is OK![0m
+2026-02-12T10:41:43: [32m2026-02-12 10:41:43[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mdiagnostic_network[0m:[36m55[0m - [1m[TELNET] Checking 10.51.217.2:502[0m
+2026-02-12T10:41:43: [32m2026-02-12 10:41:43[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mdiagnostic_network[0m:[36m79[0m - [1m[TELNET] 10.51.217.2:502 is OPEN![0m
+2026-02-12T10:41:43: [32m2026-02-12 10:41:43[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mfull_diagnostic_async[0m:[36m136[0m - [1m[REGISTER] Reading address 1 with uint16[0m
+2026-02-12T10:41:43: [32m2026-02-12 10:41:43[0m | [1mINFO    [0m | [36mapp.modscan._modscan[0m:[36mModScan[0m:[36m107[0m - [1m[MODSCAN] Trying PRIMARY: 10.51.217.2:502[0m
+2026-02-12T10:41:43: [32m2026-02-12 10:41:43[0m | [1mINFO    [0m | [36mapp.modscan._modscan[0m:[36m_modscan_connect[0m:[36m25[0m - [1m[MODSCAN] Connecting to 10.51.217.2:502[0m
+2026-02-12T10:41:43: [32m2026-02-12 10:41:43[0m | [1mINFO    [0m | [36mapp.modscan._modscan[0m:[36m_modscan_connect[0m:[36m33[0m - [1m[MODSCAN] Connected to 10.51.217.2:502[0m
+2026-02-12T10:41:48: [32m2026-02-12 10:41:48[0m | [1mINFO    [0m | [36mapp.modscan._modscan[0m:[36mModScan[0m:[36m115[0m - [1m[MODSCAN] PRIMARY connection successful[0m
+2026-02-12T10:41:48: [32m2026-02-12 10:41:48[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mfull_diagnostic_async[0m:[36m140[0m - [1m[REGISTER] Success! Value = 33.1[0m
+2026-02-12T10:41:48: [32m2026-02-12 10:41:48[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mchecking_value_sl[0m:[36m86[0m - [1mCHECKING VALUE FROM SL:[0m
+2026-02-12T10:41:48: /home/imaji/opensource/rag-llm/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host '10.51.216.9'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+2026-02-12T10:41:48:   warnings.warn(
+2026-02-12T10:41:48: [32m2026-02-12 10:41:48[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mfull_diagnostic_async[0m:[36m157[0m - [1m==================================================[0m
+2026-02-12T10:41:48: [32m2026-02-12 10:41:48[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mfull_diagnostic_async[0m:[36m158[0m - [1mFULL DIAGNOSTIC COMPLETE - 9.596s[0m
+2026-02-12T10:41:48: [32m2026-02-12 10:41:48[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mfull_diagnostic_async[0m:[36m159[0m - [1m==================================================[0m
+2026-02-12T11:30:24: /home/imaji/opensource/rag-llm/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host '10.51.216.9'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+2026-02-12T11:30:24:   warnings.warn(
+2026-02-12T11:30:24: [32m2026-02-12 11:30:24[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mfull_diagnostic_async[0m:[36m113[0m - [1m==================================================[0m
+2026-02-12T11:30:24: [32m2026-02-12 11:30:24[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mfull_diagnostic_async[0m:[36m114[0m - [1mFULL DIAGNOSTIC START[0m
+2026-02-12T11:30:24: [32m2026-02-12 11:30:24[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mfull_diagnostic_async[0m:[36m115[0m - [1m==================================================[0m
+2026-02-12T11:30:24: [32m2026-02-12 11:30:24[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mdiagnostic_network[0m:[36m20[0m - [1mDiagnostic Network ...[0m
+2026-02-12T11:30:24: [32m2026-02-12 11:30:24[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mdiagnostic_network[0m:[36m29[0m - [1m[PING] Checking primary: 10.51.217.2[0m
+2026-02-12T11:30:24: [32m2026-02-12 11:30:24[0m | [1mINFO    [0m | [36mapp.utils[0m:[36mping_icmp[0m:[36m44[0m - [1mPING (ICMP): 10.51.217.2 | count : 5[0m
+2026-02-12T11:30:28: [32m2026-02-12 11:30:28[0m | [1mINFO    [0m | [36mapp.utils[0m:[36mping_icmp[0m:[36m54[0m - [1m5 packets transmitted, 5 received, 0% packet loss, time 4004ms[0m
+2026-02-12T11:30:28: [32m2026-02-12 11:30:28[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mdiagnostic_network[0m:[36m50[0m - [1m[PING] Primary 10.51.217.2 is OK![0m
+2026-02-12T11:30:28: [32m2026-02-12 11:30:28[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mdiagnostic_network[0m:[36m55[0m - [1m[TELNET] Checking 10.51.217.2:502[0m
+2026-02-12T11:30:28: [32m2026-02-12 11:30:28[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mdiagnostic_network[0m:[36m79[0m - [1m[TELNET] 10.51.217.2:502 is OPEN![0m
+2026-02-12T11:30:28: [32m2026-02-12 11:30:28[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mfull_diagnostic_async[0m:[36m136[0m - [1m[REGISTER] Reading address 1 with uint16[0m
+2026-02-12T11:30:28: [32m2026-02-12 11:30:28[0m | [1mINFO    [0m | [36mapp.modscan._modscan[0m:[36mModScan[0m:[36m107[0m - [1m[MODSCAN] Trying PRIMARY: 10.51.217.2:502[0m
+2026-02-12T11:30:29: [32m2026-02-12 11:30:29[0m | [1mINFO    [0m | [36mapp.modscan._modscan[0m:[36m_modscan_connect[0m:[36m25[0m - [1m[MODSCAN] Connecting to 10.51.217.2:502[0m
+2026-02-12T11:30:29: [32m2026-02-12 11:30:29[0m | [1mINFO    [0m | [36mapp.modscan._modscan[0m:[36m_modscan_connect[0m:[36m33[0m - [1m[MODSCAN] Connected to 10.51.217.2:502[0m
+2026-02-12T11:30:29: [32m2026-02-12 11:30:29[0m | [1mINFO    [0m | [36mapp.modscan._modscan[0m:[36mModScan[0m:[36m115[0m - [1m[MODSCAN] PRIMARY connection successful[0m
+2026-02-12T11:30:29: [32m2026-02-12 11:30:29[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mfull_diagnostic_async[0m:[36m140[0m - [1m[REGISTER] Success! Value = 32.9[0m
+2026-02-12T11:30:29: [32m2026-02-12 11:30:29[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mchecking_value_sl[0m:[36m86[0m - [1mCHECKING VALUE FROM SL:[0m
+2026-02-12T11:30:29: /home/imaji/opensource/rag-llm/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host '10.51.216.9'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+2026-02-12T11:30:29:   warnings.warn(
+2026-02-12T11:30:29: [32m2026-02-12 11:30:29[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mfull_diagnostic_async[0m:[36m157[0m - [1m==================================================[0m
+2026-02-12T11:30:29: [32m2026-02-12 11:30:29[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mfull_diagnostic_async[0m:[36m158[0m - [1mFULL DIAGNOSTIC COMPLETE - 4.699s[0m
+2026-02-12T11:30:29: [32m2026-02-12 11:30:29[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mfull_diagnostic_async[0m:[36m159[0m - [1m==================================================[0m
+2026-02-12T14:18:16: /home/imaji/opensource/rag-llm/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host '10.51.216.9'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+2026-02-12T14:18:16:   warnings.warn(
+2026-02-12T14:18:16: [32m2026-02-12 14:18:16[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mfull_diagnostic_async[0m:[36m113[0m - [1m==================================================[0m
+2026-02-12T14:18:16: [32m2026-02-12 14:18:16[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mfull_diagnostic_async[0m:[36m114[0m - [1mFULL DIAGNOSTIC START[0m
+2026-02-12T14:18:16: [32m2026-02-12 14:18:16[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mfull_diagnostic_async[0m:[36m115[0m - [1m==================================================[0m
+2026-02-12T14:18:16: [32m2026-02-12 14:18:16[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mdiagnostic_network[0m:[36m20[0m - [1mDiagnostic Network ...[0m
+2026-02-12T14:18:16: [32m2026-02-12 14:18:16[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mdiagnostic_network[0m:[36m29[0m - [1m[PING] Checking primary: 10.51.217.2[0m
+2026-02-12T14:18:16: [32m2026-02-12 14:18:16[0m | [1mINFO    [0m | [36mapp.utils[0m:[36mping_icmp[0m:[36m44[0m - [1mPING (ICMP): 10.51.217.2 | count : 5[0m
+2026-02-12T14:18:20: [32m2026-02-12 14:18:20[0m | [1mINFO    [0m | [36mapp.utils[0m:[36mping_icmp[0m:[36m54[0m - [1m5 packets transmitted, 5 received, 0% packet loss, time 4005ms[0m
+2026-02-12T14:18:20: [32m2026-02-12 14:18:20[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mdiagnostic_network[0m:[36m50[0m - [1m[PING] Primary 10.51.217.2 is OK![0m
+2026-02-12T14:18:20: [32m2026-02-12 14:18:20[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mdiagnostic_network[0m:[36m55[0m - [1m[TELNET] Checking 10.51.217.2:502[0m
+2026-02-12T14:18:20: [32m2026-02-12 14:18:20[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mdiagnostic_network[0m:[36m79[0m - [1m[TELNET] 10.51.217.2:502 is OPEN![0m
+2026-02-12T14:18:20: [32m2026-02-12 14:18:20[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mfull_diagnostic_async[0m:[36m136[0m - [1m[REGISTER] Reading address 1 with uint16[0m
+2026-02-12T14:18:20: [32m2026-02-12 14:18:20[0m | [1mINFO    [0m | [36mapp.modscan._modscan[0m:[36mModScan[0m:[36m107[0m - [1m[MODSCAN] Trying PRIMARY: 10.51.217.2:502[0m
+2026-02-12T14:18:20: [32m2026-02-12 14:18:20[0m | [1mINFO    [0m | [36mapp.modscan._modscan[0m:[36m_modscan_connect[0m:[36m25[0m - [1m[MODSCAN] Connecting to 10.51.217.2:502[0m
+2026-02-12T14:18:21: [32m2026-02-12 14:18:21[0m | [1mINFO    [0m | [36mapp.modscan._modscan[0m:[36m_modscan_connect[0m:[36m33[0m - [1m[MODSCAN] Connected to 10.51.217.2:502[0m
+2026-02-12T14:18:21: [32m2026-02-12 14:18:21[0m | [1mINFO    [0m | [36mapp.modscan._modscan[0m:[36mModScan[0m:[36m115[0m - [1m[MODSCAN] PRIMARY connection successful[0m
+2026-02-12T14:18:21: [32m2026-02-12 14:18:21[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mfull_diagnostic_async[0m:[36m140[0m - [1m[REGISTER] Success! Value = 32.6[0m
+2026-02-12T14:18:21: [32m2026-02-12 14:18:21[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mchecking_value_sl[0m:[36m86[0m - [1mCHECKING VALUE FROM SL:[0m
+2026-02-12T14:18:21: /home/imaji/opensource/rag-llm/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host '10.51.216.9'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+2026-02-12T14:18:21:   warnings.warn(
+2026-02-12T14:18:21: [32m2026-02-12 14:18:21[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mfull_diagnostic_async[0m:[36m157[0m - [1m==================================================[0m
+2026-02-12T14:18:21: [32m2026-02-12 14:18:21[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mfull_diagnostic_async[0m:[36m158[0m - [1mFULL DIAGNOSTIC COMPLETE - 4.789s[0m
+2026-02-12T14:18:21: [32m2026-02-12 14:18:21[0m | [1mINFO    [0m | [36mapp.modscan.diagnose[0m:[36mfull_diagnostic_async[0m:[36m159[0m - [1m==================================================[0m
+2026-05-27T13:28:40: INFO:     Will watch for changes in these directories: ['/home/widioap/agent-service']
+2026-05-27T13:28:40: INFO:     Uvicorn running on http://0.0.0.0:8005 (Press CTRL+C to quit)
+2026-05-27T13:28:40: INFO:     Started reloader process [179254] using WatchFiles
+2026-05-27T13:29:02: llama_context: n_ctx_per_seq (8192) < n_ctx_train (32768) -- the full capacity of the model will not be utilized
+2026-05-27T13:29:05: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-27T13:29:07: Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]
+2026-05-27T13:29:07: Loading weights: 100%|██████████| 391/391 [00:00<00:00, 16609.34it/s]
+2026-05-27T13:29:13: 2026-05-27 13:29:13,657 - DEBUG - Building index from IDs objects
+2026-05-27T13:29:13: 2026-05-27 13:29:13,975 - INFO - HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-27T13:29:13: 2026-05-27 13:29:13,995 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/config.json "HTTP/1.1 200 OK"
+2026-05-27T13:29:14: 2026-05-27 13:29:14,251 - INFO - HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-27T13:29:14: 2026-05-27 13:29:14,270 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-27T13:29:14: 2026-05-27 13:29:14,521 - INFO - HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-reranker-v2-m3/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-27T13:29:14: 2026-05-27 13:29:14,779 - INFO - HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-reranker-v2-m3/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-27T13:29:17: 2026-05-27 13:29:17,287 - INFO - HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-reranker-v2-m3 "HTTP/1.1 200 OK"
+2026-05-27T13:29:17: 2026-05-27 13:29:17,528 - INFO - HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-27T13:29:17: 2026-05-27 13:29:17,547 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/config.json "HTTP/1.1 200 OK"
+2026-05-27T13:29:17: 2026-05-27 13:29:17,786 - INFO - HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-27T13:29:17: 2026-05-27 13:29:17,805 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/config.json "HTTP/1.1 200 OK"
+2026-05-27T13:29:18: Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]
+2026-05-27T13:29:18: Loading weights:  20%|█▉        | 77/393 [00:00<00:00, 768.67it/s]
+2026-05-27T13:29:18: Loading weights:  41%|████      | 162/393 [00:00<00:00, 816.24it/s]
+2026-05-27T13:29:18: Loading weights:  64%|██████▍   | 251/393 [00:00<00:00, 843.10it/s]
+2026-05-27T13:29:18: Loading weights:  85%|████████▌ | 336/393 [00:00<00:00, 828.02it/s]
+2026-05-27T13:29:18: Loading weights: 100%|██████████| 393/393 [00:00<00:00, 819.36it/s]
+2026-05-27T13:29:18: INFO:     Started server process [179263]
+2026-05-27T13:29:18: INFO:     Waiting for application startup.
+2026-05-27T13:29:18: INFO:     Application startup complete.
+2026-05-27T14:21:12: 2026-05-27 14:21:12,266 - INFO - [tick] add: AgentWorkflowStartEvent(user_msg='halo', chat_history=None, memory=None, max_iterations=None)
+2026-05-27T14:21:12: 2026-05-27 14:21:12,266 - INFO - [init_run:0] started from AgentWorkflowStartEvent
+2026-05-27T14:21:12: 2026-05-27 14:21:12,275 - INFO - [init_run:0] complete with AgentInput
+2026-05-27T14:21:12: 2026-05-27 14:21:12,275 - INFO - [tick] add: AgentInput(input=[ChatMessage(role=<MessageRole.USER: 'user'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text='halo')])], current_agent_name='Agent')
+2026-05-27T14:21:12: 2026-05-27 14:21:12,275 - INFO - [setup_agent:0] started from AgentInput
+2026-05-27T14:21:12: 2026-05-27 14:21:12,276 - INFO - [setup_agent:0] complete with AgentSetup
+2026-05-27T14:21:12: 2026-05-27 14:21:12,277 - INFO - [tick] add: AgentSetup(input=[ChatMessage(role=<MessageRole.SYSTEM: 'system'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text="You are an expert technical support assistant for SmartLink BMS s...
+2026-05-27T14:21:12: 2026-05-27 14:21:12,277 - INFO - [run_agent_step:0] started from AgentSetup
+2026-05-27T14:21:34: 2026-05-27 14:21:34,802 - INFO - [run_agent_step:0] complete with AgentOutput
+2026-05-27T14:21:34: 2026-05-27 14:21:34,803 - INFO - [tick] add: AgentOutput(response=ChatMessage(role=<MessageRole.ASSISTANT: 'assistant'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text='Thought: The current language of the user is: Indonesian...
+2026-05-27T14:21:34: 2026-05-27 14:21:34,803 - INFO - [parse_agent_output:0] started from AgentOutput
+2026-05-27T14:21:34: 2026-05-27 14:21:34,804 - INFO - [tick] add: ToolCall(tool_name='smartlink_manual', tool_kwargs={'input': 'halo'}, tool_id='a7eaa176-1e4f-4758-a940-22d7aa1f1738')
+2026-05-27T14:21:34: 2026-05-27 14:21:34,804 - INFO - [call_tool:0] started from ToolCall
+2026-05-27T14:21:37: 2026-05-27 14:21:37,017 - INFO - [parse_agent_output:0] complete with no result
+2026-05-27T14:21:37: 2026-05-27 14:21:37,021 - INFO - [call_tool:0] complete with ToolCallResult
+2026-05-27T14:21:37: 2026-05-27 14:21:37,021 - INFO - [tick] add: ToolCallResult(tool_name='smartlink_manual', tool_kwargs={'input': 'halo'}, tool_id='a7eaa176-1e4f-4758-a940-22d7aa1f1738', tool_output=ToolOutput(blocks=[TextBlock(block_type='text', text='Empty R...
+2026-05-27T14:21:37: 2026-05-27 14:21:37,021 - INFO - [aggregate_tool_results:0] started from ToolCallResult
+2026-05-27T14:21:37: 2026-05-27 14:21:37,022 - INFO - [aggregate_tool_results:0] complete with AgentInput
+2026-05-27T14:21:37: 2026-05-27 14:21:37,022 - INFO - [tick] add: AgentInput(input=[ChatMessage(role=<MessageRole.USER: 'user'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text='halo')])], current_agent_name='Agent')
+2026-05-27T14:21:37: 2026-05-27 14:21:37,022 - INFO - [setup_agent:0] started from AgentInput
+2026-05-27T14:21:37: 2026-05-27 14:21:37,023 - INFO - [setup_agent:0] complete with AgentSetup
+2026-05-27T14:21:37: 2026-05-27 14:21:37,023 - INFO - [tick] add: AgentSetup(input=[ChatMessage(role=<MessageRole.SYSTEM: 'system'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text="You are an expert technical support assistant for SmartLink BMS s...
+2026-05-27T14:21:37: 2026-05-27 14:21:37,023 - INFO - [run_agent_step:0] started from AgentSetup
+2026-05-27T14:21:42: 2026-05-27 14:21:42,400 - INFO - [run_agent_step:0] complete with AgentOutput
+2026-05-27T14:21:42: 2026-05-27 14:21:42,400 - INFO - [tick] add: AgentOutput(response=ChatMessage(role=<MessageRole.ASSISTANT: 'assistant'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text="Thought: I can answer without using any more tools. I'll...
+2026-05-27T14:21:42: 2026-05-27 14:21:42,400 - INFO - [parse_agent_output:0] started from AgentOutput
+2026-05-27T14:21:42: 2026-05-27 14:21:42,402 - INFO - [result] StopEvent(result=AgentOutput(response=ChatMessage(role=<MessageRole.ASSISTANT: 'assistant'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text='Halo! Bagaimana saya bisa membantu Anda...
+2026-05-27T14:21:42: 2026-05-27 14:21:42,402 - INFO - [parse_agent_output:0] complete with StopEvent
+2026-05-27T14:22:13: 2026-05-27 14:22:13,314 - INFO - [tick] add: AgentWorkflowStartEvent(user_msg='tolong dong check tagname CRAH-2DH2.1-RETURN_AIR_T...', chat_history=None, memory=None, max_iterations=None)
+2026-05-27T14:22:13: 2026-05-27 14:22:13,314 - INFO - [init_run:0] started from AgentWorkflowStartEvent
+2026-05-27T14:22:13: 2026-05-27 14:22:13,316 - INFO - [init_run:0] complete with AgentInput
+2026-05-27T14:22:13: 2026-05-27 14:22:13,316 - INFO - [tick] add: AgentInput(input=[ChatMessage(role=<MessageRole.USER: 'user'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text='tolong dong check tagname CRAH-2DH2.1-RETURN_AIR_TEMP')])], current_a...
+2026-05-27T14:22:13: 2026-05-27 14:22:13,316 - INFO - [setup_agent:0] started from AgentInput
+2026-05-27T14:22:13: 2026-05-27 14:22:13,317 - INFO - [setup_agent:0] complete with AgentSetup
+2026-05-27T14:22:13: 2026-05-27 14:22:13,317 - INFO - [tick] add: AgentSetup(input=[ChatMessage(role=<MessageRole.SYSTEM: 'system'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text="You are an expert technical support assistant for SmartLink BMS s...
+2026-05-27T14:22:13: 2026-05-27 14:22:13,317 - INFO - [run_agent_step:0] started from AgentSetup
+2026-05-27T14:22:21: 2026-05-27 14:22:21,583 - INFO - [run_agent_step:0] complete with AgentOutput
+2026-05-27T14:22:21: 2026-05-27 14:22:21,583 - INFO - [tick] add: AgentOutput(response=ChatMessage(role=<MessageRole.ASSISTANT: 'assistant'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text='Thought: The current language of the user is: Indonesian...
+2026-05-27T14:22:21: 2026-05-27 14:22:21,583 - INFO - [parse_agent_output:0] started from AgentOutput
+2026-05-27T14:22:21: 2026-05-27 14:22:21,584 - INFO - [tick] add: ToolCall(tool_name='smartlink_manual', tool_kwargs={'input': 'check tagname CRAH-2DH2.1-RETURN_AIR_TEMP'}, tool_id='7746202a-81b2-40e5-ac41-c570c082254b')
+2026-05-27T14:22:21: 2026-05-27 14:22:21,584 - INFO - [call_tool:0] started from ToolCall
+2026-05-27T14:22:21: 2026-05-27 14:22:21,866 - INFO - [parse_agent_output:0] complete with no result
+2026-05-27T14:22:21: 2026-05-27 14:22:21,881 - INFO - [call_tool:0] complete with ToolCallResult
+2026-05-27T14:22:21: 2026-05-27 14:22:21,881 - INFO - [tick] add: ToolCallResult(tool_name='smartlink_manual', tool_kwargs={'input': 'check tagname CRAH-2DH2.1-RETURN_AIR_TEMP'}, tool_id='7746202a-81b2-40e5-ac41-c570c082254b', tool_output=ToolOutput(blocks=[TextB...
+2026-05-27T14:22:21: 2026-05-27 14:22:21,881 - INFO - [aggregate_tool_results:0] started from ToolCallResult
+2026-05-27T14:22:21: 2026-05-27 14:22:21,883 - INFO - [aggregate_tool_results:0] complete with AgentInput
+2026-05-27T14:22:21: 2026-05-27 14:22:21,884 - INFO - [tick] add: AgentInput(input=[ChatMessage(role=<MessageRole.USER: 'user'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text='tolong dong check tagname CRAH-2DH2.1-RETURN_AIR_TEMP')])], current_a...
+2026-05-27T14:22:21: 2026-05-27 14:22:21,884 - INFO - [setup_agent:0] started from AgentInput
+2026-05-27T14:22:21: 2026-05-27 14:22:21,885 - INFO - [setup_agent:0] complete with AgentSetup
+2026-05-27T14:22:21: 2026-05-27 14:22:21,886 - INFO - [tick] add: AgentSetup(input=[ChatMessage(role=<MessageRole.SYSTEM: 'system'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text="You are an expert technical support assistant for SmartLink BMS s...
+2026-05-27T14:22:21: 2026-05-27 14:22:21,886 - INFO - [run_agent_step:0] started from AgentSetup
+2026-05-27T14:22:27: 2026-05-27 14:22:27,757 - INFO - [run_agent_step:0] complete with AgentOutput
+2026-05-27T14:22:27: 2026-05-27 14:22:27,758 - INFO - [tick] add: AgentOutput(response=ChatMessage(role=<MessageRole.ASSISTANT: 'assistant'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text='Thought: I cannot answer the question with the provided ...
+2026-05-27T14:22:27: 2026-05-27 14:22:27,758 - INFO - [parse_agent_output:0] started from AgentOutput
+2026-05-27T14:22:27: 2026-05-27 14:22:27,760 - INFO - [result] StopEvent(result=AgentOutput(response=ChatMessage(role=<MessageRole.ASSISTANT: 'assistant'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text='Maaf, saya tidak dapat menyelesaikan tu...
+2026-05-27T14:22:27: 2026-05-27 14:22:27,760 - INFO - [parse_agent_output:0] complete with StopEvent
+2026-05-27T14:22:41: 2026-05-27 14:22:41,346 - INFO - [tick] add: AgentWorkflowStartEvent(user_msg='please check tagname CRAH-2DH2.1-RETURN_AIR_TEMP', chat_history=None, memory=None, max_iterations=None)
+2026-05-27T14:22:41: 2026-05-27 14:22:41,346 - INFO - [init_run:0] started from AgentWorkflowStartEvent
+2026-05-27T14:22:41: 2026-05-27 14:22:41,347 - INFO - [init_run:0] complete with AgentInput
+2026-05-27T14:22:41: 2026-05-27 14:22:41,348 - INFO - [tick] add: AgentInput(input=[ChatMessage(role=<MessageRole.USER: 'user'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text='please check tagname CRAH-2DH2.1-RETURN_AIR_TEMP')])], current_agent_...
+2026-05-27T14:22:41: 2026-05-27 14:22:41,348 - INFO - [setup_agent:0] started from AgentInput
+2026-05-27T14:22:41: 2026-05-27 14:22:41,348 - INFO - [setup_agent:0] complete with AgentSetup
+2026-05-27T14:22:41: 2026-05-27 14:22:41,348 - INFO - [tick] add: AgentSetup(input=[ChatMessage(role=<MessageRole.SYSTEM: 'system'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text="You are an expert technical support assistant for SmartLink BMS s...
+2026-05-27T14:22:41: 2026-05-27 14:22:41,348 - INFO - [run_agent_step:0] started from AgentSetup
+2026-05-27T14:22:49: 2026-05-27 14:22:49,173 - INFO - [run_agent_step:0] complete with AgentOutput
+2026-05-27T14:22:49: 2026-05-27 14:22:49,173 - INFO - [tick] add: AgentOutput(response=ChatMessage(role=<MessageRole.ASSISTANT: 'assistant'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text='Thought: The current language of the user is: English. I...
+2026-05-27T14:22:49: 2026-05-27 14:22:49,173 - INFO - [parse_agent_output:0] started from AgentOutput
+2026-05-27T14:22:49: 2026-05-27 14:22:49,174 - INFO - [tick] add: ToolCall(tool_name='smartlink_manual', tool_kwargs={'input': 'tagname CRAH-2DH2.1-RETURN_AIR_TEMP'}, tool_id='09b73450-a85e-483a-8147-28e6ffb7e89c')
+2026-05-27T14:22:49: 2026-05-27 14:22:49,174 - INFO - [call_tool:0] started from ToolCall
+2026-05-27T14:22:49: 2026-05-27 14:22:49,298 - INFO - [parse_agent_output:0] complete with no result
+2026-05-27T14:22:49: 2026-05-27 14:22:49,300 - INFO - [call_tool:0] complete with ToolCallResult
+2026-05-27T14:22:49: 2026-05-27 14:22:49,301 - INFO - [tick] add: ToolCallResult(tool_name='smartlink_manual', tool_kwargs={'input': 'tagname CRAH-2DH2.1-RETURN_AIR_TEMP'}, tool_id='09b73450-a85e-483a-8147-28e6ffb7e89c', tool_output=ToolOutput(blocks=[TextBlock(b...
+2026-05-27T14:22:49: 2026-05-27 14:22:49,301 - INFO - [aggregate_tool_results:0] started from ToolCallResult
+2026-05-27T14:22:49: 2026-05-27 14:22:49,302 - INFO - [aggregate_tool_results:0] complete with AgentInput
+2026-05-27T14:22:49: 2026-05-27 14:22:49,302 - INFO - [tick] add: AgentInput(input=[ChatMessage(role=<MessageRole.USER: 'user'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text='please check tagname CRAH-2DH2.1-RETURN_AIR_TEMP')])], current_agent_...
+2026-05-27T14:22:49: 2026-05-27 14:22:49,303 - INFO - [setup_agent:0] started from AgentInput
+2026-05-27T14:22:49: 2026-05-27 14:22:49,304 - INFO - [setup_agent:0] complete with AgentSetup
+2026-05-27T14:22:49: 2026-05-27 14:22:49,304 - INFO - [tick] add: AgentSetup(input=[ChatMessage(role=<MessageRole.SYSTEM: 'system'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text="You are an expert technical support assistant for SmartLink BMS s...
+2026-05-27T14:22:49: 2026-05-27 14:22:49,304 - INFO - [run_agent_step:0] started from AgentSetup
+2026-05-27T14:22:56: 2026-05-27 14:22:56,294 - INFO - [run_agent_step:0] complete with AgentOutput
+2026-05-27T14:22:56: 2026-05-27 14:22:56,294 - INFO - [tick] add: AgentOutput(response=ChatMessage(role=<MessageRole.ASSISTANT: 'assistant'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text='Thought: The smartlink_manual tool did not provide a res...
+2026-05-27T14:22:56: 2026-05-27 14:22:56,294 - INFO - [parse_agent_output:0] started from AgentOutput
+2026-05-27T14:22:56: 2026-05-27 14:22:56,296 - INFO - [tick] add: ToolCall(tool_name='diagnose_point', tool_kwargs={'point_name': 'tagname CRAH-2DH2.1-RETURN_AIR_TEMP'}, tool_id='f6828ad7-8219-4563-9520-a46e6ac4b20a')
+2026-05-27T14:22:56: 2026-05-27 14:22:56,296 - INFO - [call_tool:0] started from ToolCall
+2026-05-27T14:22:56: 2026-05-27 14:22:56,296 - INFO - [parse_agent_output:0] complete with no result
+2026-05-27T14:22:56: /home/widioap/agent-service/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py:1110: InsecureRequestWarning: Unverified HTTPS request is being made to host '10.25.16.195'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+2026-05-27T14:22:56:   warnings.warn(
+2026-05-27T14:22:56: [32m2026-05-27 14:22:56[0m | [31m[1mERROR   [0m | [36mapp.utils[0m:[36mget_tagname[0m:[36m91[0m - [31m[1mMessage from get tagname: Tagname not found[0m
+2026-05-27T14:22:56: 2026-05-27 14:22:56,437 - INFO - [call_tool:0] complete with ToolCallResult
+2026-05-27T14:22:56: 2026-05-27 14:22:56,437 - INFO - [tick] add: ToolCallResult(tool_name='diagnose_point', tool_kwargs={'point_name': 'tagname CRAH-2DH2.1-RETURN_AIR_TEMP'}, tool_id='f6828ad7-8219-4563-9520-a46e6ac4b20a', tool_output=ToolOutput(blocks=[TextBloc...
+2026-05-27T14:22:56: 2026-05-27 14:22:56,437 - INFO - [aggregate_tool_results:0] started from ToolCallResult
+2026-05-27T14:22:56: 2026-05-27 14:22:56,438 - INFO - [aggregate_tool_results:0] complete with AgentInput
+2026-05-27T14:22:56: 2026-05-27 14:22:56,438 - INFO - [tick] add: AgentInput(input=[ChatMessage(role=<MessageRole.USER: 'user'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text='please check tagname CRAH-2DH2.1-RETURN_AIR_TEMP')])], current_agent_...
+2026-05-27T14:22:56: 2026-05-27 14:22:56,438 - INFO - [setup_agent:0] started from AgentInput
+2026-05-27T14:22:56: 2026-05-27 14:22:56,439 - INFO - [setup_agent:0] complete with AgentSetup
+2026-05-27T14:22:56: 2026-05-27 14:22:56,439 - INFO - [tick] add: AgentSetup(input=[ChatMessage(role=<MessageRole.SYSTEM: 'system'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text="You are an expert technical support assistant for SmartLink BMS s...
+2026-05-27T14:22:56: 2026-05-27 14:22:56,439 - INFO - [run_agent_step:0] started from AgentSetup
+2026-05-27T14:23:02: 2026-05-27 14:23:02,902 - INFO - [run_agent_step:0] complete with AgentOutput
+2026-05-27T14:23:02: 2026-05-27 14:23:02,902 - INFO - [tick] add: AgentOutput(response=ChatMessage(role=<MessageRole.ASSISTANT: 'assistant'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text="Thought: The diagnose_point tool did not provide a respo...
+2026-05-27T14:23:02: 2026-05-27 14:23:02,902 - INFO - [parse_agent_output:0] started from AgentOutput
+2026-05-27T14:23:02: 2026-05-27 14:23:02,909 - INFO - [result] StopEvent(result=AgentOutput(response=ChatMessage(role=<MessageRole.ASSISTANT: 'assistant'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text="I'm sorry, but I don't have the informa...
+2026-05-27T14:23:02: 2026-05-27 14:23:02,910 - INFO - [parse_agent_output:0] complete with StopEvent
+2026-05-27T14:27:00: WARNING:  WatchFiles detected changes in 'app/config.py'. Reloading...
+2026-05-27T14:27:00: INFO:     Shutting down
+2026-05-27T14:27:00: INFO:     Waiting for application shutdown.
+2026-05-27T14:27:00: INFO:     Application shutdown complete.
+2026-05-27T14:27:00: INFO:     Finished server process [179263]
+2026-05-27T14:27:18: llama_context: n_ctx_per_seq (8192) < n_ctx_train (32768) -- the full capacity of the model will not be utilized
+2026-05-27T14:27:19: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-27T14:27:22: Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]
+2026-05-27T14:27:22: Loading weights: 100%|██████████| 391/391 [00:00<00:00, 21268.24it/s]
+2026-05-27T14:27:27: 2026-05-27 14:27:27,322 - DEBUG - Building index from IDs objects
+2026-05-27T14:27:27: 2026-05-27 14:27:27,614 - INFO - HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-27T14:27:27: 2026-05-27 14:27:27,633 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/config.json "HTTP/1.1 200 OK"
+2026-05-27T14:27:27: 2026-05-27 14:27:27,881 - INFO - HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-27T14:27:27: 2026-05-27 14:27:27,899 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-27T14:27:28: 2026-05-27 14:27:28,148 - INFO - HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-reranker-v2-m3/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-27T14:27:28: 2026-05-27 14:27:28,393 - INFO - HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-reranker-v2-m3/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-27T14:27:30: 2026-05-27 14:27:30,494 - INFO - HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-reranker-v2-m3 "HTTP/1.1 200 OK"
+2026-05-27T14:27:30: 2026-05-27 14:27:30,749 - INFO - HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-27T14:27:30: 2026-05-27 14:27:30,771 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/config.json "HTTP/1.1 200 OK"
+2026-05-27T14:27:31: 2026-05-27 14:27:31,027 - INFO - HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-27T14:27:31: 2026-05-27 14:27:31,044 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/config.json "HTTP/1.1 200 OK"
+2026-05-27T14:27:31: Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]
+2026-05-27T14:27:31: Loading weights:  25%|██▍       | 97/393 [00:00<00:00, 913.27it/s]
+2026-05-27T14:27:31: Loading weights:  48%|████▊     | 189/393 [00:00<00:00, 886.07it/s]
+2026-05-27T14:27:31: Loading weights:  73%|███████▎  | 288/393 [00:00<00:00, 930.55it/s]
+2026-05-27T14:27:31: Loading weights:  97%|█████████▋| 382/393 [00:00<00:00, 821.26it/s]
+2026-05-27T14:27:31: Loading weights: 100%|██████████| 393/393 [00:00<00:00, 874.11it/s]
+2026-05-27T14:27:31: Process SpawnProcess-2:
+2026-05-27T14:27:31: Traceback (most recent call last):
+2026-05-27T14:27:31:   File "/home/widioap/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+2026-05-27T14:27:31:     self.run()
+2026-05-27T14:27:31:   File "/home/widioap/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/multiprocessing/process.py", line 108, in run
+2026-05-27T14:27:31:     self._target(*self._args, **self._kwargs)
+2026-05-27T14:27:31:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+2026-05-27T14:27:31:     target(sockets=sockets)
+2026-05-27T14:27:31:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/uvicorn/server.py", line 67, in run
+2026-05-27T14:27:31:     return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+2026-05-27T14:27:31:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-27T14:27:31:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/uvicorn/_compat.py", line 30, in asyncio_run
+2026-05-27T14:27:31:     return runner.run(main)
+2026-05-27T14:27:31:            ^^^^^^^^^^^^^^^^
+2026-05-27T14:27:31:   File "/home/widioap/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/asyncio/runners.py", line 118, in run
+2026-05-27T14:27:31:     return self._loop.run_until_complete(task)
+2026-05-27T14:27:31:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-27T14:27:31:   File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+2026-05-27T14:27:31:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/uvicorn/server.py", line 71, in serve
+2026-05-27T14:27:31:     await self._serve(sockets)
+2026-05-27T14:27:31:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/uvicorn/server.py", line 78, in _serve
+2026-05-27T14:27:31:     config.load()
+2026-05-27T14:27:31:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/uvicorn/config.py", line 439, in load
+2026-05-27T14:27:31:     self.loaded_app = import_from_string(self.app)
+2026-05-27T14:27:31:                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-27T14:27:31:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/uvicorn/importer.py", line 19, in import_from_string
+2026-05-27T14:27:31:     module = importlib.import_module(module_str)
+2026-05-27T14:27:31:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-27T14:27:31:   File "/home/widioap/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/importlib/__init__.py", line 126, in import_module
+2026-05-27T14:27:31:     return _bootstrap._gcd_import(name[level:], package, level)
+2026-05-27T14:27:31:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-27T14:27:31:   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+2026-05-27T14:27:31:   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+2026-05-27T14:27:31:   File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+2026-05-27T14:27:31:   File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+2026-05-27T14:27:31:   File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+2026-05-27T14:27:31:   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2026-05-27T14:27:31:   File "/home/widioap/agent-service/app/router.py", line 145, in <module>
+2026-05-27T14:27:31:     async def diagnose_rt(tagname: str, key: Optional[str] = Config.url_get_tagname):
+2026-05-27T14:27:31:                                                              ^^^^^^^^^^^^^^^^^^^^^^
+2026-05-27T14:27:31: AttributeError: type object 'Config' has no attribute 'url_get_tagname'
+2026-05-27T14:30:05: WARNING:  WatchFiles detected changes in 'app/utils.py'. Reloading...
+2026-05-27T14:30:18: llama_context: n_ctx_per_seq (8192) < n_ctx_train (32768) -- the full capacity of the model will not be utilized
+2026-05-27T14:30:18: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-27T14:30:21: Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]
+2026-05-27T14:30:21: Loading weights: 100%|██████████| 391/391 [00:00<00:00, 14659.89it/s]
+2026-05-27T14:30:27: 2026-05-27 14:30:27,096 - DEBUG - Building index from IDs objects
+2026-05-27T14:30:27: 2026-05-27 14:30:27,388 - INFO - HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-27T14:30:27: 2026-05-27 14:30:27,406 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/config.json "HTTP/1.1 200 OK"
+2026-05-27T14:30:27: 2026-05-27 14:30:27,658 - INFO - HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-27T14:30:27: 2026-05-27 14:30:27,676 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-27T14:30:27: 2026-05-27 14:30:27,925 - INFO - HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-reranker-v2-m3/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-27T14:30:28: 2026-05-27 14:30:28,166 - INFO - HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-reranker-v2-m3/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-27T14:30:30: 2026-05-27 14:30:30,344 - INFO - HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-reranker-v2-m3 "HTTP/1.1 200 OK"
+2026-05-27T14:30:30: 2026-05-27 14:30:30,586 - INFO - HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-27T14:30:30: 2026-05-27 14:30:30,603 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/config.json "HTTP/1.1 200 OK"
+2026-05-27T14:30:30: 2026-05-27 14:30:30,844 - INFO - HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-27T14:30:30: 2026-05-27 14:30:30,862 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/config.json "HTTP/1.1 200 OK"
+2026-05-27T14:30:31: Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]
+2026-05-27T14:30:31: Loading weights:  26%|██▌       | 102/393 [00:00<00:00, 981.77it/s]
+2026-05-27T14:30:31: Loading weights:  51%|█████     | 201/393 [00:00<00:00, 901.30it/s]
+2026-05-27T14:30:31: Loading weights:  76%|███████▌  | 298/393 [00:00<00:00, 930.66it/s]
+2026-05-27T14:30:31: Loading weights: 100%|██████████| 393/393 [00:00<00:00, 991.62it/s]
+2026-05-27T14:30:31: Process SpawnProcess-3:
+2026-05-27T14:30:31: Traceback (most recent call last):
+2026-05-27T14:30:31:   File "/home/widioap/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+2026-05-27T14:30:31:     self.run()
+2026-05-27T14:30:31:   File "/home/widioap/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/multiprocessing/process.py", line 108, in run
+2026-05-27T14:30:31:     self._target(*self._args, **self._kwargs)
+2026-05-27T14:30:31:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+2026-05-27T14:30:31:     target(sockets=sockets)
+2026-05-27T14:30:31:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/uvicorn/server.py", line 67, in run
+2026-05-27T14:30:31:     return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+2026-05-27T14:30:31:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-27T14:30:31:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/uvicorn/_compat.py", line 30, in asyncio_run
+2026-05-27T14:30:31:     return runner.run(main)
+2026-05-27T14:30:31:            ^^^^^^^^^^^^^^^^
+2026-05-27T14:30:31:   File "/home/widioap/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/asyncio/runners.py", line 118, in run
+2026-05-27T14:30:31:     return self._loop.run_until_complete(task)
+2026-05-27T14:30:31:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-27T14:30:31:   File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+2026-05-27T14:30:31:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/uvicorn/server.py", line 71, in serve
+2026-05-27T14:30:31:     await self._serve(sockets)
+2026-05-27T14:30:31:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/uvicorn/server.py", line 78, in _serve
+2026-05-27T14:30:31:     config.load()
+2026-05-27T14:30:31:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/uvicorn/config.py", line 439, in load
+2026-05-27T14:30:31:     self.loaded_app = import_from_string(self.app)
+2026-05-27T14:30:31:                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-27T14:30:31:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/uvicorn/importer.py", line 19, in import_from_string
+2026-05-27T14:30:31:     module = importlib.import_module(module_str)
+2026-05-27T14:30:31:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-27T14:30:31:   File "/home/widioap/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/importlib/__init__.py", line 126, in import_module
+2026-05-27T14:30:31:     return _bootstrap._gcd_import(name[level:], package, level)
+2026-05-27T14:30:31:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-27T14:30:31:   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+2026-05-27T14:30:31:   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+2026-05-27T14:30:31:   File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+2026-05-27T14:30:31:   File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+2026-05-27T14:30:31:   File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+2026-05-27T14:30:31:   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2026-05-27T14:30:31:   File "/home/widioap/agent-service/app/router.py", line 145, in <module>
+2026-05-27T14:30:31:     async def diagnose_rt(tagname: str, key: Optional[str] = Config.url_get_tagname):
+2026-05-27T14:30:31:                                                              ^^^^^^^^^^^^^^^^^^^^^^
+2026-05-27T14:30:31: AttributeError: type object 'Config' has no attribute 'url_get_tagname'
+2026-05-27T14:31:13: WARNING:  WatchFiles detected changes in 'app/router.py'. Reloading...
+2026-05-27T14:31:24: llama_context: n_ctx_per_seq (8192) < n_ctx_train (32768) -- the full capacity of the model will not be utilized
+2026-05-27T14:31:24: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-27T14:31:27: Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]
+2026-05-27T14:31:27: Loading weights: 100%|██████████| 391/391 [00:00<00:00, 31622.47it/s]
+2026-05-27T14:31:32: 2026-05-27 14:31:32,184 - DEBUG - Building index from IDs objects
+2026-05-27T14:31:32: 2026-05-27 14:31:32,467 - INFO - HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-27T14:31:32: 2026-05-27 14:31:32,484 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/config.json "HTTP/1.1 200 OK"
+2026-05-27T14:31:32: 2026-05-27 14:31:32,727 - INFO - HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-27T14:31:32: 2026-05-27 14:31:32,746 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-27T14:31:32: 2026-05-27 14:31:32,993 - INFO - HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-reranker-v2-m3/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-27T14:31:33: 2026-05-27 14:31:33,235 - INFO - HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-reranker-v2-m3/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-27T14:31:35: 2026-05-27 14:31:35,405 - INFO - HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-reranker-v2-m3 "HTTP/1.1 200 OK"
+2026-05-27T14:31:35: 2026-05-27 14:31:35,659 - INFO - HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-27T14:31:35: 2026-05-27 14:31:35,677 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/config.json "HTTP/1.1 200 OK"
+2026-05-27T14:31:35: 2026-05-27 14:31:35,922 - INFO - HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-27T14:31:35: 2026-05-27 14:31:35,939 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/config.json "HTTP/1.1 200 OK"
+2026-05-27T14:31:36: Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]
+2026-05-27T14:31:36: Loading weights: 100%|██████████| 393/393 [00:00<00:00, 4891.79it/s]
+2026-05-27T14:31:36: INFO:     Started server process [182655]
+2026-05-27T14:31:36: INFO:     Waiting for application startup.
+2026-05-27T14:31:36: INFO:     Application startup complete.
+2026-05-27T14:31:45: WARNING:  WatchFiles detected changes in 'app/config.py'. Reloading...
+2026-05-27T14:31:45: INFO:     Shutting down
+2026-05-27T14:31:46: INFO:     Waiting for application shutdown.
+2026-05-27T14:31:46: INFO:     Application shutdown complete.
+2026-05-27T14:31:46: INFO:     Finished server process [182655]
+2026-05-27T14:31:56: llama_context: n_ctx_per_seq (8192) < n_ctx_train (32768) -- the full capacity of the model will not be utilized
+2026-05-27T14:31:56: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-27T14:31:59: Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]
+2026-05-27T14:31:59: Loading weights: 100%|██████████| 391/391 [00:00<00:00, 22945.03it/s]
+2026-05-27T14:32:04: 2026-05-27 14:32:04,648 - DEBUG - Building index from IDs objects
+2026-05-27T14:32:05: 2026-05-27 14:32:05,003 - INFO - HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-27T14:32:05: 2026-05-27 14:32:05,024 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/config.json "HTTP/1.1 200 OK"
+2026-05-27T14:32:05: 2026-05-27 14:32:05,272 - INFO - HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-27T14:32:05: 2026-05-27 14:32:05,291 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-27T14:32:05: 2026-05-27 14:32:05,544 - INFO - HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-reranker-v2-m3/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-27T14:32:05: 2026-05-27 14:32:05,804 - INFO - HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-reranker-v2-m3/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-27T14:32:08: 2026-05-27 14:32:08,397 - INFO - HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-reranker-v2-m3 "HTTP/1.1 200 OK"
+2026-05-27T14:32:08: 2026-05-27 14:32:08,641 - INFO - HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-27T14:32:08: 2026-05-27 14:32:08,661 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/config.json "HTTP/1.1 200 OK"
+2026-05-27T14:32:08: 2026-05-27 14:32:08,902 - INFO - HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-27T14:32:08: 2026-05-27 14:32:08,921 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/config.json "HTTP/1.1 200 OK"
+2026-05-27T14:32:09: Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]
+2026-05-27T14:32:09: Loading weights:  84%|████████▍ | 330/393 [00:00<00:00, 3252.25it/s]
+2026-05-27T14:32:09: Loading weights: 100%|██████████| 393/393 [00:00<00:00, 3365.53it/s]
+2026-05-27T14:32:09: INFO:     Started server process [182690]
+2026-05-27T14:32:09: INFO:     Waiting for application startup.
+2026-05-27T14:32:09: INFO:     Application startup complete.
+2026-05-27T14:32:15: 2026-05-27 14:32:15,192 - INFO - [tick] add: AgentWorkflowStartEvent(user_msg="please check tagname CRAH-2DH2.1-RETURN_AIR_TEMP'", chat_history=None, memory=None, max_iterations=None)
+2026-05-27T14:32:15: 2026-05-27 14:32:15,192 - INFO - [init_run:0] started from AgentWorkflowStartEvent
+2026-05-27T14:32:15: 2026-05-27 14:32:15,195 - INFO - [init_run:0] complete with AgentInput
+2026-05-27T14:32:15: 2026-05-27 14:32:15,195 - INFO - [tick] add: AgentInput(input=[ChatMessage(role=<MessageRole.USER: 'user'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text="please check tagname CRAH-2DH2.1-RETURN_AIR_TEMP'")])], current_agent...
+2026-05-27T14:32:15: 2026-05-27 14:32:15,195 - INFO - [setup_agent:0] started from AgentInput
+2026-05-27T14:32:15: 2026-05-27 14:32:15,196 - INFO - [setup_agent:0] complete with AgentSetup
+2026-05-27T14:32:15: 2026-05-27 14:32:15,196 - INFO - [tick] add: AgentSetup(input=[ChatMessage(role=<MessageRole.SYSTEM: 'system'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text="You are an expert technical support assistant for SmartLink BMS s...
+2026-05-27T14:32:15: 2026-05-27 14:32:15,196 - INFO - [run_agent_step:0] started from AgentSetup
+2026-05-27T14:32:38: 2026-05-27 14:32:38,992 - INFO - [run_agent_step:0] complete with AgentOutput
+2026-05-27T14:32:38: 2026-05-27 14:32:38,993 - INFO - [tick] add: AgentOutput(response=ChatMessage(role=<MessageRole.ASSISTANT: 'assistant'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text='Thought: The current language of the user is: English. I...
+2026-05-27T14:32:38: 2026-05-27 14:32:38,993 - INFO - [parse_agent_output:0] started from AgentOutput
+2026-05-27T14:32:38: 2026-05-27 14:32:38,994 - INFO - [tick] add: ToolCall(tool_name='smartlink_manual', tool_kwargs={'input': 'check tagname CRAH-2DH2.1-RETURN_AIR_TEMP'}, tool_id='ad2d83f0-08ea-4f3f-bc61-687817f3a717')
+2026-05-27T14:32:38: 2026-05-27 14:32:38,994 - INFO - [call_tool:0] started from ToolCall
+2026-05-27T14:32:40: 2026-05-27 14:32:40,859 - INFO - [parse_agent_output:0] complete with no result
+2026-05-27T14:32:40: 2026-05-27 14:32:40,874 - INFO - [call_tool:0] complete with ToolCallResult
+2026-05-27T14:32:40: 2026-05-27 14:32:40,874 - INFO - [tick] add: ToolCallResult(tool_name='smartlink_manual', tool_kwargs={'input': 'check tagname CRAH-2DH2.1-RETURN_AIR_TEMP'}, tool_id='ad2d83f0-08ea-4f3f-bc61-687817f3a717', tool_output=ToolOutput(blocks=[TextB...
+2026-05-27T14:32:40: 2026-05-27 14:32:40,874 - INFO - [aggregate_tool_results:0] started from ToolCallResult
+2026-05-27T14:32:40: 2026-05-27 14:32:40,877 - INFO - [aggregate_tool_results:0] complete with AgentInput
+2026-05-27T14:32:40: 2026-05-27 14:32:40,878 - INFO - [tick] add: AgentInput(input=[ChatMessage(role=<MessageRole.USER: 'user'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text="please check tagname CRAH-2DH2.1-RETURN_AIR_TEMP'")])], current_agent...
+2026-05-27T14:32:40: 2026-05-27 14:32:40,878 - INFO - [setup_agent:0] started from AgentInput
+2026-05-27T14:32:40: 2026-05-27 14:32:40,880 - INFO - [setup_agent:0] complete with AgentSetup
+2026-05-27T14:32:40: 2026-05-27 14:32:40,880 - INFO - [tick] add: AgentSetup(input=[ChatMessage(role=<MessageRole.SYSTEM: 'system'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text="You are an expert technical support assistant for SmartLink BMS s...
+2026-05-27T14:32:40: 2026-05-27 14:32:40,880 - INFO - [run_agent_step:0] started from AgentSetup
+2026-05-27T14:32:46: 2026-05-27 14:32:46,886 - INFO - [run_agent_step:0] complete with AgentOutput
+2026-05-27T14:32:46: 2026-05-27 14:32:46,887 - INFO - [tick] add: AgentOutput(response=ChatMessage(role=<MessageRole.ASSISTANT: 'assistant'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text='Thought: I cannot answer the question with the provided ...
+2026-05-27T14:32:46: 2026-05-27 14:32:46,887 - INFO - [parse_agent_output:0] started from AgentOutput
+2026-05-27T14:32:46: 2026-05-27 14:32:46,890 - INFO - [result] StopEvent(result=AgentOutput(response=ChatMessage(role=<MessageRole.ASSISTANT: 'assistant'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text='Maaf, saya tidak dapat menyelesaikan tu...
+2026-05-27T14:32:46: 2026-05-27 14:32:46,890 - INFO - [parse_agent_output:0] complete with StopEvent
+2026-05-27T14:32:56: 2026-05-27 14:32:56,571 - INFO - [tick] add: AgentWorkflowStartEvent(user_msg="please check tagname CRAH-2DH2.1-RETURN_AIR_TEMP'", chat_history=None, memory=None, max_iterations=None)
+2026-05-27T14:32:56: 2026-05-27 14:32:56,572 - INFO - [init_run:0] started from AgentWorkflowStartEvent
+2026-05-27T14:32:56: 2026-05-27 14:32:56,573 - INFO - [init_run:0] complete with AgentInput
+2026-05-27T14:32:56: 2026-05-27 14:32:56,573 - INFO - [tick] add: AgentInput(input=[ChatMessage(role=<MessageRole.USER: 'user'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text="please check tagname CRAH-2DH2.1-RETURN_AIR_TEMP'")])], current_agent...
+2026-05-27T14:32:56: 2026-05-27 14:32:56,573 - INFO - [setup_agent:0] started from AgentInput
+2026-05-27T14:32:56: 2026-05-27 14:32:56,574 - INFO - [setup_agent:0] complete with AgentSetup
+2026-05-27T14:32:56: 2026-05-27 14:32:56,574 - INFO - [tick] add: AgentSetup(input=[ChatMessage(role=<MessageRole.SYSTEM: 'system'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text="You are an expert technical support assistant for SmartLink BMS s...
+2026-05-27T14:32:56: 2026-05-27 14:32:56,574 - INFO - [run_agent_step:0] started from AgentSetup
+2026-05-27T14:33:04: 2026-05-27 14:33:04,944 - INFO - [run_agent_step:0] complete with AgentOutput
+2026-05-27T14:33:04: 2026-05-27 14:33:04,952 - INFO - [tick] add: AgentOutput(response=ChatMessage(role=<MessageRole.ASSISTANT: 'assistant'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text='Thought: The current language of the user is: English. I...
+2026-05-27T14:33:04: 2026-05-27 14:33:04,952 - INFO - [parse_agent_output:0] started from AgentOutput
+2026-05-27T14:33:04: 2026-05-27 14:33:04,954 - INFO - [tick] add: ToolCall(tool_name='smartlink_manual', tool_kwargs={'input': 'tagname CRAH-2DH2.1-RETURN_AIR_TEMP'}, tool_id='aa8ebff1-1e69-4e32-a510-43cbffa632ee')
+2026-05-27T14:33:04: 2026-05-27 14:33:04,954 - INFO - [call_tool:0] started from ToolCall
+2026-05-27T14:33:06: 2026-05-27 14:33:06,237 - INFO - [parse_agent_output:0] complete with no result
+2026-05-27T14:33:06: 2026-05-27 14:33:06,242 - INFO - [call_tool:0] complete with ToolCallResult
+2026-05-27T14:33:06: 2026-05-27 14:33:06,242 - INFO - [tick] add: ToolCallResult(tool_name='smartlink_manual', tool_kwargs={'input': 'tagname CRAH-2DH2.1-RETURN_AIR_TEMP'}, tool_id='aa8ebff1-1e69-4e32-a510-43cbffa632ee', tool_output=ToolOutput(blocks=[TextBlock(b...
+2026-05-27T14:33:06: 2026-05-27 14:33:06,242 - INFO - [aggregate_tool_results:0] started from ToolCallResult
+2026-05-27T14:33:06: 2026-05-27 14:33:06,244 - INFO - [aggregate_tool_results:0] complete with AgentInput
+2026-05-27T14:33:06: 2026-05-27 14:33:06,244 - INFO - [tick] add: AgentInput(input=[ChatMessage(role=<MessageRole.USER: 'user'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text="please check tagname CRAH-2DH2.1-RETURN_AIR_TEMP'")])], current_agent...
+2026-05-27T14:33:06: 2026-05-27 14:33:06,244 - INFO - [setup_agent:0] started from AgentInput
+2026-05-27T14:33:06: 2026-05-27 14:33:06,246 - INFO - [setup_agent:0] complete with AgentSetup
+2026-05-27T14:33:06: 2026-05-27 14:33:06,246 - INFO - [tick] add: AgentSetup(input=[ChatMessage(role=<MessageRole.SYSTEM: 'system'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text="You are an expert technical support assistant for SmartLink BMS s...
+2026-05-27T14:33:06: 2026-05-27 14:33:06,246 - INFO - [run_agent_step:0] started from AgentSetup
+2026-05-27T14:33:17: 2026-05-27 14:33:17,319 - INFO - [run_agent_step:0] complete with AgentOutput
+2026-05-27T14:33:17: 2026-05-27 14:33:17,320 - INFO - [tick] add: AgentOutput(response=ChatMessage(role=<MessageRole.ASSISTANT: 'assistant'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text="Thought: I can answer without using any more tools. I'll...
+2026-05-27T14:33:17: 2026-05-27 14:33:17,320 - INFO - [parse_agent_output:0] started from AgentOutput
+2026-05-27T14:33:17: 2026-05-27 14:33:17,322 - INFO - [result] StopEvent(result=AgentOutput(response=ChatMessage(role=<MessageRole.ASSISTANT: 'assistant'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text='Mohon maaf, saya tidak dapat menemukan ...
+2026-05-27T14:33:17: 2026-05-27 14:33:17,322 - INFO - [parse_agent_output:0] complete with StopEvent
+2026-05-27T14:33:33: INFO:     Shutting down
+2026-05-27T14:33:33: INFO:     Waiting for application shutdown.
+2026-05-27T14:33:33: INFO:     Application shutdown complete.
+2026-05-27T14:33:33: INFO:     Finished server process [182690]
+2026-05-27T14:33:33: INFO:     Stopping reloader process [179254]
+2026-05-27T14:33:33: INFO:     Will watch for changes in these directories: ['/home/widioap/agent-service']
+2026-05-27T14:33:33: INFO:     Uvicorn running on http://0.0.0.0:8005 (Press CTRL+C to quit)
+2026-05-27T14:33:33: INFO:     Started reloader process [182769] using WatchFiles
+2026-05-27T14:33:44: llama_context: n_ctx_per_seq (8192) < n_ctx_train (32768) -- the full capacity of the model will not be utilized
+2026-05-27T14:33:45: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-27T14:33:48: Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]
+2026-05-27T14:33:48: Loading weights: 100%|██████████| 391/391 [00:00<00:00, 35914.70it/s]
+2026-05-27T14:33:52: 2026-05-27 14:33:52,808 - DEBUG - Building index from IDs objects
+2026-05-27T14:33:53: 2026-05-27 14:33:53,120 - INFO - HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-27T14:33:53: 2026-05-27 14:33:53,137 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/config.json "HTTP/1.1 200 OK"
+2026-05-27T14:33:53: 2026-05-27 14:33:53,381 - INFO - HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-27T14:33:53: 2026-05-27 14:33:53,398 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-27T14:33:53: 2026-05-27 14:33:53,647 - INFO - HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-reranker-v2-m3/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-27T14:33:53: 2026-05-27 14:33:53,889 - INFO - HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-reranker-v2-m3/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-27T14:33:56: 2026-05-27 14:33:56,076 - INFO - HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-reranker-v2-m3 "HTTP/1.1 200 OK"
+2026-05-27T14:33:56: 2026-05-27 14:33:56,316 - INFO - HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-27T14:33:56: 2026-05-27 14:33:56,334 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/config.json "HTTP/1.1 200 OK"
+2026-05-27T14:33:56: 2026-05-27 14:33:56,572 - INFO - HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-27T14:33:56: 2026-05-27 14:33:56,589 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/config.json "HTTP/1.1 200 OK"
+2026-05-27T14:33:57: Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]
+2026-05-27T14:33:57: Loading weights:  23%|██▎       | 90/393 [00:00<00:00, 899.61it/s]
+2026-05-27T14:33:57: Loading weights:  48%|████▊     | 189/393 [00:00<00:00, 952.31it/s]
+2026-05-27T14:33:57: Loading weights:  74%|███████▍  | 291/393 [00:00<00:00, 981.76it/s]
+2026-05-27T14:33:57: Loading weights: 100%|██████████| 393/393 [00:00<00:00, 1045.29it/s]
+2026-05-27T14:33:57: INFO:     Started server process [182771]
+2026-05-27T14:33:57: INFO:     Waiting for application startup.
+2026-05-27T14:33:57: INFO:     Application startup complete.
+2026-05-27T14:33:59: 2026-05-27 14:33:59,153 - INFO - [tick] add: AgentWorkflowStartEvent(user_msg='please check tagname CRAH-2DH2.1-RETURN_AIR_TEMP', chat_history=None, memory=None, max_iterations=None)
+2026-05-27T14:33:59: 2026-05-27 14:33:59,153 - INFO - [init_run:0] started from AgentWorkflowStartEvent
+2026-05-27T14:33:59: 2026-05-27 14:33:59,156 - INFO - [init_run:0] complete with AgentInput
+2026-05-27T14:33:59: 2026-05-27 14:33:59,157 - INFO - [tick] add: AgentInput(input=[ChatMessage(role=<MessageRole.USER: 'user'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text='please check tagname CRAH-2DH2.1-RETURN_AIR_TEMP')])], current_agent_...
+2026-05-27T14:33:59: 2026-05-27 14:33:59,157 - INFO - [setup_agent:0] started from AgentInput
+2026-05-27T14:33:59: 2026-05-27 14:33:59,158 - INFO - [setup_agent:0] complete with AgentSetup
+2026-05-27T14:33:59: 2026-05-27 14:33:59,158 - INFO - [tick] add: AgentSetup(input=[ChatMessage(role=<MessageRole.SYSTEM: 'system'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text="You are an expert technical support assistant for SmartLink BMS s...
+2026-05-27T14:33:59: 2026-05-27 14:33:59,158 - INFO - [run_agent_step:0] started from AgentSetup
+2026-05-27T14:34:23: 2026-05-27 14:34:23,108 - INFO - [run_agent_step:0] complete with AgentOutput
+2026-05-27T14:34:23: 2026-05-27 14:34:23,108 - INFO - [tick] add: AgentOutput(response=ChatMessage(role=<MessageRole.ASSISTANT: 'assistant'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text='Thought: The current language of the user is: English. I...
+2026-05-27T14:34:23: 2026-05-27 14:34:23,108 - INFO - [parse_agent_output:0] started from AgentOutput
+2026-05-27T14:34:23: 2026-05-27 14:34:23,109 - INFO - [tick] add: ToolCall(tool_name='smartlink_manual', tool_kwargs={'input': 'tagname CRAH-2DH2.1-RETURN_AIR_TEMP'}, tool_id='24dd1234-3989-485f-aa3e-a4a662b332e9')
+2026-05-27T14:34:23: 2026-05-27 14:34:23,109 - INFO - [call_tool:0] started from ToolCall
+2026-05-27T14:34:24: 2026-05-27 14:34:24,817 - INFO - [parse_agent_output:0] complete with no result
+2026-05-27T14:34:24: 2026-05-27 14:34:24,827 - INFO - [call_tool:0] complete with ToolCallResult
+2026-05-27T14:34:24: 2026-05-27 14:34:24,827 - INFO - [tick] add: ToolCallResult(tool_name='smartlink_manual', tool_kwargs={'input': 'tagname CRAH-2DH2.1-RETURN_AIR_TEMP'}, tool_id='24dd1234-3989-485f-aa3e-a4a662b332e9', tool_output=ToolOutput(blocks=[TextBlock(b...
+2026-05-27T14:34:24: 2026-05-27 14:34:24,827 - INFO - [aggregate_tool_results:0] started from ToolCallResult
+2026-05-27T14:34:24: 2026-05-27 14:34:24,830 - INFO - [aggregate_tool_results:0] complete with AgentInput
+2026-05-27T14:34:24: 2026-05-27 14:34:24,831 - INFO - [tick] add: AgentInput(input=[ChatMessage(role=<MessageRole.USER: 'user'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text='please check tagname CRAH-2DH2.1-RETURN_AIR_TEMP')])], current_agent_...
+2026-05-27T14:34:24: 2026-05-27 14:34:24,831 - INFO - [setup_agent:0] started from AgentInput
+2026-05-27T14:34:24: 2026-05-27 14:34:24,833 - INFO - [setup_agent:0] complete with AgentSetup
+2026-05-27T14:34:24: 2026-05-27 14:34:24,833 - INFO - [tick] add: AgentSetup(input=[ChatMessage(role=<MessageRole.SYSTEM: 'system'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text="You are an expert technical support assistant for SmartLink BMS s...
+2026-05-27T14:34:24: 2026-05-27 14:34:24,833 - INFO - [run_agent_step:0] started from AgentSetup
+2026-05-27T14:34:32: 2026-05-27 14:34:32,643 - INFO - [run_agent_step:0] complete with AgentOutput
+2026-05-27T14:34:32: 2026-05-27 14:34:32,643 - INFO - [tick] add: AgentOutput(response=ChatMessage(role=<MessageRole.ASSISTANT: 'assistant'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text='Thought: The smartlink_manual tool did not provide a res...
+2026-05-27T14:34:32: 2026-05-27 14:34:32,643 - INFO - [parse_agent_output:0] started from AgentOutput
+2026-05-27T14:34:32: 2026-05-27 14:34:32,644 - INFO - [tick] add: ToolCall(tool_name='diagnose_point', tool_kwargs={'point_name': 'tagname CRAH-2DH2.1-RETURN_AIR_TEMP'}, tool_id='b0a465df-7b6f-44ca-990d-88dd997d2a22')
+2026-05-27T14:34:32: 2026-05-27 14:34:32,644 - INFO - [call_tool:0] started from ToolCall
+2026-05-27T14:34:32: 2026-05-27 14:34:32,646 - INFO - [parse_agent_output:0] complete with no result
+2026-05-27T14:34:32: /home/widioap/agent-service/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py:1110: InsecureRequestWarning: Unverified HTTPS request is being made to host '10.25.16.195'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+2026-05-27T14:34:32:   warnings.warn(
+2026-05-27T14:34:33: [32m2026-05-27 14:34:33[0m | [31m[1mERROR   [0m | [36mapp.utils[0m:[36mget_tagname[0m:[36m91[0m - [31m[1mMessage from get tagname: Tagname not found[0m
+2026-05-27T14:34:33: 2026-05-27 14:34:33,017 - INFO - [call_tool:0] complete with ToolCallResult
+2026-05-27T14:34:33: 2026-05-27 14:34:33,017 - INFO - [tick] add: ToolCallResult(tool_name='diagnose_point', tool_kwargs={'point_name': 'tagname CRAH-2DH2.1-RETURN_AIR_TEMP'}, tool_id='b0a465df-7b6f-44ca-990d-88dd997d2a22', tool_output=ToolOutput(blocks=[TextBloc...
+2026-05-27T14:34:33: 2026-05-27 14:34:33,018 - INFO - [aggregate_tool_results:0] started from ToolCallResult
+2026-05-27T14:34:33: 2026-05-27 14:34:33,019 - INFO - [aggregate_tool_results:0] complete with AgentInput
+2026-05-27T14:34:33: 2026-05-27 14:34:33,019 - INFO - [tick] add: AgentInput(input=[ChatMessage(role=<MessageRole.USER: 'user'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text='please check tagname CRAH-2DH2.1-RETURN_AIR_TEMP')])], current_agent_...
+2026-05-27T14:34:33: 2026-05-27 14:34:33,019 - INFO - [setup_agent:0] started from AgentInput
+2026-05-27T14:34:33: 2026-05-27 14:34:33,020 - INFO - [setup_agent:0] complete with AgentSetup
+2026-05-27T14:34:33: 2026-05-27 14:34:33,020 - INFO - [tick] add: AgentSetup(input=[ChatMessage(role=<MessageRole.SYSTEM: 'system'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text="You are an expert technical support assistant for SmartLink BMS s...
+2026-05-27T14:34:33: 2026-05-27 14:34:33,020 - INFO - [run_agent_step:0] started from AgentSetup
+2026-05-27T14:34:39: 2026-05-27 14:34:39,368 - INFO - [run_agent_step:0] complete with AgentOutput
+2026-05-27T14:34:39: 2026-05-27 14:34:39,369 - INFO - [tick] add: AgentOutput(response=ChatMessage(role=<MessageRole.ASSISTANT: 'assistant'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text="Thought: The diagnose_point tool did not provide a respo...
+2026-05-27T14:34:39: 2026-05-27 14:34:39,369 - INFO - [parse_agent_output:0] started from AgentOutput
+2026-05-27T14:34:39: 2026-05-27 14:34:39,370 - INFO - [result] StopEvent(result=AgentOutput(response=ChatMessage(role=<MessageRole.ASSISTANT: 'assistant'>, additional_kwargs={}, blocks=[TextBlock(block_type='text', text="I'm sorry, but I don't have the informa...
+2026-05-27T14:34:39: 2026-05-27 14:34:39,370 - INFO - [parse_agent_output:0] complete with StopEvent
+2026-05-27T14:35:29: /home/widioap/agent-service/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py:1110: InsecureRequestWarning: Unverified HTTPS request is being made to host '10.25.16.195'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+2026-05-27T14:35:29:   warnings.warn(
+2026-05-27T14:35:30: ERROR:    Exception in ASGI application
+2026-05-27T14:35:30: Traceback (most recent call last):
+2026-05-27T14:35:30:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/uvicorn/protocols/http/httptools_impl.py", line 416, in run_asgi
+2026-05-27T14:35:30:     result = await app(  # type: ignore[func-returns-value]
+2026-05-27T14:35:30:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-27T14:35:30:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+2026-05-27T14:35:30:     return await self.app(scope, receive, send)
+2026-05-27T14:35:30:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-27T14:35:30:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/fastapi/applications.py", line 1135, in __call__
+2026-05-27T14:35:30:     await super().__call__(scope, receive, send)
+2026-05-27T14:35:30:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/starlette/applications.py", line 107, in __call__
+2026-05-27T14:35:30:     await self.middleware_stack(scope, receive, send)
+2026-05-27T14:35:30:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/starlette/middleware/errors.py", line 186, in __call__
+2026-05-27T14:35:30:     raise exc
+2026-05-27T14:35:30:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/starlette/middleware/errors.py", line 164, in __call__
+2026-05-27T14:35:30:     await self.app(scope, receive, _send)
+2026-05-27T14:35:30:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/starlette/middleware/cors.py", line 85, in __call__
+2026-05-27T14:35:30:     await self.app(scope, receive, send)
+2026-05-27T14:35:30:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+2026-05-27T14:35:30:     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+2026-05-27T14:35:30:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+2026-05-27T14:35:30:     raise exc
+2026-05-27T14:35:30:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+2026-05-27T14:35:30:     await app(scope, receive, sender)
+2026-05-27T14:35:30:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+2026-05-27T14:35:30:     await self.app(scope, receive, send)
+2026-05-27T14:35:30:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/starlette/routing.py", line 716, in __call__
+2026-05-27T14:35:30:     await self.middleware_stack(scope, receive, send)
+2026-05-27T14:35:30:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/starlette/routing.py", line 736, in app
+2026-05-27T14:35:30:     await route.handle(scope, receive, send)
+2026-05-27T14:35:30:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/starlette/routing.py", line 290, in handle
+2026-05-27T14:35:30:     await self.app(scope, receive, send)
+2026-05-27T14:35:30:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/fastapi/routing.py", line 115, in app
+2026-05-27T14:35:30:     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+2026-05-27T14:35:30:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+2026-05-27T14:35:30:     raise exc
+2026-05-27T14:35:30:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+2026-05-27T14:35:30:     await app(scope, receive, sender)
+2026-05-27T14:35:30:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/fastapi/routing.py", line 101, in app
+2026-05-27T14:35:30:     response = await f(request)
+2026-05-27T14:35:30:                ^^^^^^^^^^^^^^^^
+2026-05-27T14:35:30:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/fastapi/routing.py", line 355, in app
+2026-05-27T14:35:30:     raw_response = await run_endpoint_function(
+2026-05-27T14:35:30:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-27T14:35:30:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/fastapi/routing.py", line 243, in run_endpoint_function
+2026-05-27T14:35:30:     return await dependant.call(**values)
+2026-05-27T14:35:30:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-27T14:35:30:   File "/home/widioap/agent-service/app/router.py", line 172, in diagnose_rt
+2026-05-27T14:35:30:     payload = ModScanSchema.from_sl(data)
+2026-05-27T14:35:30:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-27T14:35:30:   File "/home/widioap/agent-service/app/schemas.py", line 134, in from_sl
+2026-05-27T14:35:30:     offset_value = data["offset_value"]
+2026-05-27T14:35:30:                    ~~~~^^^^^^^^^^^^^^^^
+2026-05-27T14:35:30: KeyError: 'offset_value'
+2026-05-27T14:36:27: WARNING:  WatchFiles detected changes in 'app/schemas.py'. Reloading...
+2026-05-27T14:36:27: INFO:     Shutting down
+2026-05-27T14:36:27: INFO:     Waiting for application shutdown.
+2026-05-27T14:36:27: INFO:     Application shutdown complete.
+2026-05-27T14:36:27: INFO:     Finished server process [182771]
+2026-05-27T14:36:41: llama_context: n_ctx_per_seq (8192) < n_ctx_train (32768) -- the full capacity of the model will not be utilized
+2026-05-27T14:36:41: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-27T14:36:44: Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]
+2026-05-27T14:36:44: Loading weights: 100%|██████████| 391/391 [00:00<00:00, 27472.53it/s]
+2026-05-27T14:36:49: 2026-05-27 14:36:49,363 - DEBUG - Building index from IDs objects
+2026-05-27T14:36:49: 2026-05-27 14:36:49,654 - INFO - HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-27T14:36:49: 2026-05-27 14:36:49,672 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/config.json "HTTP/1.1 200 OK"
+2026-05-27T14:36:49: 2026-05-27 14:36:49,920 - INFO - HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-27T14:36:49: 2026-05-27 14:36:49,938 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-27T14:36:50: 2026-05-27 14:36:50,181 - INFO - HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-reranker-v2-m3/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-27T14:36:50: 2026-05-27 14:36:50,457 - INFO - HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-reranker-v2-m3/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-27T14:36:52: 2026-05-27 14:36:52,665 - INFO - HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-reranker-v2-m3 "HTTP/1.1 200 OK"
+2026-05-27T14:36:52: 2026-05-27 14:36:52,921 - INFO - HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-27T14:36:52: 2026-05-27 14:36:52,938 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/config.json "HTTP/1.1 200 OK"
+2026-05-27T14:36:53: 2026-05-27 14:36:53,199 - INFO - HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-27T14:36:53: 2026-05-27 14:36:53,217 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/config.json "HTTP/1.1 200 OK"
+2026-05-27T14:36:53: Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]
+2026-05-27T14:36:53: Loading weights:  22%|██▏       | 88/393 [00:00<00:00, 879.29it/s]
+2026-05-27T14:36:53: Loading weights:  45%|████▍     | 176/393 [00:00<00:00, 771.86it/s]
+2026-05-27T14:36:53: Loading weights:  65%|██████▍   | 255/393 [00:00<00:00, 772.21it/s]
+2026-05-27T14:36:53: Loading weights:  88%|████████▊ | 346/393 [00:00<00:00, 816.45it/s]
+2026-05-27T14:36:54: Loading weights: 100%|██████████| 393/393 [00:00<00:00, 836.15it/s]
+2026-05-27T14:36:54: INFO:     Started server process [182840]
+2026-05-27T14:36:54: INFO:     Waiting for application startup.
+2026-05-27T14:36:54: INFO:     Application startup complete.
+2026-05-27T14:36:54: WARNING:  WatchFiles detected changes in 'app/schemas.py'. Reloading...
+2026-05-27T14:36:55: INFO:     Shutting down
+2026-05-27T14:36:55: INFO:     Waiting for application shutdown.
+2026-05-27T14:36:55: INFO:     Application shutdown complete.
+2026-05-27T14:36:55: INFO:     Finished server process [182840]
+2026-05-27T14:37:06: llama_context: n_ctx_per_seq (8192) < n_ctx_train (32768) -- the full capacity of the model will not be utilized
+2026-05-27T14:37:07: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-27T14:37:10: Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]
+2026-05-27T14:37:10: Loading weights: 100%|██████████| 391/391 [00:00<00:00, 26201.84it/s]
+2026-05-27T14:37:15: 2026-05-27 14:37:15,369 - DEBUG - Building index from IDs objects
+2026-05-27T14:37:15: 2026-05-27 14:37:15,656 - INFO - HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-27T14:37:15: 2026-05-27 14:37:15,675 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/config.json "HTTP/1.1 200 OK"
+2026-05-27T14:37:15: 2026-05-27 14:37:15,920 - INFO - HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-27T14:37:15: 2026-05-27 14:37:15,938 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-27T14:37:16: 2026-05-27 14:37:16,193 - INFO - HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-reranker-v2-m3/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-27T14:37:16: 2026-05-27 14:37:16,438 - INFO - HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-reranker-v2-m3/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-27T14:37:18: 2026-05-27 14:37:18,824 - INFO - HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-reranker-v2-m3 "HTTP/1.1 200 OK"
+2026-05-27T14:37:19: 2026-05-27 14:37:19,070 - INFO - HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-27T14:37:19: 2026-05-27 14:37:19,088 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/config.json "HTTP/1.1 200 OK"
+2026-05-27T14:37:19: 2026-05-27 14:37:19,368 - INFO - HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-27T14:37:19: 2026-05-27 14:37:19,385 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/config.json "HTTP/1.1 200 OK"
+2026-05-27T14:37:19: Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]
+2026-05-27T14:37:19: Loading weights:  16%|█▌        | 62/393 [00:00<00:00, 615.89it/s]
+2026-05-27T14:37:19: Loading weights:  34%|███▍      | 134/393 [00:00<00:00, 666.17it/s]
+2026-05-27T14:37:20: Loading weights:  58%|█████▊    | 228/393 [00:00<00:00, 785.62it/s]
+2026-05-27T14:37:20: Loading weights:  81%|████████  | 319/393 [00:00<00:00, 828.15it/s]
+2026-05-27T14:37:20: Loading weights: 100%|██████████| 393/393 [00:00<00:00, 816.26it/s]
+2026-05-27T14:37:20: INFO:     Started server process [182871]
+2026-05-27T14:37:20: INFO:     Waiting for application startup.
+2026-05-27T14:37:20: INFO:     Application startup complete.
+2026-05-27T14:37:20: /home/widioap/agent-service/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py:1110: InsecureRequestWarning: Unverified HTTPS request is being made to host '10.25.16.195'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+2026-05-27T14:37:20:   warnings.warn(
+2026-05-27T14:37:20: ERROR:    Exception in ASGI application
+2026-05-27T14:37:20: Traceback (most recent call last):
+2026-05-27T14:37:20:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/uvicorn/protocols/http/httptools_impl.py", line 416, in run_asgi
+2026-05-27T14:37:20:     result = await app(  # type: ignore[func-returns-value]
+2026-05-27T14:37:20:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-27T14:37:20:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+2026-05-27T14:37:20:     return await self.app(scope, receive, send)
+2026-05-27T14:37:20:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-27T14:37:20:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/fastapi/applications.py", line 1135, in __call__
+2026-05-27T14:37:20:     await super().__call__(scope, receive, send)
+2026-05-27T14:37:20:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/starlette/applications.py", line 107, in __call__
+2026-05-27T14:37:20:     await self.middleware_stack(scope, receive, send)
+2026-05-27T14:37:20:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/starlette/middleware/errors.py", line 186, in __call__
+2026-05-27T14:37:20:     raise exc
+2026-05-27T14:37:20:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/starlette/middleware/errors.py", line 164, in __call__
+2026-05-27T14:37:20:     await self.app(scope, receive, _send)
+2026-05-27T14:37:20:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/starlette/middleware/cors.py", line 85, in __call__
+2026-05-27T14:37:20:     await self.app(scope, receive, send)
+2026-05-27T14:37:20:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+2026-05-27T14:37:20:     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+2026-05-27T14:37:20:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+2026-05-27T14:37:20:     raise exc
+2026-05-27T14:37:20:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+2026-05-27T14:37:20:     await app(scope, receive, sender)
+2026-05-27T14:37:20:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+2026-05-27T14:37:20:     await self.app(scope, receive, send)
+2026-05-27T14:37:20:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/starlette/routing.py", line 716, in __call__
+2026-05-27T14:37:20:     await self.middleware_stack(scope, receive, send)
+2026-05-27T14:37:20:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/starlette/routing.py", line 736, in app
+2026-05-27T14:37:20:     await route.handle(scope, receive, send)
+2026-05-27T14:37:20:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/starlette/routing.py", line 290, in handle
+2026-05-27T14:37:20:     await self.app(scope, receive, send)
+2026-05-27T14:37:20:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/fastapi/routing.py", line 115, in app
+2026-05-27T14:37:20:     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+2026-05-27T14:37:20:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+2026-05-27T14:37:20:     raise exc
+2026-05-27T14:37:20:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+2026-05-27T14:37:20:     await app(scope, receive, sender)
+2026-05-27T14:37:20:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/fastapi/routing.py", line 101, in app
+2026-05-27T14:37:20:     response = await f(request)
+2026-05-27T14:37:20:                ^^^^^^^^^^^^^^^^
+2026-05-27T14:37:20:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/fastapi/routing.py", line 355, in app
+2026-05-27T14:37:20:     raw_response = await run_endpoint_function(
+2026-05-27T14:37:20:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-27T14:37:20:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/fastapi/routing.py", line 243, in run_endpoint_function
+2026-05-27T14:37:20:     return await dependant.call(**values)
+2026-05-27T14:37:20:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-27T14:37:20:   File "/home/widioap/agent-service/app/router.py", line 172, in diagnose_rt
+2026-05-27T14:37:20:     payload = ModScanSchema.from_sl(data)
+2026-05-27T14:37:20:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-27T14:37:20:   File "/home/widioap/agent-service/app/schemas.py", line 135, in from_sl
+2026-05-27T14:37:20:     precision_value = data["precision_value"]
+2026-05-27T14:37:20:                       ~~~~^^^^^^^^^^^^^^^^^^^
+2026-05-27T14:37:20: KeyError: 'precision_value'
+2026-05-27T14:38:12: WARNING:  WatchFiles detected changes in 'app/schemas.py'. Reloading...
+2026-05-27T14:38:12: INFO:     Shutting down
+2026-05-27T14:38:12: INFO:     Waiting for application shutdown.
+2026-05-27T14:38:12: INFO:     Application shutdown complete.
+2026-05-27T14:38:12: INFO:     Finished server process [182871]
+2026-05-27T14:38:22: llama_context: n_ctx_per_seq (8192) < n_ctx_train (32768) -- the full capacity of the model will not be utilized
+2026-05-27T14:38:23: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-27T14:38:25: Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]
+2026-05-27T14:38:25: Loading weights: 100%|██████████| 391/391 [00:00<00:00, 12187.85it/s]
+2026-05-27T14:38:30: 2026-05-27 14:38:30,322 - DEBUG - Building index from IDs objects
+2026-05-27T14:38:30: 2026-05-27 14:38:30,623 - INFO - HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-27T14:38:30: 2026-05-27 14:38:30,644 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/config.json "HTTP/1.1 200 OK"
+2026-05-27T14:38:30: 2026-05-27 14:38:30,888 - INFO - HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-27T14:38:30: 2026-05-27 14:38:30,905 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-27T14:38:31: 2026-05-27 14:38:31,158 - INFO - HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-reranker-v2-m3/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-27T14:38:31: 2026-05-27 14:38:31,403 - INFO - HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-reranker-v2-m3/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-27T14:38:33: 2026-05-27 14:38:33,410 - INFO - HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-reranker-v2-m3 "HTTP/1.1 200 OK"
+2026-05-27T14:38:33: 2026-05-27 14:38:33,657 - INFO - HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-27T14:38:33: 2026-05-27 14:38:33,674 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/config.json "HTTP/1.1 200 OK"
+2026-05-27T14:38:33: 2026-05-27 14:38:33,930 - INFO - HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-27T14:38:33: 2026-05-27 14:38:33,948 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/config.json "HTTP/1.1 200 OK"
+2026-05-27T14:38:34: Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]
+2026-05-27T14:38:34: Loading weights: 100%|██████████| 393/393 [00:00<00:00, 4729.85it/s]
+2026-05-27T14:38:34: INFO:     Started server process [182903]
+2026-05-27T14:38:34: INFO:     Waiting for application startup.
+2026-05-27T14:38:34: INFO:     Application startup complete.
+2026-05-27T14:38:56: WARNING:  WatchFiles detected changes in 'app/schemas.py'. Reloading...
+2026-05-27T14:38:56: INFO:     Shutting down
+2026-05-27T14:38:56: INFO:     Waiting for application shutdown.
+2026-05-27T14:38:56: INFO:     Application shutdown complete.
+2026-05-27T14:38:56: INFO:     Finished server process [182903]
+2026-05-27T14:39:06: llama_context: n_ctx_per_seq (8192) < n_ctx_train (32768) -- the full capacity of the model will not be utilized
+2026-05-27T14:39:07: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-27T14:39:09: Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]
+2026-05-27T14:39:09: Loading weights: 100%|██████████| 391/391 [00:00<00:00, 11937.93it/s]
+2026-05-27T14:39:14: 2026-05-27 14:39:14,481 - DEBUG - Building index from IDs objects
+2026-05-27T14:39:14: 2026-05-27 14:39:14,763 - INFO - HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-27T14:39:14: 2026-05-27 14:39:14,781 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/config.json "HTTP/1.1 200 OK"
+2026-05-27T14:39:15: 2026-05-27 14:39:15,025 - INFO - HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-27T14:39:15: 2026-05-27 14:39:15,042 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-27T14:39:15: 2026-05-27 14:39:15,283 - INFO - HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-reranker-v2-m3/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-27T14:39:15: 2026-05-27 14:39:15,528 - INFO - HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-reranker-v2-m3/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-27T14:39:17: 2026-05-27 14:39:17,994 - INFO - HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-reranker-v2-m3 "HTTP/1.1 200 OK"
+2026-05-27T14:39:18: 2026-05-27 14:39:18,257 - INFO - HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-27T14:39:18: 2026-05-27 14:39:18,275 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/config.json "HTTP/1.1 200 OK"
+2026-05-27T14:39:18: 2026-05-27 14:39:18,515 - INFO - HTTP Request: HEAD https://huggingface.co/BAAI/bge-reranker-v2-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-27T14:39:18: 2026-05-27 14:39:18,532 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-reranker-v2-m3/953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e/config.json "HTTP/1.1 200 OK"
+2026-05-27T14:39:18: Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]
+2026-05-27T14:39:19: Loading weights:  91%|█████████ | 357/393 [00:00<00:00, 3565.46it/s]
+2026-05-27T14:39:19: Loading weights: 100%|██████████| 393/393 [00:00<00:00, 3614.63it/s]
+2026-05-27T14:39:19: INFO:     Started server process [182949]
+2026-05-27T14:39:19: INFO:     Waiting for application startup.
+2026-05-27T14:39:19: INFO:     Application startup complete.
+2026-05-27T14:39:19: /home/widioap/agent-service/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py:1110: InsecureRequestWarning: Unverified HTTPS request is being made to host '10.25.16.195'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+2026-05-27T14:39:19:   warnings.warn(
+2026-05-27T14:39:19: ERROR:    Exception in ASGI application
+2026-05-27T14:39:19: Traceback (most recent call last):
+2026-05-27T14:39:19:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/uvicorn/protocols/http/httptools_impl.py", line 416, in run_asgi
+2026-05-27T14:39:19:     result = await app(  # type: ignore[func-returns-value]
+2026-05-27T14:39:19:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-27T14:39:19:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+2026-05-27T14:39:19:     return await self.app(scope, receive, send)
+2026-05-27T14:39:19:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-27T14:39:19:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/fastapi/applications.py", line 1135, in __call__
+2026-05-27T14:39:19:     await super().__call__(scope, receive, send)
+2026-05-27T14:39:19:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/starlette/applications.py", line 107, in __call__
+2026-05-27T14:39:19:     await self.middleware_stack(scope, receive, send)
+2026-05-27T14:39:19:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/starlette/middleware/errors.py", line 186, in __call__
+2026-05-27T14:39:19:     raise exc
+2026-05-27T14:39:19:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/starlette/middleware/errors.py", line 164, in __call__
+2026-05-27T14:39:19:     await self.app(scope, receive, _send)
+2026-05-27T14:39:19:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/starlette/middleware/cors.py", line 85, in __call__
+2026-05-27T14:39:19:     await self.app(scope, receive, send)
+2026-05-27T14:39:19:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+2026-05-27T14:39:19:     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+2026-05-27T14:39:19:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+2026-05-27T14:39:19:     raise exc
+2026-05-27T14:39:19:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+2026-05-27T14:39:19:     await app(scope, receive, sender)
+2026-05-27T14:39:19:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+2026-05-27T14:39:19:     await self.app(scope, receive, send)
+2026-05-27T14:39:19:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/starlette/routing.py", line 716, in __call__
+2026-05-27T14:39:19:     await self.middleware_stack(scope, receive, send)
+2026-05-27T14:39:19:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/starlette/routing.py", line 736, in app
+2026-05-27T14:39:19:     await route.handle(scope, receive, send)
+2026-05-27T14:39:19:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/starlette/routing.py", line 290, in handle
+2026-05-27T14:39:19:     await self.app(scope, receive, send)
+2026-05-27T14:39:19:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/fastapi/routing.py", line 115, in app
+2026-05-27T14:39:19:     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+2026-05-27T14:39:19:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+2026-05-27T14:39:19:     raise exc
+2026-05-27T14:39:19:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+2026-05-27T14:39:19:     await app(scope, receive, sender)
+2026-05-27T14:39:19:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/fastapi/routing.py", line 101, in app
+2026-05-27T14:39:19:     response = await f(request)
+2026-05-27T14:39:19:                ^^^^^^^^^^^^^^^^
+2026-05-27T14:39:19:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/fastapi/routing.py", line 355, in app
+2026-05-27T14:39:19:     raw_response = await run_endpoint_function(
+2026-05-27T14:39:19:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-27T14:39:19:   File "/home/widioap/agent-service/.venv/lib/python3.11/site-packages/fastapi/routing.py", line 243, in run_endpoint_function
+2026-05-27T14:39:19:     return await dependant.call(**values)
+2026-05-27T14:39:19:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-27T14:39:19:   File "/home/widioap/agent-service/app/router.py", line 172, in diagnose_rt
+2026-05-27T14:39:19:     payload = ModScanSchema.from_sl(data)
+2026-05-27T14:39:19:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-05-27T14:39:19:   File "/home/widioap/agent-service/app/schemas.py", line 137, in from_sl
+2026-05-27T14:39:19:     device_id = int(data["device_id"])
+2026-05-27T14:39:19:                     ~~~~^^^^^^^^^^^^^
+2026-05-27T14:39:19: KeyError: 'device_id'
+2026-06-08T04:09:57: INFO:     Shutting down
+2026-06-08T04:09:57: INFO:     Waiting for application shutdown.
+2026-06-08T04:09:57: INFO:     Application shutdown complete.
+2026-06-08T04:09:57: INFO:     Finished server process [182949]
+2026-06-08T04:09:57: INFO:     Stopping reloader process [182769]

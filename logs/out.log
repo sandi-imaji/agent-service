@@ -1,0 +1,129 @@
+2026-02-12T10:26:10: Loading existing vector database...
+2026-02-12T10:26:10: INFO:     127.0.0.1:48420 - "OPTIONS /chat HTTP/1.1" 200 OK
+2026-02-12T10:27:15: [DETECTED LANGUAGE] EN
+2026-02-12T10:27:15: 
+2026-02-12T10:27:15: QUERY: tolong diagnosa point E2-CRAH-1-Z01-SUPPLY_AIR_TEMP
+2026-02-12T10:27:15: ------------------------------
+2026-02-12T10:27:15: tag :  E2-CRAH-1-Z01-SUPPLY_AIR_TEMP
+2026-02-12T10:27:15: {'row_id': '1768361161', 'tagname': 'E2-CRAH-1-Z01-SUPPLY_AIR_TEMP', 'currvalue': '33.2', 'address': '1', 'bit_position': '1', 'byte_order': '0', 'modbus_point_type': '3', 'data_type': '4', 'offset_value': None, 'precision_value': None, 'factor_value': '0.1', 'device_id': '1', 'primary_host': '10.51.217.2', 'primary_port': '502', 'secondary_host': '10.51.217.8', 'secondary_port': '502'}
+2026-02-12T10:27:15: 
+2026-02-12T10:27:15: [SYSTEM] Running diagnostics for: E2-CRAH-1-Z01-SUPPLY_AIR_TEMP...
+2026-02-12T10:27:15: INFO:     127.0.0.1:48420 - "POST /chat HTTP/1.1" 200 OK
+2026-02-12T10:41:17: Loading existing vector database...
+2026-02-12T10:41:17: INFO:     127.0.0.1:37616 - "OPTIONS /chat HTTP/1.1" 200 OK
+2026-02-12T10:42:18: [DETECTED LANGUAGE] EN
+2026-02-12T10:42:18: 
+2026-02-12T10:42:18: QUERY: tolong diagnosa point E2-CRAH-1-Z01-SUPPLY_AIR_TEMP
+2026-02-12T10:42:18: ------------------------------
+2026-02-12T10:42:18: tag :  E2-CRAH-1-Z01-SUPPLY_AIR_TEMP
+2026-02-12T10:42:18: {'row_id': '1768361161', 'tagname': 'E2-CRAH-1-Z01-SUPPLY_AIR_TEMP', 'currvalue': '33.1', 'address': '1', 'bit_position': '1', 'byte_order': '0', 'modbus_point_type': '3', 'data_type': '4', 'offset_value': None, 'precision_value': None, 'factor_value': '0.1', 'device_id': '1', 'primary_host': '10.51.217.2', 'primary_port': '502', 'secondary_host': '10.51.217.8', 'secondary_port': '502'}
+2026-02-12T10:42:18: 
+2026-02-12T10:42:18: [SYSTEM] Running diagnostics for: E2-CRAH-1-Z01-SUPPLY_AIR_TEMP...
+2026-02-12T10:42:18: INFO:     127.0.0.1:37616 - "POST /chat HTTP/1.1" 200 OK
+2026-02-12T11:13:40: INFO:     127.0.0.1:60084 - "OPTIONS /chat HTTP/1.1" 200 OK
+2026-02-12T11:14:58: [DETECTED LANGUAGE] ID
+2026-02-12T11:14:58: [TRANSLATION] ID → EN: apa fungsi utama dari menu dashboard ? → What is the main function of the dashboard menu?
+2026-02-12T11:14:58: 
+2026-02-12T11:14:58: QUERY: apa fungsi utama dari menu dashboard ?
+2026-02-12T11:14:58: TRANSLATED QUERY: What is the main function of the dashboard menu?
+2026-02-12T11:14:58: ------------------------------
+2026-02-12T11:14:58: INFO:     127.0.0.1:60084 - "POST /chat HTTP/1.1" 200 OK
+2026-02-12T11:23:49: INFO:     127.0.0.1:50486 - "OPTIONS /chat HTTP/1.1" 200 OK
+2026-02-12T11:24:26: [DETECTED LANGUAGE] ID
+2026-02-12T11:24:26: [TRANSLATION] ID → EN: apa itu smartlink ? → What is SmartLink?
+2026-02-12T11:24:26: 
+2026-02-12T11:24:26: QUERY: apa itu smartlink ?
+2026-02-12T11:24:26: TRANSLATED QUERY: What is SmartLink?
+2026-02-12T11:24:26: ------------------------------
+2026-02-12T11:24:26: INFO:     127.0.0.1:50486 - "POST /chat HTTP/1.1" 200 OK
+2026-02-12T11:29:44: [DETECTED LANGUAGE] ID
+2026-02-12T11:29:44: [TRANSLATION] ID → EN: apa fungsi utama dari menu dashboard dismartlink ? → What is the main function of the SmartLink dashboard menu?
+2026-02-12T11:29:44: 
+2026-02-12T11:29:44: QUERY: apa fungsi utama dari menu dashboard dismartlink ?
+2026-02-12T11:29:44: TRANSLATED QUERY: What is the main function of the SmartLink dashboard menu?
+2026-02-12T11:29:44: ------------------------------
+2026-02-12T11:29:44: INFO:     127.0.0.1:45964 - "POST /chat HTTP/1.1" 200 OK
+2026-02-12T11:30:53: [DETECTED LANGUAGE] EN
+2026-02-12T11:30:53: 
+2026-02-12T11:30:53: QUERY: tolong diagnosa point E2-CRAH-1-Z01-SUPPLY_AIR_TEMP
+2026-02-12T11:30:53: ------------------------------
+2026-02-12T11:30:53: tag :  E2-CRAH-1-Z01-SUPPLY_AIR_TEMP
+2026-02-12T11:30:53: {'row_id': '1768361161', 'tagname': 'E2-CRAH-1-Z01-SUPPLY_AIR_TEMP', 'currvalue': '32.9', 'address': '1', 'bit_position': '1', 'byte_order': '0', 'modbus_point_type': '3', 'data_type': '4', 'offset_value': None, 'precision_value': None, 'factor_value': '0.1', 'device_id': '1', 'primary_host': '10.51.217.2', 'primary_port': '502', 'secondary_host': '10.51.217.8', 'secondary_port': '502'}
+2026-02-12T11:30:53: 
+2026-02-12T11:30:53: [SYSTEM] Running diagnostics for: E2-CRAH-1-Z01-SUPPLY_AIR_TEMP...
+2026-02-12T11:30:53: INFO:     127.0.0.1:44840 - "POST /chat HTTP/1.1" 200 OK
+2026-02-12T14:16:26: INFO:     127.0.0.1:33032 - "OPTIONS /chat HTTP/1.1" 200 OK
+2026-02-12T14:17:11: [DETECTED LANGUAGE] ID
+2026-02-12T14:17:11: [TRANSLATION] ID → EN: apa itu smartlink ? → What is SmartLink?
+2026-02-12T14:17:11: 
+2026-02-12T14:17:11: QUERY: apa itu smartlink ?
+2026-02-12T14:17:11: TRANSLATED QUERY: What is SmartLink?
+2026-02-12T14:17:11: ------------------------------
+2026-02-12T14:17:11: INFO:     127.0.0.1:33032 - "POST /chat HTTP/1.1" 200 OK
+2026-02-12T14:18:47: [DETECTED LANGUAGE] EN
+2026-02-12T14:18:47: 
+2026-02-12T14:18:47: QUERY: tolong diagnosa point E2-CRAH-1-Z01-SUPPLY_AIR_TEMP
+2026-02-12T14:18:47: ------------------------------
+2026-02-12T14:18:47: tag :  E2-CRAH-1-Z01-SUPPLY_AIR_TEMP
+2026-02-12T14:18:47: {'row_id': '1768361161', 'tagname': 'E2-CRAH-1-Z01-SUPPLY_AIR_TEMP', 'currvalue': '32.6', 'address': '1', 'bit_position': '1', 'byte_order': '0', 'modbus_point_type': '3', 'data_type': '4', 'offset_value': None, 'precision_value': None, 'factor_value': '0.1', 'device_id': '1', 'primary_host': '10.51.217.2', 'primary_port': '502', 'secondary_host': '10.51.217.8', 'secondary_port': '502'}
+2026-02-12T14:18:47: 
+2026-02-12T14:18:47: [SYSTEM] Running diagnostics for: E2-CRAH-1-Z01-SUPPLY_AIR_TEMP...
+2026-02-12T14:18:47: INFO:     127.0.0.1:38094 - "POST /chat HTTP/1.1" 200 OK
+2026-02-12T14:21:32: [DETECTED LANGUAGE] EN
+2026-02-12T14:21:32: 
+2026-02-12T14:21:32: QUERY: gimana cara create chart di smartlink ?
+2026-02-12T14:21:32: ------------------------------
+2026-02-12T14:21:32: INFO:     127.0.0.1:35698 - "POST /chat HTTP/1.1" 200 OK
+2026-05-27T13:29:18: Loading existing vector database...
+2026-05-27T14:15:17: INFO:     10.25.29.98:33592 - "GET / HTTP/1.1" 200 OK
+2026-05-27T14:15:17: INFO:     10.25.29.98:33592 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+2026-05-27T14:21:12: INFO:     10.25.29.98:36356 - "OPTIONS /chat HTTP/1.1" 200 OK
+2026-05-27T14:21:42: [DETECTED LANGUAGE] EN
+2026-05-27T14:21:42: 
+2026-05-27T14:21:42: QUERY: halo
+2026-05-27T14:21:42: ------------------------------
+2026-05-27T14:21:42: INFO:     10.25.29.98:36356 - "POST /chat HTTP/1.1" 200 OK
+2026-05-27T14:22:27: [DETECTED LANGUAGE] EN
+2026-05-27T14:22:27: 
+2026-05-27T14:22:27: QUERY: tolong dong check tagname CRAH-2DH2.1-RETURN_AIR_TEMP
+2026-05-27T14:22:27: ------------------------------
+2026-05-27T14:22:27: INFO:     10.25.29.98:57540 - "POST /chat HTTP/1.1" 200 OK
+2026-05-27T14:23:02: [DETECTED LANGUAGE] EN
+2026-05-27T14:23:02: 
+2026-05-27T14:23:02: QUERY: please check tagname CRAH-2DH2.1-RETURN_AIR_TEMP
+2026-05-27T14:23:02: ------------------------------
+2026-05-27T14:23:02: tag :  tagname CRAH-2DH2.1-RETURN_AIR_TEMP
+2026-05-27T14:23:02: 
+2026-05-27T14:23:02: [SYSTEM] Running diagnostics for: tagname CRAH-2DH2.1-RETURN_AIR_TEMP...
+2026-05-27T14:23:02: INFO:     10.25.29.98:37596 - "POST /chat HTTP/1.1" 200 OK
+2026-05-27T14:27:31: Loading existing vector database...
+2026-05-27T14:30:31: Loading existing vector database...
+2026-05-27T14:31:36: Loading existing vector database...
+2026-05-27T14:32:09: Loading existing vector database...
+2026-05-27T14:32:15: INFO:     10.25.29.98:46858 - "OPTIONS /chat HTTP/1.1" 200 OK
+2026-05-27T14:32:46: [DETECTED LANGUAGE] EN
+2026-05-27T14:32:46: 
+2026-05-27T14:32:46: QUERY: please check tagname CRAH-2DH2.1-RETURN_AIR_TEMP'
+2026-05-27T14:32:46: ------------------------------
+2026-05-27T14:32:46: INFO:     10.25.29.98:46858 - "POST /chat HTTP/1.1" 200 OK
+2026-05-27T14:33:17: [DETECTED LANGUAGE] EN
+2026-05-27T14:33:17: 
+2026-05-27T14:33:17: QUERY: please check tagname CRAH-2DH2.1-RETURN_AIR_TEMP'
+2026-05-27T14:33:17: ------------------------------
+2026-05-27T14:33:17: INFO:     10.25.29.98:55824 - "POST /chat HTTP/1.1" 200 OK
+2026-05-27T14:33:57: Loading existing vector database...
+2026-05-27T14:34:39: [DETECTED LANGUAGE] EN
+2026-05-27T14:34:39: 
+2026-05-27T14:34:39: QUERY: please check tagname CRAH-2DH2.1-RETURN_AIR_TEMP
+2026-05-27T14:34:39: ------------------------------
+2026-05-27T14:34:39: tag :  tagname CRAH-2DH2.1-RETURN_AIR_TEMP
+2026-05-27T14:34:39: 
+2026-05-27T14:34:39: [SYSTEM] Running diagnostics for: tagname CRAH-2DH2.1-RETURN_AIR_TEMP...
+2026-05-27T14:34:39: INFO:     10.25.29.98:56494 - "POST /chat HTTP/1.1" 200 OK
+2026-05-27T14:35:30: INFO:     10.25.29.98:38906 - "GET /diagnose?tagname=CRAH-2DH2.1-RETURN_AIR_TEMP HTTP/1.1" 500 Internal Server Error
+2026-05-27T14:36:53: Loading existing vector database...
+2026-05-27T14:37:19: Loading existing vector database...
+2026-05-27T14:37:20: INFO:     10.25.29.98:36244 - "GET /diagnose?tagname=CRAH-2DH2.1-RETURN_AIR_TEMP HTTP/1.1" 500 Internal Server Error
+2026-05-27T14:38:34: Loading existing vector database...
+2026-05-27T14:39:18: Loading existing vector database...
+2026-05-27T14:39:19: INFO:     10.25.29.98:59384 - "GET /diagnose?tagname=CRAH-2DH2.1-RETURN_AIR_TEMP HTTP/1.1" 500 Internal Server Error
