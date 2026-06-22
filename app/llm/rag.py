@@ -1,3 +1,4 @@
+from app.llm.llm_client import analysis_point
 from llama_index.llms.llama_cpp import LlamaCPP
 from llama_index.core import (
     StorageContext,
@@ -19,8 +20,11 @@ from llama_index.core.query_engine import RetrieverQueryEngine
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 from llama_index.vector_stores.chroma import ChromaVectorStore
 from llama_index.core.memory import ChatMemoryBuffer
+from llama_index.llms.openai_like import OpenAILike
+from llama_index.core.tools import FunctionTool, QueryEngineTool, ToolMetadata
+from llama_index.core.agent import ReActAgent  # Workflow version
 import chromadb, requests, time, os
-from app.modscan.diagnose import full_diagnostic_async_point, full_diagnostic
+from app.modscan.diagnose import full_diagnostic_async_point, full_diagnostic, full_diagnostic_async
 from pathlib import Path
 from app.config import Config
 from app.utils import get_tagname
@@ -125,16 +129,25 @@ def completion_to_prompt(completion):
     return f"<|im_start|>system\n<|im_end|>\n<|im_start|>user\n{completion}<|im_end|>\n<|im_start|>assistant\n"
 
 
-llm_model = LlamaCPP(
-    model_path=LLM_PATH,
+# llm_model = LlamaCPP(
+#     model_path=LLM_PATH,
+#     temperature=0.1,
+#     max_new_tokens=1024,
+#     context_window=8192,
+#     generate_kwargs={},
+#     model_kwargs={"n_gpu_layers": 0, "verbose": False},
+#     messages_to_prompt=messages_to_prompt,
+#     completion_to_prompt=completion_to_prompt,
+#     verbose=True,
+# )
+llm_model = OpenAILike(
+    model="Qwen2.5-7B-Instruct-Q6_K.gguf",  # Nama model di server llama.cpp
+    api_base="http://localhost:8080/v1",  # URL server llama.cpp-mu
+    api_key="sk-no-key-required",  # Biasanya llama.cpp tidak butuh API key
     temperature=0.1,
-    max_new_tokens=1024,
-    context_window=8192,
-    generate_kwargs={},
-    model_kwargs={"n_gpu_layers": 0, "verbose": False},
+    max_tokens=1024,
     messages_to_prompt=messages_to_prompt,
     completion_to_prompt=completion_to_prompt,
-    verbose=True,
 )
 
 embed_model = HuggingFaceEmbedding(model_name=EMBED_NAME, device="cpu", normalize=True)
@@ -265,9 +278,6 @@ query_engine = RetrieverQueryEngine.from_args(
 
 # --- 5. Agent Setup ---
 
-from llama_index.core.tools import FunctionTool, QueryEngineTool, ToolMetadata
-from llama_index.core.agent import ReActAgent  # Workflow version
-import asyncio
 
 # Global variable to store last diagnostic output
 _last_diagnostic_report = None
@@ -275,15 +285,30 @@ _query_language = "en"  # Track query language
 
 
 def diagnose_point(point_name: str) -> str:
-    global _last_diagnostic_report
+    """Diagnose a specific device/point in the system."""
     print("tag : ", point_name)
     payload = get_tagname(point_name)
-    if not payload: out = "TAGNAME is not found!"
-    else: out = full_diagnostic(ModScanSchema.from_sl(payload)).to_md()
+    if not payload: 
+        out = "TAGNAME is not found!"
+    else: out = full_diagnostic(ModScanSchema.from_sl(payload))
+    
     print(f"\n[SYSTEM] Running diagnostics for: {point_name}...")
+    return out
 
-    # Store the report for later display
-    _last_diagnostic_report = out
+
+async def diagnose_point_async(point_name: str) -> str:
+    """Async version: Diagnose a specific device/point in the system."""
+    print("tag : ", point_name)
+    payload = get_tagname(point_name)
+    if not payload: 
+        out = "TAGNAME is not found!"
+    else: 
+        # Call async version directly without asyncio.run
+        result = await full_diagnostic_async(ModScanSchema.from_sl(payload))
+        # Convert result to string format (FullDiagnosticSchema has to_md_optimize method)
+        generated = analysis_point(result.to_md_compact())
+        out = result.to_md_optimize(generated)
+    print(f"\n[SYSTEM] Running diagnostics for: {point_name}...")
     return out
 
 
@@ -342,6 +367,7 @@ agent = ReActAgent(
         "   Examples: 'What is SmartLink?', 'How to create a chart?', 'Apa itu SmartLink?'\n"
         "2. diagnose_point: Use ONLY when user asks to diagnose a SPECIFIC device/point\n"
         "   Examples: 'diagnose JK5-PDU-1', 'check point E1-MVP-01'\n"
+        "   🔴 CRITICAL: When using diagnose_point, return the output EXACTLY as provided without any modification!\n"
         "3. incident_lookup: Use when user asks about technical problems, errors, troubleshooting, or solutions\n"
         "   Examples: 'UPS failure how to fix?', 'sensor spike issue', 'commloss problem', 'gimana solusi error?'\n\n"
         "=== RESPONSE FORMAT ===\n"
@@ -365,10 +391,38 @@ agent = ReActAgent(
         "- **TELNET**: [status and explanation]\n"
         "- **REGISTER**: [status if applicable]\n\n"
         "**Recommendation / Rekomendasi**: [specific actions to take]\n\n"
-        "DO NOT SKIP THE CODE BLOCK."
+        "DO NOT SKIP THE CODE BLOCK.\n\n"
+        "=== SPECIAL RULE FOR DIAGNOSTIC ===\n"
+        "When using diagnose_point tool, you MUST output ONLY the diagnostic report "
+        "provided by the tool. Do NOT add any additional commentary, explanation, "
+        "or modify the report in any way. The output is already formatted and ready for the user."
     ),
     verbose=True,
 )
+
+
+import re
+
+def extract_point_name(query: str) -> str:
+    """Extract point name from diagnostic query patterns"""
+    # Pattern: diagnose/check/test [point_name] or [point_name] after diagnose/check keywords
+    patterns = [
+        r'(?:diagnose|check|cek|test|diagnosis)\s+([\w\-\.]+)',
+        r'(?:diagnose|check|cek|test|diagnosis)[\s:]+([\w\-\.]+)',
+    ]
+    
+    for pattern in patterns:
+        match = re.search(pattern, query.lower())
+        if match:
+            return match.group(1)
+    return None
+
+
+def is_diagnostic_query(query: str) -> bool:
+    """Check if query is asking for diagnostic"""
+    diagnostic_keywords = ['diagnose', 'check', 'cek', 'test', 'diagnosis', 'periksa']
+    query_lower = query.lower()
+    return any(keyword in query_lower for keyword in diagnostic_keywords)
 
 
 async def query(question):
@@ -380,30 +434,33 @@ async def query(question):
     _query_language = detect_language(question)
     print(f"[DETECTED LANGUAGE] {_query_language.upper()}")
 
-    # If Indonesian, translate query for better retrieval
-    search_query = question
-    if _query_language == "id":
-        search_query = translate_id_to_en(question, llm_model)
-        # Update query for retrieval but keep original for agent
-
-    out = ""
-
     print(f"\nQUERY: {question}")
-    if _query_language == "id" and search_query != question:
-        print(f"TRANSLATED QUERY: {search_query}")
     print("-" * 30)
 
     try:
+        # Check if this is a diagnostic query - handle directly without agent
+        if is_diagnostic_query(question):
+            point_name = extract_point_name(question)
+            if point_name:
+                print(f"[DIRECT DIAGNOSTIC] Detected point name: {point_name}")
+                # Directly call diagnose_point_async without going through agent
+                # This returns the raw diagnostic output directly to user
+                return await diagnose_point_async(point_name)
+
+        # If Indonesian, translate query for better retrieval
+        search_query = question
+        if _query_language == "id":
+            search_query = translate_id_to_en(question, llm_model)
+            if search_query != question:
+                print(f"TRANSLATED QUERY: {search_query}")
+
         # Create bilingual user message
         user_msg = question
         if _query_language == "id":
             user_msg = f"{question}\n[Note: Please answer in Indonesian / Tolong jawab dalam bahasa Indonesia]"
 
         response = await agent.run(user_msg=user_msg)
-        if _last_diagnostic_report:
-            out += _last_diagnostic_report + "\n\n"
-        out += response.response.content
-        return out
+        return response.response.content
 
     except Exception as e:
         toc = time.monotonic()
@@ -423,7 +480,7 @@ if __name__ == "__main__":
     print("  - How to create a chart?")
     print("=" * 50)
 
-    payload = get_tagname("E2-PDU-U2-A-MDF02-QL1_1_1-ENERGY")
+    payload = get_tagname("CRAH-2DH2.1-RETURN_AIR_TEMP")
 
     out = full_diagnostic(ModScanSchema.from_sl(payload))
     print(out)

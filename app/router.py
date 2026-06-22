@@ -143,33 +143,12 @@ async def modwrite_rt_tagname(
 
 @app.get("/diagnose")
 async def diagnose_rt(tagname: str, key: Optional[str] = Config.sl_key):
-    if tagname == "example":
-        net: NetworkSchema = NetworkSchema(
-            primary_port=5020,
-            primary_host="127.0.0.1",
-            secondary_host="127.0.0.1",
-            secondary_port=5020,
-            timeout=0.1,
-            retries=1,
-        )
-        payload: ModScanSchema = ModScanSchema(
-            network=net,
-            tagname="test",
-            address=1,
-            data_type=DataType.BIN,
-            point_type=PointType.INPUT_REGISTER,
-            is_big_endian=True,
-            bit_position=14,
-            precision_value=3,
-            swapped=False,
-        )
-    else:
-        data = get_tagname(tagname, key)
-        if not data:
-            raise HTTPException(status_code=500, detail="Tagname is not found!")
-        data["retries"] = 1
-        data["timeout"] = 5
-        payload = ModScanSchema.from_sl(data)
+    data = get_tagname(tagname, key)
+    if not data:
+        raise HTTPException(status_code=500, detail="Tagname is not found!")
+    data["retries"] = 1
+    data["timeout"] = 5
+    payload = ModScanSchema.from_sl(data)
 
     report = await full_diagnostic_async(payload)
     print(report.model_dump_json(indent=2))

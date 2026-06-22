@@ -3,6 +3,7 @@ from typing import List,Optional, Union,Any
 from pydantic import BaseModel,Field,field_serializer
 from pymodbus.client.mixin import ModbusClientMixin 
 import datetime
+import re
 
 class DataType(StrEnum):
   BIN = auto()
@@ -72,6 +73,8 @@ class DataType(StrEnum):
       
   @staticmethod 
   def is_swapped(v:int): return True if v in (6,8,10,12,14,16) else False
+  
+  def is_swapped_(self): return True if self in (6,8,10,12,14,16) else False
 
 class PointType(Enum):
   COIL_STATUS = 1
@@ -126,7 +129,7 @@ class ModScanSchema(BaseModel):
   @staticmethod
   def from_sl(data:dict):
     tagname = data["tagname"]
-    address = int(data["address"])
+    address = int(data["address"]) + 1
     bit_position = data["bit_position"]
     is_big_endian = bool(int(data["byte_order"]))
     point_type = PointType(int(data["modbus_point_type"]))
@@ -137,7 +140,7 @@ class ModScanSchema(BaseModel):
     device_id = int(data["device_id"])
     primary_host = data["primary_host"]
     primary_port = int(data["primary_port"])
-    secondary_host = data["primary_host"]
+    secondary_host = data["secondary_host"]
     secondary_port = int(data["secondary_port"])
     swapped = DataType.is_swapped(int(data["data_type"]))
     retries = data.get("retries",2)
@@ -218,6 +221,9 @@ class FullDiagnosticSchema(BaseModel):
   modscan_data:Optional[ModScanSchema] = None
   status:Status
   detail:str
+  active_connection:Optional[str] = Field(None, description="Connection used: PRIMARY or SECONDARY")
+  primary_mismatch_detail:Optional[str] = Field(None, description="Mismatch detail from PRIMARY if failover occurred")
+  generated:str = ""
 
   def to_md(self):
     """Generate simple text representation for chat"""
@@ -283,6 +289,12 @@ class FullDiagnosticSchema(BaseModel):
     lines.append("-" * 60)
     lines.append("📡 REGISTER DATA")
     lines.append("-" * 60)
+    
+    # Connection Info (Failover tracking)
+    if self.active_connection:
+      lines.append(f"\n🔄 Active Connection: {self.active_connection}")
+      if self.primary_mismatch_detail:
+        lines.append(f"   ⚠️  PRIMARY Mismatch: {self.primary_mismatch_detail}")
     
     if self.register_data.value is not None:
       lines.append(f"\n📈 Value: {self.register_data.value}")
@@ -447,6 +459,192 @@ class FullDiagnosticSchema(BaseModel):
     lines.append("")
     
     return '\n'.join(lines).join("\n\n")
+
+  def to_md_optimize(self,generated:str) -> str:
+    """
+    Generate structured markdown optimized for LLM analysis.
+    Format: Tables for comparative data, sections for organization,
+            key-value pairs for quick facts, minimal visual noise.
+    """
+    lines = []
+    
+    # Header
+    lines.append("## Diagnostic Summary")
+    lines.append(f"- **Timestamp**: {self.timestamp.strftime('%Y-%m-%d %H:%M:%S')} (elapsed: {self.times:.2f}s)")
+    lines.append(f"- **Overall Status**: {self.status}")
+    lines.append(f"- **Detail**: {self.detail}")
+    if self.active_connection:
+      lines.append(f"- **Active Connection**: {self.active_connection}")
+    if self.modscan_data:
+      lines.append(f"- **Tagname**: {self.modscan_data.tagname}")
+    lines.append("")
+    
+    # Network Status Table
+    lines.append("## Network Status")
+    lines.append("| Layer | Status | Detail | Time |")
+    lines.append("|-------|--------|--------|------|")
+    lines.append(f"| PING | {self.ping.status} | {self.ping.detail} | {self.ping.timestamp.strftime('%H:%M:%S')} |")
+    lines.append(f"| TELNET | {self.telnet.status} | {self.telnet.detail} | {self.telnet.timestamp.strftime('%H:%M:%S')} |")
+    lines.append("")
+    
+    # Value Comparison Trail
+    lines.append("## Value Comparison Trail")
+    if self.smartlink:
+      # Determine if failover occurred
+      is_failover = self.active_connection == "SECONDARY"
+      
+      if is_failover and self.modscan_data and self.register_data.value is not None:
+        # Extract values from details for table
+        lines.append("| Connection | ModScan Value | SL Value | Difference | Status |")
+        lines.append("|------------|---------------|----------|------------|--------|")
+        
+        # Parse current value
+        current_val = self.register_data.value
+        
+        # Try to extract SL value and PRIMARY value from details
+        sl_val = None
+        primary_val = None
+        
+        if self.smartlink.detail:
+          # Parse "Expected SL [25.5] but got ModScan [26.0]" format
+          import re
+          match = re.search(r'Expected SL \[([\d.]+)\]', self.smartlink.detail)
+          if match:
+            sl_val = float(match.group(1))
+          
+        if self.primary_mismatch_detail:
+          match = re.search(r'got ModScan \[([\d.]+)\]', self.primary_mismatch_detail)
+          if match:
+            primary_val = float(match.group(1))
+        
+        # If we can't parse, show what we have
+        if primary_val is not None and sl_val is not None:
+          diff_primary = primary_val - sl_val
+          diff_secondary = current_val - sl_val
+          lines.append(f"| PRIMARY | {primary_val} | {sl_val} | {diff_primary:+.1f} | MISMATCH |")
+          lines.append(f"| SECONDARY | {current_val} | {sl_val} | {diff_secondary:+.1f} | MATCH |")
+        else:
+          lines.append(f"| PRIMARY | N/A | N/A | N/A | MISMATCH |")
+          lines.append(f"| SECONDARY | {current_val} | {sl_val or 'N/A'} | N/A | {self.smartlink.status} |")
+      else:
+        # No failover, single comparison
+        lines.append("| Connection | ModScan Value | SL Value | Difference | Status |")
+        lines.append("|------------|---------------|----------|------------|--------|")
+        current_val = self.register_data.value if self.register_data.value else "N/A"
+        status = self.smartlink.status
+        lines.append(f"| PRIMARY | {current_val} | (see detail) | - | {status} |")
+      
+      lines.append(f"\n**Smartlink Detail**: {self.smartlink.detail}")
+    else:
+      lines.append("*No Smartlink comparison available*")
+    lines.append("")
+    
+    # Failover Tracking
+    if self.active_connection:
+      lines.append("## Failover Tracking")
+      lines.append(f"- **Triggered**: {'Yes' if self.active_connection == 'SECONDARY' else 'No'}")
+      if self.primary_mismatch_detail:
+        lines.append(f"- **Primary Mismatch Detail**: {self.primary_mismatch_detail}")
+      lines.append(f"- **Final Connection Used**: {self.active_connection}")
+      lines.append("")
+    
+    # Register Data
+    lines.append("## Register Data")
+    if self.register_data.value is not None:
+      lines.append(f"- **Current Value**: {self.register_data.value}")
+      if self.modscan_data:
+        lines.append(f"- **Data Type**: {self.modscan_data.data_type}")
+      if self.register_data.reg_hex:
+        hex_str = ' '.join(self.register_data.reg_hex)
+        lines.append(f"- **Hex Representation**: {hex_str}")
+      if self.register_data.bits:
+        bits_str = ' '.join(self.register_data.bits)
+        lines.append(f"- **Binary**: {bits_str}")
+    else:
+      lines.append("- **Status**: No register data available")
+    lines.append("")
+    
+    # Configuration
+    if self.modscan_data:
+      lines.append("## Configuration")
+      lines.append(f"- **Primary**: {self.modscan_data.network.primary_host}:{self.modscan_data.network.primary_port}")
+      lines.append(f"- **Secondary**: {self.modscan_data.network.secondary_host}:{self.modscan_data.network.secondary_port}")
+      lines.append(f"- **Device ID**: {self.modscan_data.device_id}")
+      lines.append(f"- **Register Address**: {self.modscan_data.address}")
+      lines.append(f"- **Point Type**: {self.modscan_data.point_type}")
+      lines.append(f"- **Byte Order**: {'Big Endian' if self.modscan_data.is_big_endian else 'Little Endian'}")
+      lines.append(f"- **Swapped**: {'Yes' if self.modscan_data.swapped else 'No'}")
+      lines.append(f"- **Timeout**: {self.modscan_data.network.timeout}s")
+      lines.append(f"- **Retries**: {self.modscan_data.network.retries}")
+      
+      # Optional params
+      if self.modscan_data.bit_position is not None:
+        lines.append(f"- **Bit Position**: {self.modscan_data.bit_position}")
+      if self.modscan_data.precision_value is not None:
+        lines.append(f"- **Precision**: {self.modscan_data.precision_value}")
+      if self.modscan_data.factor_value is not None:
+        lines.append(f"- **Factor**: {self.modscan_data.factor_value}")
+      if self.modscan_data.offset_value is not None:
+        lines.append(f"- **Offset**: {self.modscan_data.offset_value}")
+      lines.append("")
+    
+    # Analysis & Recommendations
+    lines.append("## Analysis & Recommendations")
+    lines.append(generated)
+    
+    return '\n'.join(lines)
+
+  def to_md_compact(self) -> str:
+    """
+    Ultra-compact format for CPU-efficient LLM processing.
+    Minimizes tokens while preserving all critical diagnostic data.
+    Format: space-separated key=value pairs, single line per section.
+    """
+    parts = []
+    
+    # Core info (single line)
+    tag = self.modscan_data.tagname if self.modscan_data else "N/A"
+    parts.append(f"TAG={tag} ST={self.status} TIME={self.times:.2f}s")
+    
+    # Network (single line)
+    parts.append(f"NET:P={self.ping.status} T={self.telnet.status}")
+    
+    # Value comparison (compact)
+    if self.smartlink:
+      sl_val = "N/A"
+      ms_val = self.register_data.value if self.register_data.value else "N/A"
+      
+      # Parse SL value from detail
+      import re
+      match = re.search(r'SL \[([\d.]+)\]|both ([\d.]+)', self.smartlink.detail)
+      if match:
+        sl_val = match.group(1) or match.group(2)
+      
+      parts.append(f"VAL:SL={sl_val} MS={ms_val}")
+      parts.append(f"CHK:{self.smartlink.status}")
+    
+    # Failover info
+    if self.active_connection:
+      fo = "Y" if self.active_connection == "SECONDARY" else "N"
+      parts.append(f"FO:{fo} CONN={self.active_connection[0]}")  # P or S
+      if self.primary_mismatch_detail:
+        # Extract just the key numbers
+        match = re.search(r'SL \[([\d.]+)\].*ModScan \[([\d.]+)\]', self.primary_mismatch_detail)
+        if match:
+          parts.append(f"MIS:SL={match.group(1)} MS={match.group(2)}")
+    
+    # Register data (minimal)
+    if self.register_data.value is not None:
+      hex_str = ''.join(self.register_data.reg_hex) if self.register_data.reg_hex else "N/A"
+      parts.append(f"REG:{self.register_data.value} H={hex_str}")
+    
+    # Config (abbreviated)
+    if self.modscan_data:
+      dt = str(self.modscan_data.data_type)[:4]  # Abbreviate
+      parts.append(f"CFG:ID={self.modscan_data.device_id} A={self.modscan_data.address} T={dt}")
+      parts.append(f"IP:P={self.modscan_data.network.primary_host} S={self.modscan_data.network.secondary_host}")
+    
+    return " | ".join(parts)
 
 
 class ChatRequest(BaseModel):

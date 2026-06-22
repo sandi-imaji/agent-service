@@ -2580,3 +2580,814 @@
 [2026-04-27 17:23:02] [INFO] app.modscan.diagnose:checking_value_sl:86 - CHECKING VALUE FROM SL:
 [2026-05-27 14:22:56] [ERROR] app.utils:get_tagname:91 - Message from get tagname: Tagname not found
 [2026-05-27 14:34:33] [ERROR] app.utils:get_tagname:91 - Message from get tagname: Tagname not found
+[2026-06-10 11:46:32] [INFO] app.modscan.diagnose:full_diagnostic_async:113 - ==================================================
+[2026-06-10 11:46:32] [INFO] app.modscan.diagnose:full_diagnostic_async:114 - FULL DIAGNOSTIC START
+[2026-06-10 11:46:32] [INFO] app.modscan.diagnose:full_diagnostic_async:115 - ==================================================
+[2026-06-10 11:46:32] [INFO] app.modscan.diagnose:diagnostic_network:20 - Diagnostic Network ...
+[2026-06-10 11:46:32] [INFO] app.modscan.diagnose:diagnostic_network:29 - [PING] Checking primary: 10.25.17.44
+[2026-06-10 11:46:32] [INFO] app.utils:ping_icmp:44 - PING (ICMP): 10.25.17.44 | count : 5
+[2026-06-10 11:46:36] [INFO] app.utils:ping_icmp:54 - 5 packets transmitted, 5 received, 0% packet loss, time 4005ms
+[2026-06-10 11:46:36] [INFO] app.modscan.diagnose:diagnostic_network:50 - [PING] Primary 10.25.17.44 is OK!
+[2026-06-10 11:46:36] [INFO] app.modscan.diagnose:diagnostic_network:55 - [TELNET] Checking 10.25.17.44:502
+[2026-06-10 11:46:36] [INFO] app.modscan.diagnose:diagnostic_network:79 - [TELNET] 10.25.17.44:502 is OPEN!
+[2026-06-10 11:46:36] [INFO] app.modscan.diagnose:full_diagnostic_async:136 - [REGISTER] Reading address 40976 with int16
+[2026-06-10 11:46:36] [INFO] app.modscan._modscan:ModScan:107 - [MODSCAN] Trying PRIMARY: 10.25.17.44:502
+[2026-06-10 11:46:36] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.44:502
+[2026-06-10 11:46:37] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.44:502
+[2026-06-10 11:46:52] [CRITICAL] app.modscan._modscan:_modscan_connect:87 - [MODSCAN] ModbusIOException: Modbus Error: [Input/Output] No response received after 2 retries, continue with next request
+[2026-06-10 11:46:52] [WARNING] app.modscan._modscan:ModScan:118 - [MODSCAN] PRIMARY failed, trying SECONDARY: 10.25.17.44:502
+[2026-06-10 11:46:52] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.44:502
+[2026-06-10 11:46:52] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.44:502
+[2026-06-10 11:47:02] [INFO] app.modscan._modscan:ModScan:126 - [MODSCAN] SECONDARY connection successful
+[2026-06-10 11:47:02] [INFO] app.modscan.diagnose:full_diagnostic_async:140 - [REGISTER] Success! Value = 231
+[2026-06-10 11:47:02] [INFO] app.modscan.diagnose:checking_value_sl:86 - CHECKING VALUE FROM SL:
+[2026-06-10 11:47:07] [INFO] app.modscan.diagnose:full_diagnostic_async:157 - ==================================================
+[2026-06-10 11:47:07] [INFO] app.modscan.diagnose:full_diagnostic_async:158 - FULL DIAGNOSTIC COMPLETE - 34.588s
+[2026-06-10 11:47:07] [INFO] app.modscan.diagnose:full_diagnostic_async:159 - ==================================================
+[2026-06-10 16:05:59] [INFO] app.modscan._modscan:ModScan:107 - [MODSCAN] Trying PRIMARY: 10.25.17.44:502
+[2026-06-10 16:06:00] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.44:502
+[2026-06-10 16:06:00] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.44:502
+[2026-06-10 16:06:15] [CRITICAL] app.modscan._modscan:_modscan_connect:87 - [MODSCAN] ModbusIOException: Modbus Error: [Input/Output] No response received after 2 retries, continue with next request
+[2026-06-10 16:06:15] [WARNING] app.modscan._modscan:ModScan:118 - [MODSCAN] PRIMARY failed, trying SECONDARY: 10.25.17.44:502
+[2026-06-10 16:06:15] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.44:502
+[2026-06-10 16:06:15] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.44:502
+[2026-06-10 16:06:30] [CRITICAL] app.modscan._modscan:_modscan_connect:87 - [MODSCAN] ModbusIOException: Modbus Error: [Input/Output] No response received after 2 retries, continue with next request
+[2026-06-10 16:06:30] [ERROR] app.modscan._modscan:ModScan:130 - [MODSCAN] Both PRIMARY and SECONDARY connections failed!
+[2026-06-10 16:06:49] [INFO] app.modscan._modscan:ModScan:107 - [MODSCAN] Trying PRIMARY: 10.25.17.44:502
+[2026-06-10 16:06:49] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.44:502
+[2026-06-10 16:06:49] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.44:502
+[2026-06-10 16:07:04] [CRITICAL] app.modscan._modscan:_modscan_connect:87 - [MODSCAN] ModbusIOException: Modbus Error: [Input/Output] No response received after 2 retries, continue with next request
+[2026-06-10 16:07:04] [WARNING] app.modscan._modscan:ModScan:118 - [MODSCAN] PRIMARY failed, trying SECONDARY: 10.25.17.44:502
+[2026-06-10 16:07:04] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.44:502
+[2026-06-10 16:07:05] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.44:502
+[2026-06-10 16:07:20] [CRITICAL] app.modscan._modscan:_modscan_connect:87 - [MODSCAN] ModbusIOException: Modbus Error: [Input/Output] No response received after 2 retries, continue with next request
+[2026-06-10 16:07:20] [ERROR] app.modscan._modscan:ModScan:130 - [MODSCAN] Both PRIMARY and SECONDARY connections failed!
+[2026-06-11 10:36:40] [INFO] app.modscan._modscan:ModScan:107 - [MODSCAN] Trying PRIMARY: 10.25.17.44:502
+[2026-06-11 10:36:41] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.44:502
+[2026-06-11 10:36:41] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.44:502
+[2026-06-11 10:36:56] [CRITICAL] app.modscan._modscan:_modscan_connect:87 - [MODSCAN] ModbusIOException: Modbus Error: [Input/Output] No response received after 2 retries, continue with next request
+[2026-06-11 10:36:56] [WARNING] app.modscan._modscan:ModScan:118 - [MODSCAN] PRIMARY failed, trying SECONDARY: 10.25.17.44:502
+[2026-06-11 10:36:56] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.44:502
+[2026-06-11 10:36:56] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.44:502
+[2026-06-11 10:37:01] [INFO] app.modscan._modscan:ModScan:126 - [MODSCAN] SECONDARY connection successful
+[2026-06-11 11:15:00] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.44:502
+[2026-06-11 11:15:00] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.44:502
+[2026-06-11 14:14:48] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.44:502
+[2026-06-11 14:14:48] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.44:502
+[2026-06-11 14:16:08] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.44:502
+[2026-06-11 14:16:08] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.44:502
+[2026-06-11 14:16:44] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.64:502
+[2026-06-11 14:16:44] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.64:502
+[2026-06-11 14:19:11] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.64:502
+[2026-06-11 14:19:11] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.64:502
+[2026-06-11 14:20:01] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.64:502
+[2026-06-11 14:20:01] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.64:502
+[2026-06-11 14:21:10] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.64:502
+[2026-06-11 14:21:10] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.64:502
+[2026-06-11 14:21:32] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.64:502
+[2026-06-11 14:21:32] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.64:502
+[2026-06-11 14:21:54] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.44:502
+[2026-06-11 14:21:54] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.44:502
+[2026-06-11 14:26:28] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.44:502
+[2026-06-11 14:26:28] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.44:502
+[2026-06-11 14:26:58] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.44:502
+[2026-06-11 14:26:58] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.44:502
+[2026-06-11 14:26:58] [WARNING] __main__:<module>:24 - Missmatch value , currvalue : 20.9 | value : 20.700000000000003
+[2026-06-11 14:26:58] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.64:502
+[2026-06-11 14:26:58] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.64:502
+[2026-06-11 14:28:05] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.44:502
+[2026-06-11 14:28:06] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.44:502
+[2026-06-11 14:28:06] [WARNING] __main__:<module>:24 - Missmatch value , currvalue : 20.9 | value : 20.700000000000003
+[2026-06-11 14:28:06] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.64:502
+[2026-06-11 14:28:06] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.64:502
+[2026-06-11 14:28:32] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.44:502
+[2026-06-11 14:28:32] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.44:502
+[2026-06-11 14:28:33] [WARNING] __main__:<module>:24 - Missmatch value , currvalue : 20.9 | value : 20.700000000000003
+[2026-06-11 14:28:33] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.64:502
+[2026-06-11 14:28:33] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.64:502
+[2026-06-11 14:49:27] [INFO] __main__:full_diagnostic_async:120 - ==================================================
+[2026-06-11 14:49:27] [INFO] __main__:full_diagnostic_async:121 - FULL DIAGNOSTIC START
+[2026-06-11 14:49:27] [INFO] __main__:full_diagnostic_async:122 - ==================================================
+[2026-06-11 14:49:27] [INFO] __main__:diagnostic_network:20 - Diagnostic Network ...
+[2026-06-11 14:49:27] [INFO] __main__:diagnostic_network:29 - [PING] Checking primary: 10.25.17.44
+[2026-06-11 14:49:27] [INFO] app.utils:ping_icmp:44 - PING (ICMP): 10.25.17.44 | count : 5
+[2026-06-11 14:49:31] [INFO] app.utils:ping_icmp:54 - 5 packets transmitted, 5 received, 0% packet loss, time 4004ms
+[2026-06-11 14:49:31] [INFO] __main__:diagnostic_network:50 - [PING] Primary 10.25.17.44 is OK!
+[2026-06-11 14:49:31] [INFO] __main__:diagnostic_network:55 - [TELNET] Checking 10.25.17.44:502
+[2026-06-11 14:49:31] [INFO] __main__:diagnostic_network:79 - [TELNET] 10.25.17.44:502 is OPEN!
+[2026-06-11 14:49:31] [INFO] __main__:full_diagnostic_async:150 - [REGISTER] Reading address 40977 from PRIMARY with int16
+[2026-06-11 14:49:31] [INFO] app.modscan._modscan:ModScan:107 - [MODSCAN] Trying PRIMARY: 10.25.17.44:502
+[2026-06-11 14:49:32] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.44:502
+[2026-06-11 14:49:32] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.44:502
+[2026-06-11 14:49:32] [INFO] app.modscan._modscan:ModScan:115 - [MODSCAN] PRIMARY connection successful
+[2026-06-11 14:49:32] [INFO] __main__:full_diagnostic_async:169 - [REGISTER] PRIMARY read success! Value = 20.6
+[2026-06-11 14:49:32] [INFO] __main__:checking_value_sl:86 - CHECKING VALUE FROM SL:
+[2026-06-11 14:49:35] [INFO] __main__:full_diagnostic_async:178 - [VALUE-CHECK] PRIMARY value matches SL: 20.6
+[2026-06-11 14:49:35] [INFO] __main__:full_diagnostic_async:252 - ==================================================
+[2026-06-11 14:49:35] [INFO] __main__:full_diagnostic_async:253 - FULL DIAGNOSTIC COMPLETE - 8.018s
+[2026-06-11 14:49:35] [INFO] __main__:full_diagnostic_async:254 - Active connection: PRIMARY
+[2026-06-11 14:49:35] [INFO] __main__:full_diagnostic_async:255 - ==================================================
+[2026-06-11 14:50:47] [INFO] __main__:full_diagnostic_async:120 - ==================================================
+[2026-06-11 14:50:47] [INFO] __main__:full_diagnostic_async:121 - FULL DIAGNOSTIC START
+[2026-06-11 14:50:47] [INFO] __main__:full_diagnostic_async:122 - ==================================================
+[2026-06-11 14:50:47] [INFO] __main__:diagnostic_network:20 - Diagnostic Network ...
+[2026-06-11 14:50:47] [INFO] __main__:diagnostic_network:29 - [PING] Checking primary: 10.25.17.44
+[2026-06-11 14:50:47] [INFO] app.utils:ping_icmp:44 - PING (ICMP): 10.25.17.44 | count : 5
+[2026-06-11 14:50:51] [INFO] app.utils:ping_icmp:54 - 5 packets transmitted, 5 received, 0% packet loss, time 4005ms
+[2026-06-11 14:50:51] [INFO] __main__:diagnostic_network:50 - [PING] Primary 10.25.17.44 is OK!
+[2026-06-11 14:50:51] [INFO] __main__:diagnostic_network:55 - [TELNET] Checking 10.25.17.44:502
+[2026-06-11 14:50:51] [INFO] __main__:diagnostic_network:79 - [TELNET] 10.25.17.44:502 is OPEN!
+[2026-06-11 14:50:51] [INFO] __main__:full_diagnostic_async:150 - [REGISTER] Reading address 40977 from PRIMARY with int16
+[2026-06-11 14:50:51] [INFO] app.modscan._modscan:ModScan:107 - [MODSCAN] Trying PRIMARY: 10.25.17.44:502
+[2026-06-11 14:50:51] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.44:502
+[2026-06-11 14:50:51] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.44:502
+[2026-06-11 14:50:51] [INFO] app.modscan._modscan:ModScan:115 - [MODSCAN] PRIMARY connection successful
+[2026-06-11 14:50:51] [INFO] __main__:full_diagnostic_async:169 - [REGISTER] PRIMARY read success! Value = 20.900000000000002
+[2026-06-11 14:50:51] [INFO] __main__:checking_value_sl:86 - CHECKING VALUE FROM SL:
+[2026-06-11 14:50:55] [INFO] __main__:full_diagnostic_async:178 - [VALUE-CHECK] PRIMARY value matches SL: 20.900000000000002
+[2026-06-11 14:50:55] [INFO] __main__:full_diagnostic_async:252 - ==================================================
+[2026-06-11 14:50:55] [INFO] __main__:full_diagnostic_async:253 - FULL DIAGNOSTIC COMPLETE - 7.947s
+[2026-06-11 14:50:55] [INFO] __main__:full_diagnostic_async:254 - Active connection: PRIMARY
+[2026-06-11 14:50:55] [INFO] __main__:full_diagnostic_async:255 - ==================================================
+[2026-06-11 14:53:04] [INFO] __main__:full_diagnostic_async:120 - ==================================================
+[2026-06-11 14:53:04] [INFO] __main__:full_diagnostic_async:121 - FULL DIAGNOSTIC START
+[2026-06-11 14:53:04] [INFO] __main__:full_diagnostic_async:122 - ==================================================
+[2026-06-11 14:53:04] [INFO] __main__:diagnostic_network:20 - Diagnostic Network ...
+[2026-06-11 14:53:04] [INFO] __main__:diagnostic_network:29 - [PING] Checking primary: 10.25.17.44
+[2026-06-11 14:53:04] [INFO] app.utils:ping_icmp:44 - PING (ICMP): 10.25.17.44 | count : 5
+[2026-06-11 14:53:08] [INFO] app.utils:ping_icmp:54 - 5 packets transmitted, 5 received, 0% packet loss, time 4003ms
+[2026-06-11 14:53:08] [INFO] __main__:diagnostic_network:50 - [PING] Primary 10.25.17.44 is OK!
+[2026-06-11 14:53:08] [INFO] __main__:diagnostic_network:55 - [TELNET] Checking 10.25.17.44:502
+[2026-06-11 14:53:08] [INFO] __main__:diagnostic_network:79 - [TELNET] 10.25.17.44:502 is OPEN!
+[2026-06-11 14:53:08] [INFO] __main__:full_diagnostic_async:150 - [REGISTER] Reading address 40977 from PRIMARY with int16
+[2026-06-11 14:53:08] [INFO] app.modscan._modscan:ModScan:107 - [MODSCAN] Trying PRIMARY: 10.25.17.44:502
+[2026-06-11 14:53:08] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.44:502
+[2026-06-11 14:53:08] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.44:502
+[2026-06-11 14:53:08] [INFO] app.modscan._modscan:ModScan:115 - [MODSCAN] PRIMARY connection successful
+[2026-06-11 14:53:08] [INFO] __main__:full_diagnostic_async:169 - [REGISTER] PRIMARY read success! Value = 20.900000000000002
+[2026-06-11 14:53:08] [INFO] __main__:checking_value_sl:86 - CHECKING VALUE FROM SL:
+[2026-06-11 14:53:12] [INFO] __main__:full_diagnostic_async:178 - [VALUE-CHECK] PRIMARY value matches SL: 20.900000000000002
+[2026-06-11 14:53:12] [INFO] __main__:full_diagnostic_async:252 - ==================================================
+[2026-06-11 14:53:12] [INFO] __main__:full_diagnostic_async:253 - FULL DIAGNOSTIC COMPLETE - 8.106s
+[2026-06-11 14:53:12] [INFO] __main__:full_diagnostic_async:254 - Active connection: PRIMARY
+[2026-06-11 14:53:12] [INFO] __main__:full_diagnostic_async:255 - ==================================================
+[2026-06-11 14:55:16] [INFO] __main__:full_diagnostic_async:120 - ==================================================
+[2026-06-11 14:55:16] [INFO] __main__:full_diagnostic_async:121 - FULL DIAGNOSTIC START
+[2026-06-11 14:55:16] [INFO] __main__:full_diagnostic_async:122 - ==================================================
+[2026-06-11 14:55:16] [INFO] __main__:diagnostic_network:20 - Diagnostic Network ...
+[2026-06-11 14:55:16] [INFO] __main__:diagnostic_network:29 - [PING] Checking primary: 10.25.17.44
+[2026-06-11 14:55:16] [INFO] app.utils:ping_icmp:44 - PING (ICMP): 10.25.17.44 | count : 5
+[2026-06-11 14:55:20] [INFO] app.utils:ping_icmp:54 - 5 packets transmitted, 5 received, 0% packet loss, time 4006ms
+[2026-06-11 14:55:20] [INFO] __main__:diagnostic_network:50 - [PING] Primary 10.25.17.44 is OK!
+[2026-06-11 14:55:20] [INFO] __main__:diagnostic_network:55 - [TELNET] Checking 10.25.17.44:502
+[2026-06-11 14:55:20] [INFO] __main__:diagnostic_network:79 - [TELNET] 10.25.17.44:502 is OPEN!
+[2026-06-11 14:55:20] [INFO] __main__:full_diagnostic_async:150 - [REGISTER] Reading address 40977 from PRIMARY with int16
+[2026-06-11 14:55:20] [INFO] app.modscan._modscan:ModScan:107 - [MODSCAN] Trying PRIMARY: 10.25.17.44:502
+[2026-06-11 14:55:20] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.44:502
+[2026-06-11 14:55:20] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.44:502
+[2026-06-11 14:55:21] [INFO] app.modscan._modscan:ModScan:115 - [MODSCAN] PRIMARY connection successful
+[2026-06-11 14:55:21] [INFO] __main__:full_diagnostic_async:169 - [REGISTER] PRIMARY read success! Value = 20.900000000000002
+[2026-06-11 14:55:21] [INFO] __main__:checking_value_sl:86 - CHECKING VALUE FROM SL:
+[2026-06-11 14:55:25] [WARNING] __main__:full_diagnostic_async:184 - [VALUE-CHECK] PRIMARY mismatch detected!
+[2026-06-11 14:55:25] [WARNING] __main__:full_diagnostic_async:185 - [VALUE-CHECK] PRIMARY detail: Mismatch: Expected SL [21.1] but got ModScan [20.900000000000002]
+[2026-06-11 14:55:25] [INFO] __main__:full_diagnostic_async:189 - [NETWORK-SECONDARY] Checking secondary network...
+[2026-06-11 14:55:25] [INFO] __main__:full_diagnostic_async:190 - [PING-SECONDARY] Checking secondary: 10.25.17.64
+[2026-06-11 14:55:25] [INFO] app.utils:ping_icmp:44 - PING (ICMP): 10.25.17.64 | count : 5
+[2026-06-11 14:55:29] [INFO] app.utils:ping_icmp:54 - 5 packets transmitted, 5 received, 0% packet loss, time 4005ms
+[2026-06-11 14:55:29] [INFO] __main__:full_diagnostic_async:200 - [PING-SECONDARY] Secondary 10.25.17.64 is OK!
+[2026-06-11 14:55:29] [INFO] __main__:full_diagnostic_async:203 - [TELNET-SECONDARY] Checking 10.25.17.64:502
+[2026-06-11 14:55:29] [INFO] __main__:full_diagnostic_async:213 - [TELNET-SECONDARY] Secondary 10.25.17.64:502 is OPEN!
+[2026-06-11 14:55:29] [INFO] __main__:full_diagnostic_async:216 - [REGISTER-SECONDARY] Trying to read from SECONDARY...
+[2026-06-11 14:55:29] [INFO] app.modscan._modscan:ModScanSecondary:145 - [MODSCAN-SECONDARY] Forcing read from SECONDARY: 10.25.17.64:502
+[2026-06-11 14:55:29] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.64:502
+[2026-06-11 14:55:29] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.64:502
+[2026-06-11 14:55:30] [INFO] app.modscan._modscan:ModScanSecondary:153 - [MODSCAN-SECONDARY] SECONDARY connection successful
+[2026-06-11 14:55:30] [INFO] __main__:full_diagnostic_async:226 - [REGISTER-SECONDARY] SECONDARY read success! Value = 21.1
+[2026-06-11 14:55:30] [INFO] __main__:checking_value_sl:86 - CHECKING VALUE FROM SL:
+[2026-06-11 14:55:34] [INFO] __main__:full_diagnostic_async:239 - [VALUE-CHECK] SECONDARY value matches SL: 21.1
+[2026-06-11 14:55:34] [INFO] __main__:full_diagnostic_async:252 - ==================================================
+[2026-06-11 14:55:34] [INFO] __main__:full_diagnostic_async:253 - FULL DIAGNOSTIC COMPLETE - 17.783s
+[2026-06-11 14:55:34] [INFO] __main__:full_diagnostic_async:254 - Active connection: SECONDARY
+[2026-06-11 14:55:34] [INFO] __main__:full_diagnostic_async:255 - ==================================================
+[2026-06-11 14:56:57] [INFO] __main__:full_diagnostic_async:120 - ==================================================
+[2026-06-11 14:56:57] [INFO] __main__:full_diagnostic_async:121 - FULL DIAGNOSTIC START
+[2026-06-11 14:56:57] [INFO] __main__:full_diagnostic_async:122 - ==================================================
+[2026-06-11 14:56:57] [INFO] __main__:diagnostic_network:20 - Diagnostic Network ...
+[2026-06-11 14:56:57] [INFO] __main__:diagnostic_network:29 - [PING] Checking primary: 10.25.17.44
+[2026-06-11 14:56:57] [INFO] app.utils:ping_icmp:44 - PING (ICMP): 10.25.17.44 | count : 5
+[2026-06-11 14:57:01] [INFO] app.utils:ping_icmp:54 - 5 packets transmitted, 5 received, 0% packet loss, time 4007ms
+[2026-06-11 14:57:01] [INFO] __main__:diagnostic_network:50 - [PING] Primary 10.25.17.44 is OK!
+[2026-06-11 14:57:01] [INFO] __main__:diagnostic_network:55 - [TELNET] Checking 10.25.17.44:502
+[2026-06-11 14:57:02] [INFO] __main__:diagnostic_network:79 - [TELNET] 10.25.17.44:502 is OPEN!
+[2026-06-11 14:57:02] [INFO] __main__:full_diagnostic_async:150 - [REGISTER] Reading address 40977 from PRIMARY with int16
+[2026-06-11 14:57:02] [INFO] app.modscan._modscan:ModScan:107 - [MODSCAN] Trying PRIMARY: 10.25.17.44:502
+[2026-06-11 14:57:02] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.44:502
+[2026-06-11 14:57:02] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.44:502
+[2026-06-11 14:57:02] [INFO] app.modscan._modscan:ModScan:115 - [MODSCAN] PRIMARY connection successful
+[2026-06-11 14:57:02] [INFO] __main__:full_diagnostic_async:169 - [REGISTER] PRIMARY read success! Value = 20.900000000000002
+[2026-06-11 14:57:02] [INFO] __main__:checking_value_sl:86 - CHECKING VALUE FROM SL:
+[2026-06-11 14:57:07] [WARNING] __main__:full_diagnostic_async:184 - [VALUE-CHECK] PRIMARY mismatch detected!
+[2026-06-11 14:57:07] [WARNING] __main__:full_diagnostic_async:185 - [VALUE-CHECK] PRIMARY detail: Mismatch: Expected SL [21.1] but got ModScan [20.900000000000002]
+[2026-06-11 14:57:07] [INFO] __main__:full_diagnostic_async:189 - [NETWORK-SECONDARY] Checking secondary network...
+[2026-06-11 14:57:07] [INFO] __main__:full_diagnostic_async:190 - [PING-SECONDARY] Checking secondary: 10.25.17.64
+[2026-06-11 14:57:07] [INFO] app.utils:ping_icmp:44 - PING (ICMP): 10.25.17.64 | count : 5
+[2026-06-11 14:57:11] [INFO] app.utils:ping_icmp:54 - 5 packets transmitted, 5 received, 0% packet loss, time 4006ms
+[2026-06-11 14:57:11] [INFO] __main__:full_diagnostic_async:200 - [PING-SECONDARY] Secondary 10.25.17.64 is OK!
+[2026-06-11 14:57:11] [INFO] __main__:full_diagnostic_async:203 - [TELNET-SECONDARY] Checking 10.25.17.64:502
+[2026-06-11 14:57:11] [INFO] __main__:full_diagnostic_async:213 - [TELNET-SECONDARY] Secondary 10.25.17.64:502 is OPEN!
+[2026-06-11 14:57:11] [INFO] __main__:full_diagnostic_async:216 - [REGISTER-SECONDARY] Trying to read from SECONDARY...
+[2026-06-11 14:57:11] [INFO] app.modscan._modscan:ModScanSecondary:145 - [MODSCAN-SECONDARY] Forcing read from SECONDARY: 10.25.17.64:502
+[2026-06-11 14:57:11] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.64:502
+[2026-06-11 14:57:11] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.64:502
+[2026-06-11 14:57:11] [INFO] app.modscan._modscan:ModScanSecondary:153 - [MODSCAN-SECONDARY] SECONDARY connection successful
+[2026-06-11 14:57:11] [INFO] __main__:full_diagnostic_async:226 - [REGISTER-SECONDARY] SECONDARY read success! Value = 21.1
+[2026-06-11 14:57:11] [INFO] __main__:checking_value_sl:86 - CHECKING VALUE FROM SL:
+[2026-06-11 14:57:16] [INFO] __main__:full_diagnostic_async:239 - [VALUE-CHECK] SECONDARY value matches SL: 21.1
+[2026-06-11 14:57:16] [INFO] __main__:full_diagnostic_async:252 - ==================================================
+[2026-06-11 14:57:16] [INFO] __main__:full_diagnostic_async:253 - FULL DIAGNOSTIC COMPLETE - 18.324s
+[2026-06-11 14:57:16] [INFO] __main__:full_diagnostic_async:254 - Active connection: SECONDARY
+[2026-06-11 14:57:16] [INFO] __main__:full_diagnostic_async:255 - ==================================================
+[2026-06-11 14:57:41] [INFO] __main__:full_diagnostic_async:120 - ==================================================
+[2026-06-11 14:57:41] [INFO] __main__:full_diagnostic_async:121 - FULL DIAGNOSTIC START
+[2026-06-11 14:57:41] [INFO] __main__:full_diagnostic_async:122 - ==================================================
+[2026-06-11 14:57:41] [INFO] __main__:diagnostic_network:20 - Diagnostic Network ...
+[2026-06-11 14:57:41] [INFO] __main__:diagnostic_network:29 - [PING] Checking primary: 10.25.17.44
+[2026-06-11 14:57:41] [INFO] app.utils:ping_icmp:44 - PING (ICMP): 10.25.17.44 | count : 5
+[2026-06-11 14:57:45] [INFO] app.utils:ping_icmp:54 - 5 packets transmitted, 5 received, 0% packet loss, time 4006ms
+[2026-06-11 14:57:45] [INFO] __main__:diagnostic_network:50 - [PING] Primary 10.25.17.44 is OK!
+[2026-06-11 14:57:45] [INFO] __main__:diagnostic_network:55 - [TELNET] Checking 10.25.17.44:502
+[2026-06-11 14:57:45] [INFO] __main__:diagnostic_network:79 - [TELNET] 10.25.17.44:502 is OPEN!
+[2026-06-11 14:57:45] [INFO] __main__:full_diagnostic_async:150 - [REGISTER] Reading address 40977 from PRIMARY with int16
+[2026-06-11 14:57:45] [INFO] app.modscan._modscan:ModScan:107 - [MODSCAN] Trying PRIMARY: 10.25.17.44:502
+[2026-06-11 14:57:45] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.44:502
+[2026-06-11 14:57:45] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.44:502
+[2026-06-11 14:57:45] [INFO] app.modscan._modscan:ModScan:115 - [MODSCAN] PRIMARY connection successful
+[2026-06-11 14:57:45] [INFO] __main__:full_diagnostic_async:169 - [REGISTER] PRIMARY read success! Value = 20.900000000000002
+[2026-06-11 14:57:45] [INFO] __main__:checking_value_sl:86 - CHECKING VALUE FROM SL:
+[2026-06-11 14:57:50] [WARNING] __main__:full_diagnostic_async:184 - [VALUE-CHECK] PRIMARY mismatch detected!
+[2026-06-11 14:57:50] [WARNING] __main__:full_diagnostic_async:185 - [VALUE-CHECK] PRIMARY detail: Mismatch: Expected SL [21.1] but got ModScan [20.900000000000002]
+[2026-06-11 14:57:50] [INFO] __main__:full_diagnostic_async:189 - [NETWORK-SECONDARY] Checking secondary network...
+[2026-06-11 14:57:50] [INFO] __main__:full_diagnostic_async:190 - [PING-SECONDARY] Checking secondary: 10.25.17.64
+[2026-06-11 14:57:50] [INFO] app.utils:ping_icmp:44 - PING (ICMP): 10.25.17.64 | count : 5
+[2026-06-11 14:57:54] [INFO] app.utils:ping_icmp:54 - 5 packets transmitted, 5 received, 0% packet loss, time 4005ms
+[2026-06-11 14:57:54] [INFO] __main__:full_diagnostic_async:200 - [PING-SECONDARY] Secondary 10.25.17.64 is OK!
+[2026-06-11 14:57:54] [INFO] __main__:full_diagnostic_async:203 - [TELNET-SECONDARY] Checking 10.25.17.64:502
+[2026-06-11 14:57:54] [INFO] __main__:full_diagnostic_async:213 - [TELNET-SECONDARY] Secondary 10.25.17.64:502 is OPEN!
+[2026-06-11 14:57:54] [INFO] __main__:full_diagnostic_async:216 - [REGISTER-SECONDARY] Trying to read from SECONDARY...
+[2026-06-11 14:57:54] [INFO] app.modscan._modscan:ModScanSecondary:145 - [MODSCAN-SECONDARY] Forcing read from SECONDARY: 10.25.17.64:502
+[2026-06-11 14:57:54] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.64:502
+[2026-06-11 14:57:54] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.64:502
+[2026-06-11 14:57:54] [INFO] app.modscan._modscan:ModScanSecondary:153 - [MODSCAN-SECONDARY] SECONDARY connection successful
+[2026-06-11 14:57:54] [INFO] __main__:full_diagnostic_async:226 - [REGISTER-SECONDARY] SECONDARY read success! Value = 21.200000000000003
+[2026-06-11 14:57:54] [INFO] __main__:checking_value_sl:86 - CHECKING VALUE FROM SL:
+[2026-06-11 14:57:58] [ERROR] __main__:full_diagnostic_async:245 - [VALUE-CHECK] SECONDARY also mismatch!
+[2026-06-11 14:57:58] [ERROR] __main__:full_diagnostic_async:246 - [VALUE-CHECK] SECONDARY detail: Mismatch: Expected SL [21.1] but got ModScan [21.200000000000003]
+[2026-06-11 14:57:58] [INFO] __main__:full_diagnostic_async:252 - ==================================================
+[2026-06-11 14:57:58] [INFO] __main__:full_diagnostic_async:253 - FULL DIAGNOSTIC COMPLETE - 16.992s
+[2026-06-11 14:57:58] [INFO] __main__:full_diagnostic_async:254 - Active connection: SECONDARY
+[2026-06-11 14:57:58] [INFO] __main__:full_diagnostic_async:255 - ==================================================
+[2026-06-11 16:30:14] [INFO] __main__:full_diagnostic_async:120 - ==================================================
+[2026-06-11 16:30:14] [INFO] __main__:full_diagnostic_async:121 - FULL DIAGNOSTIC START
+[2026-06-11 16:30:14] [INFO] __main__:full_diagnostic_async:122 - ==================================================
+[2026-06-11 16:30:14] [INFO] __main__:diagnostic_network:20 - Diagnostic Network ...
+[2026-06-11 16:30:14] [INFO] __main__:diagnostic_network:29 - [PING] Checking primary: 10.25.17.44
+[2026-06-11 16:30:14] [INFO] app.utils:ping_icmp:44 - PING (ICMP): 10.25.17.44 | count : 5
+[2026-06-11 16:30:18] [INFO] app.utils:ping_icmp:54 - 5 packets transmitted, 5 received, 0% packet loss, time 4005ms
+[2026-06-11 16:30:18] [INFO] __main__:diagnostic_network:50 - [PING] Primary 10.25.17.44 is OK!
+[2026-06-11 16:30:18] [INFO] __main__:diagnostic_network:55 - [TELNET] Checking 10.25.17.44:502
+[2026-06-11 16:30:18] [INFO] __main__:diagnostic_network:79 - [TELNET] 10.25.17.44:502 is OPEN!
+[2026-06-11 16:30:18] [INFO] __main__:full_diagnostic_async:150 - [REGISTER] Reading address 40977 from PRIMARY with int16
+[2026-06-11 16:30:18] [INFO] app.modscan._modscan:ModScan:107 - [MODSCAN] Trying PRIMARY: 10.25.17.44:502
+[2026-06-11 16:30:19] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.44:502
+[2026-06-11 16:30:19] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.44:502
+[2026-06-11 16:30:19] [INFO] app.modscan._modscan:ModScan:115 - [MODSCAN] PRIMARY connection successful
+[2026-06-11 16:30:19] [INFO] __main__:full_diagnostic_async:169 - [REGISTER] PRIMARY read success! Value = 21.0
+[2026-06-11 16:30:19] [INFO] __main__:checking_value_sl:86 - CHECKING VALUE FROM SL:
+[2026-06-11 16:30:23] [WARNING] __main__:full_diagnostic_async:184 - [VALUE-CHECK] PRIMARY mismatch detected!
+[2026-06-11 16:30:23] [WARNING] __main__:full_diagnostic_async:185 - [VALUE-CHECK] PRIMARY detail: Mismatch: Expected SL [21.2] but got ModScan [21.0]
+[2026-06-11 16:30:23] [INFO] __main__:full_diagnostic_async:189 - [NETWORK-SECONDARY] Checking secondary network...
+[2026-06-11 16:30:23] [INFO] __main__:full_diagnostic_async:190 - [PING-SECONDARY] Checking secondary: 10.25.17.64
+[2026-06-11 16:30:23] [INFO] app.utils:ping_icmp:44 - PING (ICMP): 10.25.17.64 | count : 5
+[2026-06-11 16:30:27] [INFO] app.utils:ping_icmp:54 - 5 packets transmitted, 5 received, 0% packet loss, time 4003ms
+[2026-06-11 16:30:27] [INFO] __main__:full_diagnostic_async:200 - [PING-SECONDARY] Secondary 10.25.17.64 is OK!
+[2026-06-11 16:30:27] [INFO] __main__:full_diagnostic_async:203 - [TELNET-SECONDARY] Checking 10.25.17.64:502
+[2026-06-11 16:30:27] [INFO] __main__:full_diagnostic_async:213 - [TELNET-SECONDARY] Secondary 10.25.17.64:502 is OPEN!
+[2026-06-11 16:30:27] [INFO] __main__:full_diagnostic_async:216 - [REGISTER-SECONDARY] Trying to read from SECONDARY...
+[2026-06-11 16:30:27] [INFO] app.modscan._modscan:ModScanSecondary:145 - [MODSCAN-SECONDARY] Forcing read from SECONDARY: 10.25.17.64:502
+[2026-06-11 16:30:27] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.64:502
+[2026-06-11 16:30:27] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.64:502
+[2026-06-11 16:30:27] [INFO] app.modscan._modscan:ModScanSecondary:153 - [MODSCAN-SECONDARY] SECONDARY connection successful
+[2026-06-11 16:30:27] [INFO] __main__:full_diagnostic_async:226 - [REGISTER-SECONDARY] SECONDARY read success! Value = 21.200000000000003
+[2026-06-11 16:30:27] [INFO] __main__:checking_value_sl:86 - CHECKING VALUE FROM SL:
+[2026-06-11 16:30:31] [INFO] __main__:full_diagnostic_async:239 - [VALUE-CHECK] SECONDARY value matches SL: 21.200000000000003
+[2026-06-11 16:30:31] [INFO] __main__:full_diagnostic_async:252 - ==================================================
+[2026-06-11 16:30:31] [INFO] __main__:full_diagnostic_async:253 - FULL DIAGNOSTIC COMPLETE - 17.028s
+[2026-06-11 16:30:31] [INFO] __main__:full_diagnostic_async:254 - Active connection: SECONDARY
+[2026-06-11 16:30:31] [INFO] __main__:full_diagnostic_async:255 - ==================================================
+[2026-06-12 10:58:58] [INFO] __main__:full_diagnostic_async:120 - ==================================================
+[2026-06-12 10:58:58] [INFO] __main__:full_diagnostic_async:121 - FULL DIAGNOSTIC START
+[2026-06-12 10:58:58] [INFO] __main__:full_diagnostic_async:122 - ==================================================
+[2026-06-12 10:58:58] [INFO] __main__:diagnostic_network:20 - Diagnostic Network ...
+[2026-06-12 10:58:58] [INFO] __main__:diagnostic_network:29 - [PING] Checking primary: 10.25.17.44
+[2026-06-12 10:58:58] [INFO] app.utils:ping_icmp:44 - PING (ICMP): 10.25.17.44 | count : 5
+[2026-06-12 10:59:03] [INFO] app.utils:ping_icmp:54 - 5 packets transmitted, 1 received, 80% packet loss, time 4079ms
+[2026-06-12 10:59:03] [INFO] __main__:diagnostic_network:50 - [PING] Primary 10.25.17.44 is OK!
+[2026-06-12 10:59:03] [INFO] __main__:diagnostic_network:55 - [TELNET] Checking 10.25.17.44:502
+[2026-06-12 10:59:05] [ERROR] __main__:diagnostic_network:59 - [TELNET] 10.25.17.44:502 is CLOSED!
+[2026-06-12 10:59:05] [INFO] __main__:diagnostic_network:65 - [TELNET] Trying fallback: 10.25.17.64:502
+[2026-06-12 10:59:05] [INFO] __main__:diagnostic_network:77 - [TELNET] Fallback 10.25.17.64:502 is OPEN!
+[2026-06-12 10:59:05] [INFO] __main__:full_diagnostic_async:150 - [REGISTER] Reading address 40977 from PRIMARY with int16
+[2026-06-12 10:59:05] [INFO] app.modscan._modscan:ModScan:107 - [MODSCAN] Trying PRIMARY: 10.25.17.44:502
+[2026-06-12 10:59:10] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.44:502
+[2026-06-12 10:59:12] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.44:502
+[2026-06-12 10:59:13] [INFO] app.modscan._modscan:ModScan:115 - [MODSCAN] PRIMARY connection successful
+[2026-06-12 10:59:13] [INFO] __main__:full_diagnostic_async:169 - [REGISTER] PRIMARY read success! Value = 20.8
+[2026-06-12 10:59:13] [INFO] __main__:checking_value_sl:86 - CHECKING VALUE FROM SL:
+[2026-06-12 10:59:17] [INFO] __main__:full_diagnostic_async:178 - [VALUE-CHECK] PRIMARY value matches SL: 20.8
+[2026-06-12 10:59:17] [INFO] __main__:full_diagnostic_async:252 - ==================================================
+[2026-06-12 10:59:17] [INFO] __main__:full_diagnostic_async:253 - FULL DIAGNOSTIC COMPLETE - 19.447s
+[2026-06-12 10:59:17] [INFO] __main__:full_diagnostic_async:254 - Active connection: PRIMARY
+[2026-06-12 10:59:17] [INFO] __main__:full_diagnostic_async:255 - ==================================================
+[2026-06-12 11:00:23] [INFO] __main__:full_diagnostic_async:120 - ==================================================
+[2026-06-12 11:00:23] [INFO] __main__:full_diagnostic_async:121 - FULL DIAGNOSTIC START
+[2026-06-12 11:00:23] [INFO] __main__:full_diagnostic_async:122 - ==================================================
+[2026-06-12 11:00:23] [INFO] __main__:diagnostic_network:20 - Diagnostic Network ...
+[2026-06-12 11:00:23] [INFO] __main__:diagnostic_network:29 - [PING] Checking primary: 10.25.17.44
+[2026-06-12 11:00:23] [INFO] app.utils:ping_icmp:44 - PING (ICMP): 10.25.17.44 | count : 5
+[2026-06-12 11:00:27] [INFO] app.utils:ping_icmp:54 - 5 packets transmitted, 5 received, 0% packet loss, time 4003ms
+[2026-06-12 11:00:27] [INFO] __main__:diagnostic_network:50 - [PING] Primary 10.25.17.44 is OK!
+[2026-06-12 11:00:27] [INFO] __main__:diagnostic_network:55 - [TELNET] Checking 10.25.17.44:502
+[2026-06-12 11:00:27] [INFO] __main__:diagnostic_network:79 - [TELNET] 10.25.17.44:502 is OPEN!
+[2026-06-12 11:00:27] [INFO] __main__:full_diagnostic_async:150 - [REGISTER] Reading address 40977 from PRIMARY with int16
+[2026-06-12 11:00:27] [INFO] app.modscan._modscan:ModScan:107 - [MODSCAN] Trying PRIMARY: 10.25.17.44:502
+[2026-06-12 11:00:27] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.44:502
+[2026-06-12 11:00:27] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.44:502
+[2026-06-12 11:00:28] [INFO] app.modscan._modscan:ModScan:115 - [MODSCAN] PRIMARY connection successful
+[2026-06-12 11:00:28] [INFO] __main__:full_diagnostic_async:169 - [REGISTER] PRIMARY read success! Value = 20.8
+[2026-06-12 11:00:28] [INFO] __main__:checking_value_sl:86 - CHECKING VALUE FROM SL:
+[2026-06-12 11:00:33] [INFO] __main__:full_diagnostic_async:178 - [VALUE-CHECK] PRIMARY value matches SL: 20.8
+[2026-06-12 11:00:33] [INFO] __main__:full_diagnostic_async:252 - ==================================================
+[2026-06-12 11:00:33] [INFO] __main__:full_diagnostic_async:253 - FULL DIAGNOSTIC COMPLETE - 10.194s
+[2026-06-12 11:00:33] [INFO] __main__:full_diagnostic_async:254 - Active connection: PRIMARY
+[2026-06-12 11:00:33] [INFO] __main__:full_diagnostic_async:255 - ==================================================
+[2026-06-12 15:09:23] [INFO] __main__:full_diagnostic_async:120 - ==================================================
+[2026-06-12 15:09:23] [INFO] __main__:full_diagnostic_async:121 - FULL DIAGNOSTIC START
+[2026-06-12 15:09:23] [INFO] __main__:full_diagnostic_async:122 - ==================================================
+[2026-06-12 15:09:23] [INFO] __main__:diagnostic_network:20 - Diagnostic Network ...
+[2026-06-12 15:09:23] [INFO] __main__:diagnostic_network:29 - [PING] Checking primary: 10.25.17.44
+[2026-06-12 15:09:23] [INFO] app.utils:ping_icmp:44 - PING (ICMP): 10.25.17.44 | count : 5
+[2026-06-12 15:09:28] [INFO] app.utils:ping_icmp:54 - 5 packets transmitted, 1 received, 80% packet loss, time 4057ms
+[2026-06-12 15:09:28] [INFO] __main__:diagnostic_network:50 - [PING] Primary 10.25.17.44 is OK!
+[2026-06-12 15:09:28] [INFO] __main__:diagnostic_network:55 - [TELNET] Checking 10.25.17.44:502
+[2026-06-12 15:09:30] [ERROR] __main__:diagnostic_network:59 - [TELNET] 10.25.17.44:502 is CLOSED!
+[2026-06-12 15:09:30] [INFO] __main__:diagnostic_network:65 - [TELNET] Trying fallback: 10.25.17.64:502
+[2026-06-12 15:09:30] [INFO] __main__:diagnostic_network:77 - [TELNET] Fallback 10.25.17.64:502 is OPEN!
+[2026-06-12 15:09:30] [INFO] __main__:full_diagnostic_async:150 - [REGISTER] Reading address 40977 from PRIMARY with int16
+[2026-06-12 15:09:30] [INFO] app.modscan._modscan:ModScan:107 - [MODSCAN] Trying PRIMARY: 10.25.17.44:502
+[2026-06-12 15:09:35] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.44:502
+[2026-06-12 15:09:40] [ERROR] app.modscan._modscan:_modscan_connect:29 - [MODSCAN] Failed to connect to 10.25.17.44:502
+[2026-06-12 15:09:40] [WARNING] app.modscan._modscan:ModScan:118 - [MODSCAN] PRIMARY failed, trying SECONDARY: 10.25.17.64:502
+[2026-06-12 15:09:40] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.64:502
+[2026-06-12 15:09:40] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.64:502
+[2026-06-12 15:09:40] [INFO] app.modscan._modscan:ModScan:126 - [MODSCAN] SECONDARY connection successful
+[2026-06-12 15:09:40] [INFO] __main__:full_diagnostic_async:169 - [REGISTER] PRIMARY read success! Value = 21.200000000000003
+[2026-06-12 15:09:40] [INFO] __main__:checking_value_sl:86 - CHECKING VALUE FROM SL:
+[2026-06-12 15:09:45] [INFO] __main__:full_diagnostic_async:178 - [VALUE-CHECK] PRIMARY value matches SL: 21.200000000000003
+[2026-06-12 15:09:45] [INFO] __main__:full_diagnostic_async:252 - ==================================================
+[2026-06-12 15:09:45] [INFO] __main__:full_diagnostic_async:253 - FULL DIAGNOSTIC COMPLETE - 22.118s
+[2026-06-12 15:09:45] [INFO] __main__:full_diagnostic_async:254 - Active connection: PRIMARY
+[2026-06-12 15:09:45] [INFO] __main__:full_diagnostic_async:255 - ==================================================
+[2026-06-17 14:08:12] [INFO] __main__:full_diagnostic_async:120 - ==================================================
+[2026-06-17 14:08:12] [INFO] __main__:full_diagnostic_async:121 - FULL DIAGNOSTIC START
+[2026-06-17 14:08:12] [INFO] __main__:full_diagnostic_async:122 - ==================================================
+[2026-06-17 14:08:12] [INFO] __main__:diagnostic_network:20 - Diagnostic Network ...
+[2026-06-17 14:08:12] [INFO] __main__:diagnostic_network:29 - [PING] Checking primary: 10.25.17.44
+[2026-06-17 14:08:12] [INFO] app.utils:ping_icmp:44 - PING (ICMP): 10.25.17.44 | count : 5
+[2026-06-17 14:08:17] [INFO] app.utils:ping_icmp:54 - 5 packets transmitted, 1 received, 80% packet loss, time 4057ms
+[2026-06-17 14:08:17] [INFO] __main__:diagnostic_network:50 - [PING] Primary 10.25.17.44 is OK!
+[2026-06-17 14:08:17] [INFO] __main__:diagnostic_network:55 - [TELNET] Checking 10.25.17.44:502
+[2026-06-17 14:08:19] [ERROR] __main__:diagnostic_network:59 - [TELNET] 10.25.17.44:502 is CLOSED!
+[2026-06-17 14:08:19] [INFO] __main__:diagnostic_network:65 - [TELNET] Trying fallback: 10.25.17.64:502
+[2026-06-17 14:08:21] [ERROR] __main__:diagnostic_network:69 - [TELNET] Fallback 10.25.17.64:502 is also CLOSED!
+[2026-06-17 14:08:21] [ERROR] __main__:full_diagnostic_async:134 - [REGISTER] Skipped - Network unreachable
+[2026-06-17 14:21:01] [INFO] __main__:full_diagnostic_async:120 - ==================================================
+[2026-06-17 14:21:01] [INFO] __main__:full_diagnostic_async:121 - FULL DIAGNOSTIC START
+[2026-06-17 14:21:01] [INFO] __main__:full_diagnostic_async:122 - ==================================================
+[2026-06-17 14:21:01] [INFO] __main__:diagnostic_network:20 - Diagnostic Network ...
+[2026-06-17 14:21:01] [INFO] __main__:diagnostic_network:29 - [PING] Checking primary: 10.25.17.44
+[2026-06-17 14:21:01] [INFO] app.utils:ping_icmp:44 - PING (ICMP): 10.25.17.44 | count : 5
+[2026-06-17 14:21:05] [INFO] app.utils:ping_icmp:54 - 5 packets transmitted, 5 received, 0% packet loss, time 4003ms
+[2026-06-17 14:21:05] [INFO] __main__:diagnostic_network:50 - [PING] Primary 10.25.17.44 is OK!
+[2026-06-17 14:21:05] [INFO] __main__:diagnostic_network:55 - [TELNET] Checking 10.25.17.44:502
+[2026-06-17 14:21:05] [INFO] __main__:diagnostic_network:79 - [TELNET] 10.25.17.44:502 is OPEN!
+[2026-06-17 14:21:05] [INFO] __main__:full_diagnostic_async:150 - [REGISTER] Reading address 40977 from PRIMARY with int16
+[2026-06-17 14:21:05] [INFO] app.modscan._modscan:ModScan:106 - [MODSCAN] Trying PRIMARY: 10.25.17.44:502
+[2026-06-17 14:21:06] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.44:502
+[2026-06-17 14:21:06] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.44:502
+[2026-06-17 14:21:06] [INFO] app.modscan._modscan:ModScan:114 - [MODSCAN] PRIMARY connection successful
+[2026-06-17 14:21:06] [INFO] __main__:full_diagnostic_async:169 - [REGISTER] PRIMARY read success! Value = 21.400000000000002
+[2026-06-17 14:21:06] [INFO] __main__:checking_value_sl:86 - CHECKING VALUE FROM SL:
+[2026-06-17 14:21:11] [WARNING] __main__:full_diagnostic_async:184 - [VALUE-CHECK] PRIMARY mismatch detected!
+[2026-06-17 14:21:11] [WARNING] __main__:full_diagnostic_async:185 - [VALUE-CHECK] PRIMARY detail: Mismatch: Expected SL [20.7] but got ModScan [21.400000000000002]
+[2026-06-17 14:21:11] [INFO] __main__:full_diagnostic_async:189 - [NETWORK-SECONDARY] Checking secondary network...
+[2026-06-17 14:21:11] [INFO] __main__:full_diagnostic_async:190 - [PING-SECONDARY] Checking secondary: 10.25.17.64
+[2026-06-17 14:21:11] [INFO] app.utils:ping_icmp:44 - PING (ICMP): 10.25.17.64 | count : 5
+[2026-06-17 14:21:16] [INFO] app.utils:ping_icmp:54 - 5 packets transmitted, 1 received, 80% packet loss, time 4052ms
+[2026-06-17 14:21:16] [INFO] __main__:full_diagnostic_async:200 - [PING-SECONDARY] Secondary 10.25.17.64 is OK!
+[2026-06-17 14:21:16] [INFO] __main__:full_diagnostic_async:203 - [TELNET-SECONDARY] Checking 10.25.17.64:502
+[2026-06-17 14:21:18] [ERROR] __main__:full_diagnostic_async:207 - [TELNET-SECONDARY] Secondary 10.25.17.64:502 is CLOSED!
+[2026-06-17 14:21:18] [INFO] __main__:full_diagnostic_async:252 - ==================================================
+[2026-06-17 14:21:18] [INFO] __main__:full_diagnostic_async:253 - FULL DIAGNOSTIC COMPLETE - 17.081s
+[2026-06-17 14:21:18] [INFO] __main__:full_diagnostic_async:254 - Active connection: PRIMARY
+[2026-06-17 14:21:18] [INFO] __main__:full_diagnostic_async:255 - ==================================================
+[2026-06-17 14:22:07] [INFO] __main__:full_diagnostic_async:120 - ==================================================
+[2026-06-17 14:22:07] [INFO] __main__:full_diagnostic_async:121 - FULL DIAGNOSTIC START
+[2026-06-17 14:22:07] [INFO] __main__:full_diagnostic_async:122 - ==================================================
+[2026-06-17 14:22:07] [INFO] __main__:diagnostic_network:20 - Diagnostic Network ...
+[2026-06-17 14:22:07] [INFO] __main__:diagnostic_network:29 - [PING] Checking primary: 10.25.17.44
+[2026-06-17 14:22:07] [INFO] app.utils:ping_icmp:44 - PING (ICMP): 10.25.17.44 | count : 5
+[2026-06-17 14:22:11] [INFO] app.utils:ping_icmp:54 - 5 packets transmitted, 5 received, 0% packet loss, time 4006ms
+[2026-06-17 14:22:11] [INFO] __main__:diagnostic_network:50 - [PING] Primary 10.25.17.44 is OK!
+[2026-06-17 14:22:11] [INFO] __main__:diagnostic_network:55 - [TELNET] Checking 10.25.17.44:502
+[2026-06-17 14:22:12] [INFO] __main__:diagnostic_network:79 - [TELNET] 10.25.17.44:502 is OPEN!
+[2026-06-17 14:22:12] [INFO] __main__:full_diagnostic_async:150 - [REGISTER] Reading address 40977 from PRIMARY with int16
+[2026-06-17 14:22:12] [INFO] app.modscan._modscan:ModScan:106 - [MODSCAN] Trying PRIMARY: 10.25.17.44:502
+[2026-06-17 14:22:12] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.44:502
+[2026-06-17 14:22:12] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.44:502
+[2026-06-17 14:22:22] [INFO] app.modscan._modscan:ModScan:114 - [MODSCAN] PRIMARY connection successful
+[2026-06-17 14:22:22] [INFO] __main__:full_diagnostic_async:169 - [REGISTER] PRIMARY read success! Value = 21.400000000000002
+[2026-06-17 14:22:22] [INFO] __main__:checking_value_sl:86 - CHECKING VALUE FROM SL:
+[2026-06-17 14:22:27] [WARNING] __main__:full_diagnostic_async:184 - [VALUE-CHECK] PRIMARY mismatch detected!
+[2026-06-17 14:22:27] [WARNING] __main__:full_diagnostic_async:185 - [VALUE-CHECK] PRIMARY detail: Mismatch: Expected SL [20.7] but got ModScan [21.400000000000002]
+[2026-06-17 14:22:27] [INFO] __main__:full_diagnostic_async:189 - [NETWORK-SECONDARY] Checking secondary network...
+[2026-06-17 14:22:27] [INFO] __main__:full_diagnostic_async:190 - [PING-SECONDARY] Checking secondary: 10.25.17.64
+[2026-06-17 14:22:27] [INFO] app.utils:ping_icmp:44 - PING (ICMP): 10.25.17.64 | count : 5
+[2026-06-17 14:22:31] [INFO] app.utils:ping_icmp:54 - 5 packets transmitted, 5 received, 0% packet loss, time 4004ms
+[2026-06-17 14:22:31] [INFO] __main__:full_diagnostic_async:200 - [PING-SECONDARY] Secondary 10.25.17.64 is OK!
+[2026-06-17 14:22:31] [INFO] __main__:full_diagnostic_async:203 - [TELNET-SECONDARY] Checking 10.25.17.64:502
+[2026-06-17 14:22:31] [INFO] __main__:full_diagnostic_async:213 - [TELNET-SECONDARY] Secondary 10.25.17.64:502 is OPEN!
+[2026-06-17 14:22:31] [INFO] __main__:full_diagnostic_async:216 - [REGISTER-SECONDARY] Trying to read from SECONDARY...
+[2026-06-17 14:22:31] [INFO] app.modscan._modscan:ModScanSecondary:144 - [MODSCAN-SECONDARY] Forcing read from SECONDARY: 10.25.17.64:502
+[2026-06-17 14:22:31] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.64:502
+[2026-06-17 14:22:31] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.64:502
+[2026-06-17 14:22:31] [INFO] app.modscan._modscan:ModScanSecondary:152 - [MODSCAN-SECONDARY] SECONDARY connection successful
+[2026-06-17 14:22:31] [INFO] __main__:full_diagnostic_async:226 - [REGISTER-SECONDARY] SECONDARY read success! Value = 20.700000000000003
+[2026-06-17 14:22:31] [INFO] __main__:checking_value_sl:86 - CHECKING VALUE FROM SL:
+[2026-06-17 14:22:36] [INFO] __main__:full_diagnostic_async:239 - [VALUE-CHECK] SECONDARY value matches SL: 20.700000000000003
+[2026-06-17 14:22:36] [INFO] __main__:full_diagnostic_async:252 - ==================================================
+[2026-06-17 14:22:36] [INFO] __main__:full_diagnostic_async:253 - FULL DIAGNOSTIC COMPLETE - 28.567s
+[2026-06-17 14:22:36] [INFO] __main__:full_diagnostic_async:254 - Active connection: SECONDARY
+[2026-06-17 14:22:36] [INFO] __main__:full_diagnostic_async:255 - ==================================================
+[2026-06-17 14:23:52] [INFO] __main__:full_diagnostic_async:120 - ==================================================
+[2026-06-17 14:23:52] [INFO] __main__:full_diagnostic_async:121 - FULL DIAGNOSTIC START
+[2026-06-17 14:23:52] [INFO] __main__:full_diagnostic_async:122 - ==================================================
+[2026-06-17 14:23:52] [INFO] __main__:diagnostic_network:20 - Diagnostic Network ...
+[2026-06-17 14:23:52] [INFO] __main__:diagnostic_network:29 - [PING] Checking primary: 10.25.17.44
+[2026-06-17 14:23:52] [INFO] app.utils:ping_icmp:44 - PING (ICMP): 10.25.17.44 | count : 5
+[2026-06-17 14:23:56] [INFO] app.utils:ping_icmp:54 - 5 packets transmitted, 5 received, 0% packet loss, time 4003ms
+[2026-06-17 14:23:56] [INFO] __main__:diagnostic_network:50 - [PING] Primary 10.25.17.44 is OK!
+[2026-06-17 14:23:56] [INFO] __main__:diagnostic_network:55 - [TELNET] Checking 10.25.17.44:502
+[2026-06-17 14:23:57] [INFO] __main__:diagnostic_network:79 - [TELNET] 10.25.17.44:502 is OPEN!
+[2026-06-17 14:23:57] [INFO] __main__:full_diagnostic_async:150 - [REGISTER] Reading address 40977 from PRIMARY with int16
+[2026-06-17 14:23:57] [INFO] app.modscan._modscan:ModScan:106 - [MODSCAN] Trying PRIMARY: 10.25.17.44:502
+[2026-06-17 14:23:57] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.44:502
+[2026-06-17 14:23:57] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.44:502
+[2026-06-17 14:23:57] [INFO] app.modscan._modscan:ModScan:114 - [MODSCAN] PRIMARY connection successful
+[2026-06-17 14:23:57] [INFO] __main__:full_diagnostic_async:169 - [REGISTER] PRIMARY read success! Value = 21.400000000000002
+[2026-06-17 14:23:57] [INFO] __main__:checking_value_sl:86 - CHECKING VALUE FROM SL:
+[2026-06-17 14:24:03] [WARNING] __main__:full_diagnostic_async:184 - [VALUE-CHECK] PRIMARY mismatch detected!
+[2026-06-17 14:24:03] [WARNING] __main__:full_diagnostic_async:185 - [VALUE-CHECK] PRIMARY detail: Mismatch: Expected SL [20.7] but got ModScan [21.400000000000002]
+[2026-06-17 14:24:03] [INFO] __main__:full_diagnostic_async:189 - [NETWORK-SECONDARY] Checking secondary network...
+[2026-06-17 14:24:03] [INFO] __main__:full_diagnostic_async:190 - [PING-SECONDARY] Checking secondary: 10.25.17.64
+[2026-06-17 14:24:03] [INFO] app.utils:ping_icmp:44 - PING (ICMP): 10.25.17.64 | count : 5
+[2026-06-17 14:24:08] [INFO] app.utils:ping_icmp:54 - 5 packets transmitted, 5 received, 0% packet loss, time 4005ms
+[2026-06-17 14:24:08] [INFO] __main__:full_diagnostic_async:200 - [PING-SECONDARY] Secondary 10.25.17.64 is OK!
+[2026-06-17 14:24:08] [INFO] __main__:full_diagnostic_async:203 - [TELNET-SECONDARY] Checking 10.25.17.64:502
+[2026-06-17 14:24:08] [INFO] __main__:full_diagnostic_async:213 - [TELNET-SECONDARY] Secondary 10.25.17.64:502 is OPEN!
+[2026-06-17 14:24:08] [INFO] __main__:full_diagnostic_async:216 - [REGISTER-SECONDARY] Trying to read from SECONDARY...
+[2026-06-17 14:24:08] [INFO] app.modscan._modscan:ModScanSecondary:144 - [MODSCAN-SECONDARY] Forcing read from SECONDARY: 10.25.17.64:502
+[2026-06-17 14:24:08] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.64:502
+[2026-06-17 14:24:08] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.64:502
+[2026-06-17 14:24:08] [INFO] app.modscan._modscan:ModScanSecondary:152 - [MODSCAN-SECONDARY] SECONDARY connection successful
+[2026-06-17 14:24:08] [INFO] __main__:full_diagnostic_async:226 - [REGISTER-SECONDARY] SECONDARY read success! Value = 20.700000000000003
+[2026-06-17 14:24:08] [INFO] __main__:checking_value_sl:86 - CHECKING VALUE FROM SL:
+[2026-06-17 14:24:13] [INFO] __main__:full_diagnostic_async:239 - [VALUE-CHECK] SECONDARY value matches SL: 20.700000000000003
+[2026-06-17 14:24:13] [INFO] __main__:full_diagnostic_async:252 - ==================================================
+[2026-06-17 14:24:13] [INFO] __main__:full_diagnostic_async:253 - FULL DIAGNOSTIC COMPLETE - 20.681s
+[2026-06-17 14:24:13] [INFO] __main__:full_diagnostic_async:254 - Active connection: SECONDARY
+[2026-06-17 14:24:13] [INFO] __main__:full_diagnostic_async:255 - ==================================================
+[2026-06-17 14:25:38] [INFO] __main__:full_diagnostic_async:120 - ==================================================
+[2026-06-17 14:25:38] [INFO] __main__:full_diagnostic_async:121 - FULL DIAGNOSTIC START
+[2026-06-17 14:25:38] [INFO] __main__:full_diagnostic_async:122 - ==================================================
+[2026-06-17 14:25:38] [INFO] __main__:diagnostic_network:20 - Diagnostic Network ...
+[2026-06-17 14:25:38] [INFO] __main__:diagnostic_network:29 - [PING] Checking primary: 10.25.17.44
+[2026-06-17 14:25:38] [INFO] app.utils:ping_icmp:44 - PING (ICMP): 10.25.17.44 | count : 5
+[2026-06-17 14:25:42] [INFO] app.utils:ping_icmp:54 - 5 packets transmitted, 5 received, 0% packet loss, time 4002ms
+[2026-06-17 14:25:42] [INFO] __main__:diagnostic_network:50 - [PING] Primary 10.25.17.44 is OK!
+[2026-06-17 14:25:42] [INFO] __main__:diagnostic_network:55 - [TELNET] Checking 10.25.17.44:502
+[2026-06-17 14:25:42] [INFO] __main__:diagnostic_network:79 - [TELNET] 10.25.17.44:502 is OPEN!
+[2026-06-17 14:25:42] [INFO] __main__:full_diagnostic_async:150 - [REGISTER] Reading address 40977 from PRIMARY with int16
+[2026-06-17 14:25:42] [INFO] app.modscan._modscan:ModScan:106 - [MODSCAN] Trying PRIMARY: 10.25.17.44:502
+[2026-06-17 14:25:43] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.44:502
+[2026-06-17 14:25:43] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.44:502
+[2026-06-17 14:25:43] [INFO] app.modscan._modscan:ModScan:114 - [MODSCAN] PRIMARY connection successful
+[2026-06-17 14:25:43] [INFO] __main__:full_diagnostic_async:169 - [REGISTER] PRIMARY read success! Value = 21.400000000000002
+[2026-06-17 14:25:43] [INFO] __main__:checking_value_sl:86 - CHECKING VALUE FROM SL:
+[2026-06-17 14:25:48] [WARNING] __main__:full_diagnostic_async:184 - [VALUE-CHECK] PRIMARY mismatch detected!
+[2026-06-17 14:25:48] [WARNING] __main__:full_diagnostic_async:185 - [VALUE-CHECK] PRIMARY detail: Mismatch: Expected SL [20.7] but got ModScan [21.400000000000002]
+[2026-06-17 14:25:48] [INFO] __main__:full_diagnostic_async:189 - [NETWORK-SECONDARY] Checking secondary network...
+[2026-06-17 14:25:48] [INFO] __main__:full_diagnostic_async:190 - [PING-SECONDARY] Checking secondary: 10.25.17.64
+[2026-06-17 14:25:48] [INFO] app.utils:ping_icmp:44 - PING (ICMP): 10.25.17.64 | count : 5
+[2026-06-17 14:25:52] [INFO] app.utils:ping_icmp:54 - 5 packets transmitted, 5 received, 0% packet loss, time 4004ms
+[2026-06-17 14:25:52] [INFO] __main__:full_diagnostic_async:200 - [PING-SECONDARY] Secondary 10.25.17.64 is OK!
+[2026-06-17 14:25:52] [INFO] __main__:full_diagnostic_async:203 - [TELNET-SECONDARY] Checking 10.25.17.64:502
+[2026-06-17 14:25:52] [INFO] __main__:full_diagnostic_async:213 - [TELNET-SECONDARY] Secondary 10.25.17.64:502 is OPEN!
+[2026-06-17 14:25:52] [INFO] __main__:full_diagnostic_async:216 - [REGISTER-SECONDARY] Trying to read from SECONDARY...
+[2026-06-17 14:25:52] [INFO] app.modscan._modscan:ModScanSecondary:144 - [MODSCAN-SECONDARY] Forcing read from SECONDARY: 10.25.17.64:502
+[2026-06-17 14:25:52] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.64:502
+[2026-06-17 14:25:52] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.64:502
+[2026-06-17 14:25:52] [INFO] app.modscan._modscan:ModScanSecondary:152 - [MODSCAN-SECONDARY] SECONDARY connection successful
+[2026-06-17 14:25:52] [INFO] __main__:full_diagnostic_async:226 - [REGISTER-SECONDARY] SECONDARY read success! Value = 20.700000000000003
+[2026-06-17 14:25:52] [INFO] __main__:checking_value_sl:86 - CHECKING VALUE FROM SL:
+[2026-06-17 14:25:57] [INFO] __main__:full_diagnostic_async:239 - [VALUE-CHECK] SECONDARY value matches SL: 20.700000000000003
+[2026-06-17 14:25:57] [INFO] __main__:full_diagnostic_async:252 - ==================================================
+[2026-06-17 14:25:57] [INFO] __main__:full_diagnostic_async:253 - FULL DIAGNOSTIC COMPLETE - 19.145s
+[2026-06-17 14:25:57] [INFO] __main__:full_diagnostic_async:254 - Active connection: SECONDARY
+[2026-06-17 14:25:57] [INFO] __main__:full_diagnostic_async:255 - ==================================================
+[2026-06-17 14:45:59] [INFO] app.modscan.diagnose:full_diagnostic_async:120 - ==================================================
+[2026-06-17 14:45:59] [INFO] app.modscan.diagnose:full_diagnostic_async:121 - FULL DIAGNOSTIC START
+[2026-06-17 14:45:59] [INFO] app.modscan.diagnose:full_diagnostic_async:122 - ==================================================
+[2026-06-17 14:45:59] [INFO] app.modscan.diagnose:diagnostic_network:20 - Diagnostic Network ...
+[2026-06-17 14:45:59] [INFO] app.modscan.diagnose:diagnostic_network:29 - [PING] Checking primary: 10.25.17.44
+[2026-06-17 14:45:59] [INFO] app.utils:ping_icmp:44 - PING (ICMP): 10.25.17.44 | count : 5
+[2026-06-17 14:46:03] [INFO] app.utils:ping_icmp:54 - 5 packets transmitted, 5 received, 0% packet loss, time 4004ms
+[2026-06-17 14:46:03] [INFO] app.modscan.diagnose:diagnostic_network:50 - [PING] Primary 10.25.17.44 is OK!
+[2026-06-17 14:46:03] [INFO] app.modscan.diagnose:diagnostic_network:55 - [TELNET] Checking 10.25.17.44:502
+[2026-06-17 14:46:03] [INFO] app.modscan.diagnose:diagnostic_network:79 - [TELNET] 10.25.17.44:502 is OPEN!
+[2026-06-17 14:46:03] [INFO] app.modscan.diagnose:full_diagnostic_async:150 - [REGISTER] Reading address 40977 from PRIMARY with int16
+[2026-06-17 14:46:03] [INFO] app.modscan._modscan:ModScan:106 - [MODSCAN] Trying PRIMARY: 10.25.17.44:502
+[2026-06-17 14:46:03] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.44:502
+[2026-06-17 14:46:03] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.44:502
+[2026-06-17 14:46:18] [CRITICAL] app.modscan._modscan:_modscan_connect:86 - [MODSCAN] ModbusIOException: Modbus Error: [Input/Output] No response received after 2 retries, continue with next request
+[2026-06-17 14:46:18] [WARNING] app.modscan._modscan:ModScan:117 - [MODSCAN] PRIMARY failed, trying SECONDARY: 10.25.17.64:502
+[2026-06-17 14:46:18] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.64:502
+[2026-06-17 14:46:18] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.64:502
+[2026-06-17 14:46:18] [INFO] app.modscan._modscan:ModScan:125 - [MODSCAN] SECONDARY connection successful
+[2026-06-17 14:46:19] [INFO] app.modscan.diagnose:full_diagnostic_async:169 - [REGISTER] PRIMARY read success! Value = 20.700000000000003
+[2026-06-17 14:46:19] [INFO] app.modscan.diagnose:checking_value_sl:86 - CHECKING VALUE FROM SL:
+[2026-06-17 14:46:23] [INFO] app.modscan.diagnose:full_diagnostic_async:178 - [VALUE-CHECK] PRIMARY value matches SL: 20.700000000000003
+[2026-06-17 14:46:23] [INFO] app.modscan.diagnose:full_diagnostic_async:252 - ==================================================
+[2026-06-17 14:46:23] [INFO] app.modscan.diagnose:full_diagnostic_async:253 - FULL DIAGNOSTIC COMPLETE - 24.784s
+[2026-06-17 14:46:23] [INFO] app.modscan.diagnose:full_diagnostic_async:254 - Active connection: PRIMARY
+[2026-06-17 14:46:23] [INFO] app.modscan.diagnose:full_diagnostic_async:255 - ==================================================
+[2026-06-17 14:55:13] [INFO] app.modscan.diagnose:full_diagnostic_async:120 - ==================================================
+[2026-06-17 14:55:13] [INFO] app.modscan.diagnose:full_diagnostic_async:121 - FULL DIAGNOSTIC START
+[2026-06-17 14:55:13] [INFO] app.modscan.diagnose:full_diagnostic_async:122 - ==================================================
+[2026-06-17 14:55:13] [INFO] app.modscan.diagnose:diagnostic_network:20 - Diagnostic Network ...
+[2026-06-17 14:55:13] [INFO] app.modscan.diagnose:diagnostic_network:29 - [PING] Checking primary: 10.25.17.44
+[2026-06-17 14:55:13] [INFO] app.utils:ping_icmp:44 - PING (ICMP): 10.25.17.44 | count : 5
+[2026-06-17 14:55:17] [INFO] app.utils:ping_icmp:54 - 5 packets transmitted, 5 received, 0% packet loss, time 4004ms
+[2026-06-17 14:55:17] [INFO] app.modscan.diagnose:diagnostic_network:50 - [PING] Primary 10.25.17.44 is OK!
+[2026-06-17 14:55:17] [INFO] app.modscan.diagnose:diagnostic_network:55 - [TELNET] Checking 10.25.17.44:502
+[2026-06-17 14:55:17] [INFO] app.modscan.diagnose:diagnostic_network:79 - [TELNET] 10.25.17.44:502 is OPEN!
+[2026-06-17 14:55:17] [INFO] app.modscan.diagnose:full_diagnostic_async:150 - [REGISTER] Reading address 40977 from PRIMARY with int16
+[2026-06-17 14:55:17] [INFO] app.modscan._modscan:ModScan:106 - [MODSCAN] Trying PRIMARY: 10.25.17.44:502
+[2026-06-17 14:55:18] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.44:502
+[2026-06-17 14:55:18] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.44:502
+[2026-06-17 14:55:28] [INFO] app.modscan._modscan:ModScan:114 - [MODSCAN] PRIMARY connection successful
+[2026-06-17 14:55:28] [INFO] app.modscan.diagnose:full_diagnostic_async:169 - [REGISTER] PRIMARY read success! Value = 21.5
+[2026-06-17 14:55:28] [INFO] app.modscan.diagnose:checking_value_sl:86 - CHECKING VALUE FROM SL:
+[2026-06-17 14:55:32] [WARNING] app.modscan.diagnose:full_diagnostic_async:184 - [VALUE-CHECK] PRIMARY mismatch detected!
+[2026-06-17 14:55:32] [WARNING] app.modscan.diagnose:full_diagnostic_async:185 - [VALUE-CHECK] PRIMARY detail: Mismatch: Expected SL [20.7] but got ModScan [21.5]
+[2026-06-17 14:55:32] [INFO] app.modscan.diagnose:full_diagnostic_async:189 - [NETWORK-SECONDARY] Checking secondary network...
+[2026-06-17 14:55:32] [INFO] app.modscan.diagnose:full_diagnostic_async:190 - [PING-SECONDARY] Checking secondary: 10.25.17.64
+[2026-06-17 14:55:32] [INFO] app.utils:ping_icmp:44 - PING (ICMP): 10.25.17.64 | count : 5
+[2026-06-17 14:55:37] [INFO] app.utils:ping_icmp:54 - 5 packets transmitted, 1 received, 80% packet loss, time 4102ms
+[2026-06-17 14:55:37] [INFO] app.modscan.diagnose:full_diagnostic_async:200 - [PING-SECONDARY] Secondary 10.25.17.64 is OK!
+[2026-06-17 14:55:37] [INFO] app.modscan.diagnose:full_diagnostic_async:203 - [TELNET-SECONDARY] Checking 10.25.17.64:502
+[2026-06-17 14:55:39] [ERROR] app.modscan.diagnose:full_diagnostic_async:207 - [TELNET-SECONDARY] Secondary 10.25.17.64:502 is CLOSED!
+[2026-06-17 14:55:39] [INFO] app.modscan.diagnose:full_diagnostic_async:252 - ==================================================
+[2026-06-17 14:55:39] [INFO] app.modscan.diagnose:full_diagnostic_async:253 - FULL DIAGNOSTIC COMPLETE - 25.987s
+[2026-06-17 14:55:39] [INFO] app.modscan.diagnose:full_diagnostic_async:254 - Active connection: PRIMARY
+[2026-06-17 14:55:39] [INFO] app.modscan.diagnose:full_diagnostic_async:255 - ==================================================
+[2026-06-17 15:01:52] [INFO] app.modscan.diagnose:full_diagnostic_async:120 - ==================================================
+[2026-06-17 15:01:52] [INFO] app.modscan.diagnose:full_diagnostic_async:121 - FULL DIAGNOSTIC START
+[2026-06-17 15:01:52] [INFO] app.modscan.diagnose:full_diagnostic_async:122 - ==================================================
+[2026-06-17 15:01:52] [INFO] app.modscan.diagnose:diagnostic_network:20 - Diagnostic Network ...
+[2026-06-17 15:01:52] [INFO] app.modscan.diagnose:diagnostic_network:29 - [PING] Checking primary: 10.25.17.44
+[2026-06-17 15:01:52] [INFO] app.utils:ping_icmp:44 - PING (ICMP): 10.25.17.44 | count : 5
+[2026-06-17 15:01:57] [INFO] app.utils:ping_icmp:54 - 5 packets transmitted, 5 received, 0% packet loss, time 4004ms
+[2026-06-17 15:01:57] [INFO] app.modscan.diagnose:diagnostic_network:50 - [PING] Primary 10.25.17.44 is OK!
+[2026-06-17 15:01:57] [INFO] app.modscan.diagnose:diagnostic_network:55 - [TELNET] Checking 10.25.17.44:502
+[2026-06-17 15:01:57] [INFO] app.modscan.diagnose:diagnostic_network:79 - [TELNET] 10.25.17.44:502 is OPEN!
+[2026-06-17 15:01:57] [INFO] app.modscan.diagnose:full_diagnostic_async:150 - [REGISTER] Reading address 40977 from PRIMARY with int16
+[2026-06-17 15:01:57] [INFO] app.modscan._modscan:ModScan:106 - [MODSCAN] Trying PRIMARY: 10.25.17.44:502
+[2026-06-17 15:01:57] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.44:502
+[2026-06-17 15:01:57] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.44:502
+[2026-06-17 15:02:08] [INFO] app.modscan._modscan:ModScan:114 - [MODSCAN] PRIMARY connection successful
+[2026-06-17 15:02:08] [INFO] app.modscan.diagnose:full_diagnostic_async:169 - [REGISTER] PRIMARY read success! Value = 0.0
+[2026-06-17 15:02:08] [INFO] app.modscan.diagnose:checking_value_sl:86 - CHECKING VALUE FROM SL:
+[2026-06-17 15:02:12] [WARNING] app.modscan.diagnose:full_diagnostic_async:184 - [VALUE-CHECK] PRIMARY mismatch detected!
+[2026-06-17 15:02:12] [WARNING] app.modscan.diagnose:full_diagnostic_async:185 - [VALUE-CHECK] PRIMARY detail: Mismatch: Expected SL [20.7] but got ModScan [0.0]
+[2026-06-17 15:02:12] [INFO] app.modscan.diagnose:full_diagnostic_async:189 - [NETWORK-SECONDARY] Checking secondary network...
+[2026-06-17 15:02:12] [INFO] app.modscan.diagnose:full_diagnostic_async:190 - [PING-SECONDARY] Checking secondary: 10.25.17.64
+[2026-06-17 15:02:12] [INFO] app.utils:ping_icmp:44 - PING (ICMP): 10.25.17.64 | count : 5
+[2026-06-17 15:02:16] [INFO] app.utils:ping_icmp:54 - 5 packets transmitted, 5 received, 0% packet loss, time 4004ms
+[2026-06-17 15:02:16] [INFO] app.modscan.diagnose:full_diagnostic_async:200 - [PING-SECONDARY] Secondary 10.25.17.64 is OK!
+[2026-06-17 15:02:16] [INFO] app.modscan.diagnose:full_diagnostic_async:203 - [TELNET-SECONDARY] Checking 10.25.17.64:502
+[2026-06-17 15:02:16] [INFO] app.modscan.diagnose:full_diagnostic_async:213 - [TELNET-SECONDARY] Secondary 10.25.17.64:502 is OPEN!
+[2026-06-17 15:02:16] [INFO] app.modscan.diagnose:full_diagnostic_async:216 - [REGISTER-SECONDARY] Trying to read from SECONDARY...
+[2026-06-17 15:02:16] [INFO] app.modscan._modscan:ModScanSecondary:144 - [MODSCAN-SECONDARY] Forcing read from SECONDARY: 10.25.17.64:502
+[2026-06-17 15:02:16] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.64:502
+[2026-06-17 15:02:16] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.64:502
+[2026-06-17 15:02:16] [INFO] app.modscan._modscan:ModScanSecondary:152 - [MODSCAN-SECONDARY] SECONDARY connection successful
+[2026-06-17 15:02:16] [INFO] app.modscan.diagnose:full_diagnostic_async:226 - [REGISTER-SECONDARY] SECONDARY read success! Value = 20.8
+[2026-06-17 15:02:16] [INFO] app.modscan.diagnose:checking_value_sl:86 - CHECKING VALUE FROM SL:
+[2026-06-17 15:02:21] [ERROR] app.modscan.diagnose:full_diagnostic_async:245 - [VALUE-CHECK] SECONDARY also mismatch!
+[2026-06-17 15:02:21] [ERROR] app.modscan.diagnose:full_diagnostic_async:246 - [VALUE-CHECK] SECONDARY detail: Mismatch: Expected SL [20.7] but got ModScan [20.8]
+[2026-06-17 15:02:21] [INFO] app.modscan.diagnose:full_diagnostic_async:252 - ==================================================
+[2026-06-17 15:02:21] [INFO] app.modscan.diagnose:full_diagnostic_async:253 - FULL DIAGNOSTIC COMPLETE - 28.447s
+[2026-06-17 15:02:21] [INFO] app.modscan.diagnose:full_diagnostic_async:254 - Active connection: SECONDARY
+[2026-06-17 15:02:21] [INFO] app.modscan.diagnose:full_diagnostic_async:255 - ==================================================
+[2026-06-17 15:10:17] [INFO] app.modscan.diagnose:full_diagnostic_async:120 - ==================================================
+[2026-06-17 15:10:17] [INFO] app.modscan.diagnose:full_diagnostic_async:121 - FULL DIAGNOSTIC START
+[2026-06-17 15:10:17] [INFO] app.modscan.diagnose:full_diagnostic_async:122 - ==================================================
+[2026-06-17 15:10:17] [INFO] app.modscan.diagnose:diagnostic_network:20 - Diagnostic Network ...
+[2026-06-17 15:10:17] [INFO] app.modscan.diagnose:diagnostic_network:29 - [PING] Checking primary: 10.25.17.44
+[2026-06-17 15:10:17] [INFO] app.utils:ping_icmp:44 - PING (ICMP): 10.25.17.44 | count : 5
+[2026-06-17 15:10:21] [INFO] app.utils:ping_icmp:54 - 5 packets transmitted, 5 received, 0% packet loss, time 4005ms
+[2026-06-17 15:10:21] [INFO] app.modscan.diagnose:diagnostic_network:50 - [PING] Primary 10.25.17.44 is OK!
+[2026-06-17 15:10:21] [INFO] app.modscan.diagnose:diagnostic_network:55 - [TELNET] Checking 10.25.17.44:502
+[2026-06-17 15:10:21] [INFO] app.modscan.diagnose:diagnostic_network:79 - [TELNET] 10.25.17.44:502 is OPEN!
+[2026-06-17 15:10:21] [INFO] app.modscan.diagnose:full_diagnostic_async:150 - [REGISTER] Reading address 40977 from PRIMARY with int16
+[2026-06-17 15:10:21] [INFO] app.modscan._modscan:ModScan:106 - [MODSCAN] Trying PRIMARY: 10.25.17.44:502
+[2026-06-17 15:10:22] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.44:502
+[2026-06-17 15:10:22] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.44:502
+[2026-06-17 15:10:27] [INFO] app.modscan._modscan:ModScan:114 - [MODSCAN] PRIMARY connection successful
+[2026-06-17 15:10:27] [INFO] app.modscan.diagnose:full_diagnostic_async:169 - [REGISTER] PRIMARY read success! Value = 21.5
+[2026-06-17 15:10:27] [INFO] app.modscan.diagnose:checking_value_sl:86 - CHECKING VALUE FROM SL:
+[2026-06-17 15:10:33] [WARNING] app.modscan.diagnose:full_diagnostic_async:184 - [VALUE-CHECK] PRIMARY mismatch detected!
+[2026-06-17 15:10:33] [WARNING] app.modscan.diagnose:full_diagnostic_async:185 - [VALUE-CHECK] PRIMARY detail: Mismatch: Expected SL [20.8] but got ModScan [21.5]
+[2026-06-17 15:10:33] [INFO] app.modscan.diagnose:full_diagnostic_async:189 - [NETWORK-SECONDARY] Checking secondary network...
+[2026-06-17 15:10:33] [INFO] app.modscan.diagnose:full_diagnostic_async:190 - [PING-SECONDARY] Checking secondary: 10.25.17.64
+[2026-06-17 15:10:33] [INFO] app.utils:ping_icmp:44 - PING (ICMP): 10.25.17.64 | count : 5
+[2026-06-17 15:10:37] [INFO] app.utils:ping_icmp:54 - 5 packets transmitted, 5 received, 0% packet loss, time 4004ms
+[2026-06-17 15:10:37] [INFO] app.modscan.diagnose:full_diagnostic_async:200 - [PING-SECONDARY] Secondary 10.25.17.64 is OK!
+[2026-06-17 15:10:37] [INFO] app.modscan.diagnose:full_diagnostic_async:203 - [TELNET-SECONDARY] Checking 10.25.17.64:502
+[2026-06-17 15:10:37] [INFO] app.modscan.diagnose:full_diagnostic_async:213 - [TELNET-SECONDARY] Secondary 10.25.17.64:502 is OPEN!
+[2026-06-17 15:10:37] [INFO] app.modscan.diagnose:full_diagnostic_async:216 - [REGISTER-SECONDARY] Trying to read from SECONDARY...
+[2026-06-17 15:10:37] [INFO] app.modscan._modscan:ModScanSecondary:144 - [MODSCAN-SECONDARY] Forcing read from SECONDARY: 10.25.17.64:502
+[2026-06-17 15:10:37] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.64:502
+[2026-06-17 15:10:37] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.64:502
+[2026-06-17 15:10:38] [INFO] app.modscan._modscan:ModScanSecondary:152 - [MODSCAN-SECONDARY] SECONDARY connection successful
+[2026-06-17 15:10:38] [INFO] app.modscan.diagnose:full_diagnostic_async:226 - [REGISTER-SECONDARY] SECONDARY read success! Value = 20.700000000000003
+[2026-06-17 15:10:38] [INFO] app.modscan.diagnose:checking_value_sl:86 - CHECKING VALUE FROM SL:
+[2026-06-17 15:10:42] [INFO] app.modscan.diagnose:full_diagnostic_async:239 - [VALUE-CHECK] SECONDARY value matches SL: 20.700000000000003
+[2026-06-17 15:10:42] [INFO] app.modscan.diagnose:full_diagnostic_async:252 - ==================================================
+[2026-06-17 15:10:42] [INFO] app.modscan.diagnose:full_diagnostic_async:253 - FULL DIAGNOSTIC COMPLETE - 25.066s
+[2026-06-17 15:10:42] [INFO] app.modscan.diagnose:full_diagnostic_async:254 - Active connection: SECONDARY
+[2026-06-17 15:10:42] [INFO] app.modscan.diagnose:full_diagnostic_async:255 - ==================================================
+[2026-06-17 15:14:39] [ERROR] app.utils:get_tagname:91 - Message from get tagname: Tagname not found
+[2026-06-17 15:16:06] [ERROR] app.utils:get_tagname:91 - Message from get tagname tagname: Tagname not found
+[2026-06-17 15:23:13] [INFO] app.modscan.diagnose:full_diagnostic_async:120 - ==================================================
+[2026-06-17 15:23:13] [INFO] app.modscan.diagnose:full_diagnostic_async:121 - FULL DIAGNOSTIC START
+[2026-06-17 15:23:13] [INFO] app.modscan.diagnose:full_diagnostic_async:122 - ==================================================
+[2026-06-17 15:23:13] [INFO] app.modscan.diagnose:diagnostic_network:20 - Diagnostic Network ...
+[2026-06-17 15:23:13] [INFO] app.modscan.diagnose:diagnostic_network:29 - [PING] Checking primary: 10.25.17.44
+[2026-06-17 15:23:13] [INFO] app.utils:ping_icmp:44 - PING (ICMP): 10.25.17.44 | count : 5
+[2026-06-17 15:23:17] [INFO] app.utils:ping_icmp:54 - 5 packets transmitted, 5 received, 0% packet loss, time 4004ms
+[2026-06-17 15:23:17] [INFO] app.modscan.diagnose:diagnostic_network:50 - [PING] Primary 10.25.17.44 is OK!
+[2026-06-17 15:23:17] [INFO] app.modscan.diagnose:diagnostic_network:55 - [TELNET] Checking 10.25.17.44:502
+[2026-06-17 15:23:18] [INFO] app.modscan.diagnose:diagnostic_network:79 - [TELNET] 10.25.17.44:502 is OPEN!
+[2026-06-17 15:23:18] [INFO] app.modscan.diagnose:full_diagnostic_async:150 - [REGISTER] Reading address 40977 from PRIMARY with int16
+[2026-06-17 15:23:18] [INFO] app.modscan._modscan:ModScan:106 - [MODSCAN] Trying PRIMARY: 10.25.17.44:502
+[2026-06-17 15:23:18] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.44:502
+[2026-06-17 15:23:18] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.44:502
+[2026-06-17 15:23:23] [CRITICAL] app.modscan._modscan:_modscan_connect:89 - [MODSCAN] Exception: unpack requires a buffer of 2 bytes
+[2026-06-17 15:23:23] [WARNING] app.modscan._modscan:ModScan:117 - [MODSCAN] PRIMARY failed, trying SECONDARY: 10.25.17.64:502
+[2026-06-17 15:23:23] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.64:502
+[2026-06-17 15:23:23] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.64:502
+[2026-06-17 15:23:23] [INFO] app.modscan._modscan:ModScan:125 - [MODSCAN] SECONDARY connection successful
+[2026-06-17 15:23:23] [INFO] app.modscan.diagnose:full_diagnostic_async:169 - [REGISTER] PRIMARY read success! Value = 20.8
+[2026-06-17 15:23:23] [INFO] app.modscan.diagnose:checking_value_sl:86 - CHECKING VALUE FROM SL:
+[2026-06-17 15:23:29] [INFO] app.modscan.diagnose:full_diagnostic_async:178 - [VALUE-CHECK] PRIMARY value matches SL: 20.8
+[2026-06-17 15:23:29] [INFO] app.modscan.diagnose:full_diagnostic_async:252 - ==================================================
+[2026-06-17 15:23:29] [INFO] app.modscan.diagnose:full_diagnostic_async:253 - FULL DIAGNOSTIC COMPLETE - 15.802s
+[2026-06-17 15:23:29] [INFO] app.modscan.diagnose:full_diagnostic_async:254 - Active connection: PRIMARY
+[2026-06-17 15:23:29] [INFO] app.modscan.diagnose:full_diagnostic_async:255 - ==================================================
+[2026-06-17 15:27:11] [INFO] app.modscan.diagnose:full_diagnostic_async:120 - ==================================================
+[2026-06-17 15:27:11] [INFO] app.modscan.diagnose:full_diagnostic_async:121 - FULL DIAGNOSTIC START
+[2026-06-17 15:27:11] [INFO] app.modscan.diagnose:full_diagnostic_async:122 - ==================================================
+[2026-06-17 15:27:11] [INFO] app.modscan.diagnose:diagnostic_network:20 - Diagnostic Network ...
+[2026-06-17 15:27:11] [INFO] app.modscan.diagnose:diagnostic_network:29 - [PING] Checking primary: 10.25.17.44
+[2026-06-17 15:27:11] [INFO] app.utils:ping_icmp:44 - PING (ICMP): 10.25.17.44 | count : 5
+[2026-06-17 15:27:15] [INFO] app.utils:ping_icmp:54 - 5 packets transmitted, 5 received, 0% packet loss, time 4000ms
+[2026-06-17 15:27:15] [INFO] app.modscan.diagnose:diagnostic_network:50 - [PING] Primary 10.25.17.44 is OK!
+[2026-06-17 15:27:15] [INFO] app.modscan.diagnose:diagnostic_network:55 - [TELNET] Checking 10.25.17.44:502
+[2026-06-17 15:27:15] [INFO] app.modscan.diagnose:diagnostic_network:79 - [TELNET] 10.25.17.44:502 is OPEN!
+[2026-06-17 15:27:15] [INFO] app.modscan.diagnose:full_diagnostic_async:150 - [REGISTER] Reading address 40977 from PRIMARY with int16
+[2026-06-17 15:27:15] [INFO] app.modscan._modscan:ModScan:106 - [MODSCAN] Trying PRIMARY: 10.25.17.44:502
+[2026-06-17 15:27:16] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.44:502
+[2026-06-17 15:27:16] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.44:502
+[2026-06-17 15:27:21] [INFO] app.modscan._modscan:ModScan:114 - [MODSCAN] PRIMARY connection successful
+[2026-06-17 15:27:21] [INFO] app.modscan.diagnose:full_diagnostic_async:169 - [REGISTER] PRIMARY read success! Value = 21.5
+[2026-06-17 15:27:21] [INFO] app.modscan.diagnose:checking_value_sl:86 - CHECKING VALUE FROM SL:
+[2026-06-17 15:27:26] [WARNING] app.modscan.diagnose:full_diagnostic_async:184 - [VALUE-CHECK] PRIMARY mismatch detected!
+[2026-06-17 15:27:26] [WARNING] app.modscan.diagnose:full_diagnostic_async:185 - [VALUE-CHECK] PRIMARY detail: Mismatch: Expected SL [20.8] but got ModScan [21.5]
+[2026-06-17 15:27:26] [INFO] app.modscan.diagnose:full_diagnostic_async:189 - [NETWORK-SECONDARY] Checking secondary network...
+[2026-06-17 15:27:26] [INFO] app.modscan.diagnose:full_diagnostic_async:190 - [PING-SECONDARY] Checking secondary: 10.25.17.64
+[2026-06-17 15:27:26] [INFO] app.utils:ping_icmp:44 - PING (ICMP): 10.25.17.64 | count : 5
+[2026-06-17 15:27:30] [INFO] app.utils:ping_icmp:54 - 5 packets transmitted, 5 received, 0% packet loss, time 4004ms
+[2026-06-17 15:27:30] [INFO] app.modscan.diagnose:full_diagnostic_async:200 - [PING-SECONDARY] Secondary 10.25.17.64 is OK!
+[2026-06-17 15:27:30] [INFO] app.modscan.diagnose:full_diagnostic_async:203 - [TELNET-SECONDARY] Checking 10.25.17.64:502
+[2026-06-17 15:27:30] [INFO] app.modscan.diagnose:full_diagnostic_async:213 - [TELNET-SECONDARY] Secondary 10.25.17.64:502 is OPEN!
+[2026-06-17 15:27:30] [INFO] app.modscan.diagnose:full_diagnostic_async:216 - [REGISTER-SECONDARY] Trying to read from SECONDARY...
+[2026-06-17 15:27:30] [INFO] app.modscan._modscan:ModScanSecondary:144 - [MODSCAN-SECONDARY] Forcing read from SECONDARY: 10.25.17.64:502
+[2026-06-17 15:27:30] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.64:502
+[2026-06-17 15:27:30] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.64:502
+[2026-06-17 15:27:30] [INFO] app.modscan._modscan:ModScanSecondary:152 - [MODSCAN-SECONDARY] SECONDARY connection successful
+[2026-06-17 15:27:30] [INFO] app.modscan.diagnose:full_diagnostic_async:226 - [REGISTER-SECONDARY] SECONDARY read success! Value = 20.8
+[2026-06-17 15:27:30] [INFO] app.modscan.diagnose:checking_value_sl:86 - CHECKING VALUE FROM SL:
+[2026-06-17 15:27:34] [INFO] app.modscan.diagnose:full_diagnostic_async:239 - [VALUE-CHECK] SECONDARY value matches SL: 20.8
+[2026-06-17 15:27:34] [INFO] app.modscan.diagnose:full_diagnostic_async:252 - ==================================================
+[2026-06-17 15:27:34] [INFO] app.modscan.diagnose:full_diagnostic_async:253 - FULL DIAGNOSTIC COMPLETE - 22.922s
+[2026-06-17 15:27:34] [INFO] app.modscan.diagnose:full_diagnostic_async:254 - Active connection: SECONDARY
+[2026-06-17 15:27:34] [INFO] app.modscan.diagnose:full_diagnostic_async:255 - ==================================================
+[2026-06-22 10:54:01] [INFO] app.modscan.diagnose:full_diagnostic_async:120 - ==================================================
+[2026-06-22 10:54:01] [INFO] app.modscan.diagnose:full_diagnostic_async:121 - FULL DIAGNOSTIC START
+[2026-06-22 10:54:01] [INFO] app.modscan.diagnose:full_diagnostic_async:122 - ==================================================
+[2026-06-22 10:54:01] [INFO] app.modscan.diagnose:diagnostic_network:20 - Diagnostic Network ...
+[2026-06-22 10:54:01] [INFO] app.modscan.diagnose:diagnostic_network:29 - [PING] Checking primary: 10.25.17.44
+[2026-06-22 10:54:01] [INFO] app.utils:ping_icmp:44 - PING (ICMP): 10.25.17.44 | count : 5
+[2026-06-22 10:54:05] [INFO] app.utils:ping_icmp:54 - 5 packets transmitted, 5 received, 0% packet loss, time 4004ms
+[2026-06-22 10:54:05] [INFO] app.modscan.diagnose:diagnostic_network:50 - [PING] Primary 10.25.17.44 is OK!
+[2026-06-22 10:54:05] [INFO] app.modscan.diagnose:diagnostic_network:55 - [TELNET] Checking 10.25.17.44:502
+[2026-06-22 10:54:05] [INFO] app.modscan.diagnose:diagnostic_network:79 - [TELNET] 10.25.17.44:502 is OPEN!
+[2026-06-22 10:54:05] [INFO] app.modscan.diagnose:full_diagnostic_async:150 - [REGISTER] Reading address 40978 from PRIMARY with int16
+[2026-06-22 10:54:05] [INFO] app.modscan._modscan:ModScan:106 - [MODSCAN] Trying PRIMARY: 10.25.17.44:502
+[2026-06-22 10:54:05] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.44:502
+[2026-06-22 10:54:05] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.44:502
+[2026-06-22 10:54:11] [INFO] app.modscan._modscan:ModScan:114 - [MODSCAN] PRIMARY connection successful
+[2026-06-22 10:54:11] [INFO] app.modscan.diagnose:full_diagnostic_async:169 - [REGISTER] PRIMARY read success! Value = 20.6
+[2026-06-22 10:54:11] [INFO] app.modscan.diagnose:checking_value_sl:86 - CHECKING VALUE FROM SL:
+[2026-06-22 10:54:14] [WARNING] app.modscan.diagnose:full_diagnostic_async:184 - [VALUE-CHECK] PRIMARY mismatch detected!
+[2026-06-22 10:54:14] [WARNING] app.modscan.diagnose:full_diagnostic_async:185 - [VALUE-CHECK] PRIMARY detail: Mismatch: Expected SL [20.3] but got ModScan [20.6]
+[2026-06-22 10:54:14] [INFO] app.modscan.diagnose:full_diagnostic_async:189 - [NETWORK-SECONDARY] Checking secondary network...
+[2026-06-22 10:54:14] [INFO] app.modscan.diagnose:full_diagnostic_async:190 - [PING-SECONDARY] Checking secondary: 10.25.17.64
+[2026-06-22 10:54:14] [INFO] app.utils:ping_icmp:44 - PING (ICMP): 10.25.17.64 | count : 5
+[2026-06-22 10:54:18] [INFO] app.utils:ping_icmp:54 - 5 packets transmitted, 5 received, 0% packet loss, time 4005ms
+[2026-06-22 10:54:18] [INFO] app.modscan.diagnose:full_diagnostic_async:200 - [PING-SECONDARY] Secondary 10.25.17.64 is OK!
+[2026-06-22 10:54:18] [INFO] app.modscan.diagnose:full_diagnostic_async:203 - [TELNET-SECONDARY] Checking 10.25.17.64:502
+[2026-06-22 10:54:18] [INFO] app.modscan.diagnose:full_diagnostic_async:213 - [TELNET-SECONDARY] Secondary 10.25.17.64:502 is OPEN!
+[2026-06-22 10:54:18] [INFO] app.modscan.diagnose:full_diagnostic_async:216 - [REGISTER-SECONDARY] Trying to read from SECONDARY...
+[2026-06-22 10:54:18] [INFO] app.modscan._modscan:ModScanSecondary:144 - [MODSCAN-SECONDARY] Forcing read from SECONDARY: 10.25.17.64:502
+[2026-06-22 10:54:18] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.64:502
+[2026-06-22 10:54:18] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.64:502
+[2026-06-22 10:54:18] [INFO] app.modscan._modscan:ModScanSecondary:152 - [MODSCAN-SECONDARY] SECONDARY connection successful
+[2026-06-22 10:54:18] [INFO] app.modscan.diagnose:full_diagnostic_async:226 - [REGISTER-SECONDARY] SECONDARY read success! Value = 20.3
+[2026-06-22 10:54:18] [INFO] app.modscan.diagnose:checking_value_sl:86 - CHECKING VALUE FROM SL:
+[2026-06-22 10:54:21] [INFO] app.modscan.diagnose:full_diagnostic_async:239 - [VALUE-CHECK] SECONDARY value matches SL: 20.3
+[2026-06-22 10:54:21] [INFO] app.modscan.diagnose:full_diagnostic_async:252 - ==================================================
+[2026-06-22 10:54:21] [INFO] app.modscan.diagnose:full_diagnostic_async:253 - FULL DIAGNOSTIC COMPLETE - 20.165s
+[2026-06-22 10:54:21] [INFO] app.modscan.diagnose:full_diagnostic_async:254 - Active connection: SECONDARY
+[2026-06-22 10:54:21] [INFO] app.modscan.diagnose:full_diagnostic_async:255 - ==================================================
+[2026-06-22 10:55:35] [ERROR] app.utils:get_tagname:91 - Message from get tagname point: Tagname not found
+[2026-06-22 10:56:55] [ERROR] app.utils:get_tagname:91 - Message from get tagname point: Tagname not found
+[2026-06-22 10:59:33] [INFO] app.modscan.diagnose:full_diagnostic_async:120 - ==================================================
+[2026-06-22 10:59:33] [INFO] app.modscan.diagnose:full_diagnostic_async:121 - FULL DIAGNOSTIC START
+[2026-06-22 10:59:33] [INFO] app.modscan.diagnose:full_diagnostic_async:122 - ==================================================
+[2026-06-22 10:59:33] [INFO] app.modscan.diagnose:diagnostic_network:20 - Diagnostic Network ...
+[2026-06-22 10:59:33] [INFO] app.modscan.diagnose:diagnostic_network:29 - [PING] Checking primary: 10.25.17.44
+[2026-06-22 10:59:33] [INFO] app.utils:ping_icmp:44 - PING (ICMP): 10.25.17.44 | count : 5
+[2026-06-22 10:59:37] [INFO] app.utils:ping_icmp:54 - 5 packets transmitted, 5 received, 0% packet loss, time 4005ms
+[2026-06-22 10:59:37] [INFO] app.modscan.diagnose:diagnostic_network:50 - [PING] Primary 10.25.17.44 is OK!
+[2026-06-22 10:59:37] [INFO] app.modscan.diagnose:diagnostic_network:55 - [TELNET] Checking 10.25.17.44:502
+[2026-06-22 10:59:37] [INFO] app.modscan.diagnose:diagnostic_network:79 - [TELNET] 10.25.17.44:502 is OPEN!
+[2026-06-22 10:59:37] [INFO] app.modscan.diagnose:full_diagnostic_async:150 - [REGISTER] Reading address 40977 from PRIMARY with int16
+[2026-06-22 10:59:37] [INFO] app.modscan._modscan:ModScan:106 - [MODSCAN] Trying PRIMARY: 10.25.17.44:502
+[2026-06-22 10:59:37] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.44:502
+[2026-06-22 10:59:37] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.44:502
+[2026-06-22 10:59:43] [INFO] app.modscan._modscan:ModScan:114 - [MODSCAN] PRIMARY connection successful
+[2026-06-22 10:59:43] [INFO] app.modscan.diagnose:full_diagnostic_async:169 - [REGISTER] PRIMARY read success! Value = 21.1
+[2026-06-22 10:59:43] [INFO] app.modscan.diagnose:checking_value_sl:86 - CHECKING VALUE FROM SL:
+[2026-06-22 10:59:46] [WARNING] app.modscan.diagnose:full_diagnostic_async:184 - [VALUE-CHECK] PRIMARY mismatch detected!
+[2026-06-22 10:59:46] [WARNING] app.modscan.diagnose:full_diagnostic_async:185 - [VALUE-CHECK] PRIMARY detail: Mismatch: Expected SL [21] but got ModScan [21.1]
+[2026-06-22 10:59:46] [INFO] app.modscan.diagnose:full_diagnostic_async:189 - [NETWORK-SECONDARY] Checking secondary network...
+[2026-06-22 10:59:46] [INFO] app.modscan.diagnose:full_diagnostic_async:190 - [PING-SECONDARY] Checking secondary: 10.25.17.64
+[2026-06-22 10:59:46] [INFO] app.utils:ping_icmp:44 - PING (ICMP): 10.25.17.64 | count : 5
+[2026-06-22 10:59:51] [INFO] app.utils:ping_icmp:54 - 5 packets transmitted, 5 received, 0% packet loss, time 4005ms
+[2026-06-22 10:59:51] [INFO] app.modscan.diagnose:full_diagnostic_async:200 - [PING-SECONDARY] Secondary 10.25.17.64 is OK!
+[2026-06-22 10:59:51] [INFO] app.modscan.diagnose:full_diagnostic_async:203 - [TELNET-SECONDARY] Checking 10.25.17.64:502
+[2026-06-22 10:59:51] [INFO] app.modscan.diagnose:full_diagnostic_async:213 - [TELNET-SECONDARY] Secondary 10.25.17.64:502 is OPEN!
+[2026-06-22 10:59:51] [INFO] app.modscan.diagnose:full_diagnostic_async:216 - [REGISTER-SECONDARY] Trying to read from SECONDARY...
+[2026-06-22 10:59:51] [INFO] app.modscan._modscan:ModScanSecondary:144 - [MODSCAN-SECONDARY] Forcing read from SECONDARY: 10.25.17.64:502
+[2026-06-22 10:59:51] [INFO] app.modscan._modscan:_modscan_connect:25 - [MODSCAN] Connecting to 10.25.17.64:502
+[2026-06-22 10:59:51] [INFO] app.modscan._modscan:_modscan_connect:33 - [MODSCAN] Connected to 10.25.17.64:502
+[2026-06-22 10:59:51] [INFO] app.modscan._modscan:ModScanSecondary:152 - [MODSCAN-SECONDARY] SECONDARY connection successful
+[2026-06-22 10:59:51] [INFO] app.modscan.diagnose:full_diagnostic_async:226 - [REGISTER-SECONDARY] SECONDARY read success! Value = 21.0
+[2026-06-22 10:59:51] [INFO] app.modscan.diagnose:checking_value_sl:86 - CHECKING VALUE FROM SL:
+[2026-06-22 10:59:55] [INFO] app.modscan.diagnose:full_diagnostic_async:239 - [VALUE-CHECK] SECONDARY value matches SL: 21.0
+[2026-06-22 10:59:55] [INFO] app.modscan.diagnose:full_diagnostic_async:252 - ==================================================
+[2026-06-22 10:59:55] [INFO] app.modscan.diagnose:full_diagnostic_async:253 - FULL DIAGNOSTIC COMPLETE - 21.636s
+[2026-06-22 10:59:55] [INFO] app.modscan.diagnose:full_diagnostic_async:254 - Active connection: SECONDARY
+[2026-06-22 10:59:55] [INFO] app.modscan.diagnose:full_diagnostic_async:255 - ==================================================

@@ -80,7 +80,7 @@ def telnet(host, port, timeout=2) -> bool:
     return result == 0
   except: return False
 
-def get_tagname(tagname,key:Optional[str] = None) -> Optional[dict]:
+def get_tagname(tagname,key:Optional[str] = None) -> dict:
   endpoint =  f"application/api/modbus/get-point?tagname={tagname}"
   url = f"{Config.sl_host}{endpoint}"
   if not key: key = Config.sl_key
@@ -88,15 +88,14 @@ def get_tagname(tagname,key:Optional[str] = None) -> Optional[dict]:
     res = req.post(url,data={"key":key},verify=False)
     if res.status_code == 200: res = res.json()
     if "data" not in res.keys():
-      log.error(f"Message from get tagname: {res.get('message','')}")
-      return None
-    return res['data']
+      log.error(f"Message from get tagname {tagname}: {res.get('message','')}")
+      return {}
+    return res.get('data',{})
   except req.exceptions.ConnectTimeout:
     raise ValueError("")
 
 def get_current_value_sl(tagname:str,key:Optional[str]=None) -> Union[int,float]:
   data = get_tagname(tagname)
-  print(data)
   if not data:
     log.error("Tagname is not found!")
     return None

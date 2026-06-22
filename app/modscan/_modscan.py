@@ -39,8 +39,7 @@ async def _modscan_connect(host: str, port: int, payload: ModScanSchema):
         log.critical(f"[MODSCAN] Exception: {detail.name}")
         return False, ModScanResponse(detail=detail.name, request=payload)
       
-      if not isinstance(response, ModbusPDU):
-        raise TypeError(f"response is {type(response)}")
+      if not isinstance(response, ModbusPDU): raise TypeError(f"response is {type(response)}")
       
       # Process response based on point type
       if payload.point_type in (PointType.COIL_STATUS, PointType.INPUT_STATUS):
@@ -131,6 +130,35 @@ async def ModScan(payload: ModScanSchema) -> ModScanResponse:
   return ModScanResponse(
     request=payload,
     detail=f"{response.detail}"
+  )
+
+async def ModScanSecondary(payload: ModScanSchema) -> ModScanResponse:
+  """
+  Force read Modbus register from SECONDARY connection (for value mismatch failover).
+  This function directly tries secondary without attempting primary first.
+  
+  Returns: ModScanResponse with connection info
+  """
+  network = payload.network
+  
+  log.info(f"[MODSCAN-SECONDARY] Forcing read from SECONDARY: {network.secondary_host}:{network.secondary_port}")
+  success, response = await _modscan_connect(
+    host=network.secondary_host,
+    port=network.secondary_port,
+    payload=payload
+  )
+  
+  if success:
+    log.info(f"[MODSCAN-SECONDARY] SECONDARY connection successful")
+    # Mark that this came from secondary
+    response.detail = f"[SECONDARY] {response.detail}"
+    return response
+  
+  # Secondary failed
+  log.error(f"[MODSCAN-SECONDARY] SECONDARY connection failed!")
+  return ModScanResponse(
+    request=payload,
+    detail=f"[SECONDARY] Connection failed: {network.secondary_host}:{network.secondary_port} - {response.detail}"
   )
 
 async def _modwrite_connect(host: str, port: int, payload: ModScanSchema, value: Union[float, int]):
